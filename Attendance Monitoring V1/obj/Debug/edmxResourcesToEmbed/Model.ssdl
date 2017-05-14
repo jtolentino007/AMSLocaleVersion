@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Attendance_Summary_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="usp_SSRS_Attendance_Summary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Gathering_Month" Type="int" Mode="In" />
+    <Parameter Name="Gathering_Year" Type="int" Mode="In" />
+    <Parameter Name="No_of_absense" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="Attendance_Summary_ModelStoreContainer" />
+</Schema>

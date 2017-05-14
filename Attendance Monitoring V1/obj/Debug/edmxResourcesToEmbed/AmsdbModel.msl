@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Attendance_Summary_ModelStoreContainer" CdmEntityContainer="AMSDBEntities">
+    <FunctionImportMapping FunctionImportName="usp_SSRS_Attendance_Summary" FunctionName="Attendance_Summary_Model.Store.usp_SSRS_Attendance_Summary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Attendance_Summary_Model.usp_SSRS_Attendance_Summary_Result">
+          <ScalarProperty Name="brethren_id" ColumnName="brethren_id" />
+          <ScalarProperty Name="BrethrenName" ColumnName="BrethrenName" />
+          <ScalarProperty Name="Gathering_Week" ColumnName="Gathering_Week" />
+          <ScalarProperty Name="Gathering_Month" ColumnName="Gathering_Month" />
+          <ScalarProperty Name="Gathering_Year" ColumnName="Gathering_Year" />
+          <ScalarProperty Name="no_gathering" ColumnName="no_gathering" />
+          <ScalarProperty Name="no_presents" ColumnName="no_presents" />
+          <ScalarProperty Name="no_absences" ColumnName="no_absences" />
+          <ScalarProperty Name="total_absences" ColumnName="total_absences" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

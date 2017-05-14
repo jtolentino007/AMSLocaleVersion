@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Attendance_Summary_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AMSDBEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="usp_SSRS_Attendance_Summary" ReturnType="Collection(Attendance_Summary_Model.usp_SSRS_Attendance_Summary_Result)">
+      <Parameter Name="Gathering_Month" Mode="In" Type="Int32" />
+      <Parameter Name="Gathering_Year" Mode="In" Type="Int32" />
+      <Parameter Name="No_of_absense" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="usp_SSRS_Attendance_Summary_Result">
+    <Property Type="String" Name="brethren_id" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BrethrenName" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="Gathering_Week" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Gathering_Month" Nullable="true" />
+    <Property Type="Int32" Name="Gathering_Year" Nullable="true" />
+    <Property Type="Int32" Name="no_gathering" Nullable="true" />
+    <Property Type="Int32" Name="no_presents" Nullable="true" />
+    <Property Type="Int32" Name="no_absences" Nullable="true" />
+    <Property Type="Int32" Name="total_absences" Nullable="true" />
+  </ComplexType>
+</Schema>

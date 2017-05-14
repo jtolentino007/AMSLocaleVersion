@@ -1,0 +1,788 @@
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.exe.config
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.exe
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.pdb
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Charts.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Data.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.DemoData.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.DemoData.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Tutorials.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraBars.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraNavBar.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.CodeParser.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Office.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.UI.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Data.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraBars.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraNavBar.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Office.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.UI.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraCharts.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraCharts.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraCharts.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraCharts.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraNavBar.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Utils.v15.2.UI.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Utils.v15.2.UI.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Utils.v15.2.UI.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Utils.v15.2.UI.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmCommittees.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmCommitteesAddEdit.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmGroups.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmAddGroup.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmBrethrenAddEdit.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmLocale.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmLocaleAddEdit.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.Properties.Resources.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.csproj.GenerateResource.Cache
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe.licenses
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.pdb
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringSetup.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.WaitForm1.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmAttendanceMonitoring.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmLogin.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.csprojResolveAssemblyReference.cache
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringView.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Win.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.UI.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Map.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.PivotGrid.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Xpo.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Presets.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Win.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraMap.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPivotGrid.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.Extensions.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Win.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.UI.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Map.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.PivotGrid.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Xpo.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Presets.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Win.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraMap.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPivotGrid.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.Extensions.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Dashboard.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Dashboard.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Dashboard.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Dashboard.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Dashboard.v15.2.Win.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Dashboard.v15.2.Win.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Dashboard.v15.2.Win.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Dashboard.v15.2.Win.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.DataAccess.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.DataAccess.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.DataAccess.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.DataAccess.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.DataAccess.v15.2.UI.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.DataAccess.v15.2.UI.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.DataAccess.v15.2.UI.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.DataAccess.v15.2.UI.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Map.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Map.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Map.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Map.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.PivotGrid.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.PivotGrid.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.PivotGrid.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.PivotGrid.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Xpo.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Xpo.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Xpo.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Xpo.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGauges.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGauges.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Core.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraPivotGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraPivotGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraPivotGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraPivotGrid.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraReports.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraReports.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraReports.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraReports.v15.2.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmMain.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmBrethren.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmUsers.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmUserRegistration.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Diagram.v15.2.Core.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Extensions.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraDiagram.v15.2.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.Extensions.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.Diagram.v15.2.Core.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraDiagram.v15.2.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.Extensions.xml
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmInterlocale.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmBatchAddEdit.resources
+D:\Church AMS\Attendance Monitoring V1\Attendance Monitoring V1\obj\Debug\AMS.frmBatches.resources
+D:\Church AMS\Attendance Monitoring TFS\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.exe.config
+D:\Church AMS\Attendance Monitoring TFS\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe
+D:\Church AMS\Attendance Monitoring TFS\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.pdb
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.exe.config
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.exe.manifest
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.application
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.exe
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.pdb
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Charts.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.CodeParser.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Win.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Data.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.UI.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DemoData.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DemoData.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Diagram.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Map.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Office.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.PivotGrid.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Tutorials.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.UI.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Xpo.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraBars.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Extensions.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraDiagram.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Presets.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Win.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraMap.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraNavBar.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPivotGrid.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.Extensions.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.Extensions.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Win.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Data.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.UI.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Diagram.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Map.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Office.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.PivotGrid.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.UI.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Xpo.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraBars.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraDiagram.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Presets.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Win.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraMap.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraNavBar.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPivotGrid.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.Extensions.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.Extensions.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Dashboard.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Dashboard.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Dashboard.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Dashboard.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Dashboard.v15.2.Win.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Dashboard.v15.2.Win.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Dashboard.v15.2.Win.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Dashboard.v15.2.Win.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.DataAccess.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.DataAccess.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.DataAccess.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.DataAccess.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.DataAccess.v15.2.UI.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.DataAccess.v15.2.UI.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.DataAccess.v15.2.UI.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.DataAccess.v15.2.UI.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Map.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Map.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Map.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Map.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.PivotGrid.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.PivotGrid.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.PivotGrid.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.PivotGrid.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Xpo.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Xpo.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Xpo.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Xpo.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraPivotGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraPivotGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraPivotGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraPivotGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraReports.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraReports.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraReports.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraReports.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmAMSSplash.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmAttendanceMonitoring.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmAttendanceReport.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmBatchAddEdit.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmBatches.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmCommittees.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmCommitteesAddEdit.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringSetup.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringView.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGroups.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmAddGroup.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmBrethren.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmBrethrenAddEdit.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmInterlocale.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmLocale.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmLocaleAddEdit.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmLogin.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmMain.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmNewlyBaptized.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmSystemLogs.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmUserRegistration.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmUsers.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.Properties.Resources.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmDashboardDesign.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.XtraReportAttendance.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.csproj.GenerateResource.Cache
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe.licenses
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe.manifest
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.application
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.pdb
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.WaitFormLogin.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.WaitFormAttendance.resources
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.csprojResolveAssemblyReference.cache
+C:\Users\jdevb\Source\Workspaces\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.Attendance_Summary_Report.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.exe.config
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.exe
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Attendance Monitoring V1.pdb
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Charts.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.CodeParser.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Win.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Data.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.UI.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DemoData.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DemoData.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Diagram.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Map.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Office.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.PivotGrid.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Tutorials.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.UI.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Xpo.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraBars.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Extensions.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraDiagram.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Presets.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Win.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraMap.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraNavBar.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPivotGrid.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.Extensions.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.Extensions.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Dashboard.v15.2.Win.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Data.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.DataAccess.v15.2.UI.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Diagram.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Map.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Office.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.PivotGrid.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Utils.v15.2.UI.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Xpo.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraBars.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraDiagram.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Presets.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGauges.v15.2.Win.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraMap.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraNavBar.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPivotGrid.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraReports.v15.2.Extensions.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraRichEdit.v15.2.Extensions.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Dashboard.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Dashboard.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Dashboard.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Dashboard.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Dashboard.v15.2.Win.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Dashboard.v15.2.Win.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Dashboard.v15.2.Win.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Dashboard.v15.2.Win.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.DataAccess.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.DataAccess.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.DataAccess.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.DataAccess.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.DataAccess.v15.2.UI.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.DataAccess.v15.2.UI.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.DataAccess.v15.2.UI.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.DataAccess.v15.2.UI.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Map.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Map.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Map.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Map.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.PivotGrid.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.PivotGrid.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.PivotGrid.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.PivotGrid.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Xpo.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Xpo.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Xpo.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Xpo.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGauges.v15.2.Presets.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraPivotGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraPivotGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraPivotGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraPivotGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraReports.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraReports.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraReports.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraReports.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraReports.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmAMSSplash.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmAttendanceMonitoring.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmODTReport.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmCelebrantsReport.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGroupingsReport.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmCommitteeReport.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmAttendanceReport.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmBatchAddEdit.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmBatches.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmCommittees.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmCommitteesAddEdit.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringSetup.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringTypeAddEdit.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringTypes.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringView.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmGroups.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmAddGroup.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmBrethren.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmBrethrenAddEdit.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmInterlocale.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmInterlocaleReport.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmLocale.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmLocaleAddEdit.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmLogin.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmMain.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmNewlyBaptized.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmDashboardDesign.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmSystemLogs.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmUserRegistration.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.frmUsers.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.Properties.Resources.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.rpt_Viewer.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.WaitFormLogin.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.XtraReportODT.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.XtraReportCelebrants.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.XtraReportNewlyBaptized.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.XtraReportGroupings.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.XtraReportCommittee.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.XtraReportAttendance.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\AMS.XtraReportInterlocale.resources
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.csproj.GenerateResource.Cache
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe.licenses
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe
+C:\Users\jdevb\Documents\Attendance Monitoring\Attendance Monitoring System (Locale Version)\AMS v1\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.pdb
