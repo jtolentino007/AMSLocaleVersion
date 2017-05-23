@@ -44,6 +44,7 @@
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.lueBatch = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbGatheringType = new DevExpress.XtraEditors.LookUpEdit();
+            this.btnSet = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbViewingType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDateGathering.Properties.CalendarTimeProperties)).BeginInit();
@@ -68,7 +69,7 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(353, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(361, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -108,7 +109,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 408);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(353, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(361, 23);
             // 
             // labelControl1
             // 
@@ -221,12 +222,22 @@
             this.cmbGatheringType.TabIndex = 1;
             this.cmbGatheringType.TextChanged += new System.EventHandler(this.cmbGatheringyType_TextChanged);
             // 
+            // btnSet
+            // 
+            this.btnSet.Location = new System.Drawing.Point(285, 197);
+            this.btnSet.Name = "btnSet";
+            this.btnSet.Size = new System.Drawing.Size(25, 21);
+            this.btnSet.TabIndex = 28;
+            this.btnSet.Text = "SET";
+            this.btnSet.Visible = false;
+            this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
+            // 
             // frmGatheringSetup
             // 
             this.ActiveGlowColor = System.Drawing.Color.DodgerBlue;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 431);
+            this.ClientSize = new System.Drawing.Size(361, 431);
             this.Controls.Add(this.lueBatch);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.labelControl4);
@@ -237,6 +248,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.cmbGatheringType);
+            this.Controls.Add(this.btnSet);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -274,5 +286,6 @@
         private DevExpress.XtraEditors.SimpleButton btnEdit;
         private DevExpress.XtraEditors.LookUpEdit lueBatch;
         private DevExpress.XtraEditors.LookUpEdit cmbGatheringType;
+        private DevExpress.XtraEditors.SimpleButton btnSet;
     }
 }

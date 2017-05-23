@@ -70,7 +70,7 @@
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowItemCaptionsInPageHeader = true;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(968, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(976, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -126,7 +126,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 579);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(968, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(976, 23);
             // 
             // gridGathering
             // 
@@ -135,7 +135,7 @@
             this.gridGathering.MainView = this.gridView1;
             this.gridGathering.MenuManager = this.ribbonControl1;
             this.gridGathering.Name = "gridGathering";
-            this.gridGathering.Size = new System.Drawing.Size(968, 432);
+            this.gridGathering.Size = new System.Drawing.Size(976, 432);
             this.gridGathering.TabIndex = 2;
             this.gridGathering.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -212,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 602);
+            this.ClientSize = new System.Drawing.Size(976, 602);
             this.Controls.Add(this.gridGathering);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);

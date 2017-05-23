@@ -89,6 +89,8 @@
             this.peUserImage = new DevExpress.XtraEditors.PictureEdit();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dashboardViewer1 = new DevExpress.DashboardWin.DashboardViewer(this.components);
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
@@ -150,9 +152,11 @@
             this.barButtonGroupingsReport,
             this.barButtonCelebrantReport,
             this.barButtonNewlyBaptizedReport,
-            this.barButtonItem4});
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonItem6});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 247;
+            this.ribbonControl1.MaxItemId = 249;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1,
@@ -250,6 +254,7 @@
             this.mnuBtnAttendance.Id = 10;
             this.mnuBtnAttendance.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAttendance.LargeGlyph")));
             this.mnuBtnAttendance.Name = "mnuBtnAttendance";
+            this.mnuBtnAttendance.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.mnuBtnAttendance.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnAttendance_ItemClick);
             // 
             // mnuBtnAttendanceReport
@@ -511,6 +516,8 @@
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.mnuBtnAttendance);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.ShowCaptionButton = false;
             // 
@@ -662,6 +669,22 @@
             this.dashboardViewer1.TabIndex = 0;
             this.dashboardViewer1.Load += new System.EventHandler(this.dashboardViewer1_Load);
             // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "New Gathering";
+            this.barButtonItem5.Id = 247;
+            this.barButtonItem5.LargeGlyph = global::AMS.Properties.Resources.New_Slide_Filled_50;
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "View/Edit List of Gatherings";
+            this.barButtonItem6.Id = 248;
+            this.barButtonItem6.LargeGlyph = global::AMS.Properties.Resources.Year_View_Filled_50;
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
+            // 
             // frmMain
             // 
             this.ActiveGlowColor = System.Drawing.Color.DodgerBlue;
@@ -755,6 +778,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonCelebrantReport;
         private DevExpress.XtraBars.BarButtonItem barButtonNewlyBaptizedReport;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
     }
 }
 

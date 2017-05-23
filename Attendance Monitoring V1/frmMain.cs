@@ -268,5 +268,15 @@ namespace AMS
                 printTool.ShowPreview();
             }
         }
+
+        private void barButtonItem5_ItemClick_1(object sender, ItemClickEventArgs e)
+        {
+            Instances.setupGathering.ShowDialog();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Instances.viewGatherings.ShowDialog();
+        }
     }
 }

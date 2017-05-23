@@ -19,6 +19,7 @@ namespace AMS
         public static string GatheringID;
         public static DateTime Time;
         public static DataRow drAttendance;
+        public static bool _isGatheringSetup = false;
 
         public static int Status = 1;
         public frmAttendanceMonitoring()
@@ -64,18 +65,18 @@ namespace AMS
                 gridBrethren.Enabled = true;
                 txtSearch.Enabled = true;
             }
-            else
-            {
-                mnuBtnInterlocale.Visibility = BarItemVisibility.Never;
-                barBtnTimeIn.Visibility = BarItemVisibility.Never;
-                barBtnEndAttendance.Visibility = BarItemVisibility.Never;
-                barBtnNewlyBaptized.Visibility = BarItemVisibility.Never;
-                barBtnLateStatus.Visibility = BarItemVisibility.Never;
-                lblStatus.Text = "PLEASE CREATE/SELECT GATHERING";
-                gridBrethren.Enabled = false;
-                gridAttendance.Enabled = false;
-                txtSearch.Enabled = false;
-            }
+            //else
+            //{
+            //    mnuBtnInterlocale.Visibility = BarItemVisibility.Never;
+            //    barBtnTimeIn.Visibility = BarItemVisibility.Never;
+            //    barBtnEndAttendance.Visibility = BarItemVisibility.Never;
+            //    barBtnNewlyBaptized.Visibility = BarItemVisibility.Never;
+            //    barBtnLateStatus.Visibility = BarItemVisibility.Never;
+            //    lblStatus.Text = "PLEASE CREATE/SELECT GATHERING";
+            //    gridBrethren.Enabled = false;
+            //    gridAttendance.Enabled = false;
+            //    txtSearch.Enabled = false;
+            //}
             peBrethren.Image = null;
             barStaticLocale.Caption = "Locale of " + frmLogin.Locale;
         }
@@ -158,7 +159,6 @@ namespace AMS
                     lblStatus.Text = "Brethren Already Timed In";
                 else
                 {
-
                     //splashScreenManager1.ShowWaitForm();
                     using (var cmd = new SqlCommand("INSERT_TEMP_ATTENDANCE", Utilities.con))
                     {
@@ -192,8 +192,6 @@ namespace AMS
                     dtAttendance.AcceptChanges();
 
                     GetAttendedBrethren();
-
-                    //splashScreenManager1.CloseWaitForm();
                 }
 
                 txtSearch.ResetText();
@@ -251,6 +249,7 @@ namespace AMS
                         GetCurrentAttendance();
                         ReturnAttendanceToNormal();
                         Utilities.SuccessMessage("Attendance Sheet Successfully Saved!");
+                        this.Close();
                     }
                 }
             }

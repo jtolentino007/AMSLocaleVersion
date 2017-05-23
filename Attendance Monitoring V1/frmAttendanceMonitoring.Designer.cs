@@ -109,7 +109,7 @@
             this.gridBrethren.Location = new System.Drawing.Point(12, 275);
             this.gridBrethren.MainView = this.gridView2;
             this.gridBrethren.Name = "gridBrethren";
-            this.gridBrethren.Size = new System.Drawing.Size(467, 266);
+            this.gridBrethren.Size = new System.Drawing.Size(475, 266);
             this.gridBrethren.TabIndex = 24;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -187,7 +187,7 @@
             this.txtSearch.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtSearch.Properties.NullValuePrompt = "Enter Church ID or Name";
             this.txtSearch.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtSearch.Size = new System.Drawing.Size(467, 40);
+            this.txtSearch.Size = new System.Drawing.Size(475, 40);
             this.txtSearch.TabIndex = 29;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
@@ -222,7 +222,7 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1192, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(1200, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -399,12 +399,12 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 586);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1192, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1200, 23);
             // 
             // peBrethren
             // 
             this.peBrethren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.peBrethren.Location = new System.Drawing.Point(1083, 65);
+            this.peBrethren.Location = new System.Drawing.Point(1091, 65);
             this.peBrethren.MenuManager = this.ribbonControl1;
             this.peBrethren.Name = "peBrethren";
             this.peBrethren.Properties.InitialImage = ((System.Drawing.Image)(resources.GetObject("peBrethren.Properties.InitialImage")));
@@ -513,7 +513,7 @@
             gridLevelNode1.RelationName = "Level1";
             this.gridAttendance.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.gridAttendance.Location = new System.Drawing.Point(487, 275);
+            this.gridAttendance.Location = new System.Drawing.Point(495, 275);
             this.gridAttendance.MainView = this.gridView1;
             this.gridAttendance.Name = "gridAttendance";
             this.gridAttendance.Size = new System.Drawing.Size(695, 266);
@@ -568,7 +568,7 @@
             this.lblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblStatus.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(58)))));
-            this.lblStatus.Location = new System.Drawing.Point(487, 201);
+            this.lblStatus.Location = new System.Drawing.Point(495, 201);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(695, 46);
             this.lblStatus.TabIndex = 34;
@@ -585,7 +585,7 @@
             this.lblTimerGathering.ForeColor = System.Drawing.Color.White;
             this.lblTimerGathering.Location = new System.Drawing.Point(0, 152);
             this.lblTimerGathering.Name = "lblTimerGathering";
-            this.lblTimerGathering.Size = new System.Drawing.Size(1192, 40);
+            this.lblTimerGathering.Size = new System.Drawing.Size(1200, 40);
             this.lblTimerGathering.TabIndex = 37;
             this.lblTimerGathering.Text = "NO ACTIVE GATHERING";
             this.lblTimerGathering.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -599,7 +599,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 252);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(467, 23);
+            this.label1.Size = new System.Drawing.Size(475, 23);
             this.label1.TabIndex = 40;
             this.label1.Text = "Brethren Masterlist";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -610,7 +610,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(487, 252);
+            this.label2.Location = new System.Drawing.Point(495, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(695, 23);
             this.label2.TabIndex = 41;
@@ -623,7 +623,7 @@
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 609);
+            this.ClientSize = new System.Drawing.Size(1200, 609);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTimerGathering);

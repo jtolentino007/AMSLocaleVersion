@@ -96,6 +96,7 @@ namespace AMS
         {
             Instances.attendanceMontoring.lblStatus.Text = "READY";
             AcceptAttendance();
+            Instances.attendanceMontoring.ShowDialog();
         }
 
         private void barBtnFindGathering_ItemClick(object sender, ItemClickEventArgs e)
