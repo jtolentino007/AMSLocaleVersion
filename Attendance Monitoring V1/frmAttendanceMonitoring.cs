@@ -248,8 +248,12 @@ namespace AMS
                         cmdAttendance.ExecuteNonQuery();
                         GetCurrentAttendance();
                         ReturnAttendanceToNormal();
-                        Utilities.SuccessMessage("Attendance Sheet Successfully Saved!");
-                        this.Close();
+                        Instances.main.barButtonItem5.Visibility = BarItemVisibility.Always;
+                        Instances.main.barButtonItem6.Visibility = BarItemVisibility.Always;
+                        Instances.main.mnuBtnAttendance.Visibility = BarItemVisibility.Never;
+                        Utilities.SuccessMessage("Attendance Successfully ended");
+                        Instances.main.Show();
+                        this.Hide();
                     }
                 }
             }

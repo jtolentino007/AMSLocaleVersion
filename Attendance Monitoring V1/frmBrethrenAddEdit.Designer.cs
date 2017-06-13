@@ -32,6 +32,8 @@
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.mnuBtnSave = new DevExpress.XtraBars.BarButtonItem();
             this.mnuBtnClose = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuBtnPrint = new DevExpress.XtraBars.BarButtonItem();
+            this.mnuBtnPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -118,9 +120,11 @@
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.mnuBtnSave,
-            this.mnuBtnClose});
+            this.mnuBtnClose,
+            this.mnuBtnPrint,
+            this.mnuBtnPrintPreview});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 3;
+            this.ribbonControl1.MaxItemId = 5;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -128,7 +132,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(919, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(919, 143);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mnuBtnSave
@@ -149,6 +153,20 @@
             this.mnuBtnClose.Name = "mnuBtnClose";
             this.mnuBtnClose.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnClose_ItemClick);
             // 
+            // mnuBtnPrint
+            // 
+            this.mnuBtnPrint.Caption = "Print Preview";
+            this.mnuBtnPrint.Id = 3;
+            this.mnuBtnPrint.Name = "mnuBtnPrint";
+            // 
+            // mnuBtnPrintPreview
+            // 
+            this.mnuBtnPrintPreview.Caption = "Print Preview";
+            this.mnuBtnPrintPreview.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnPrintPreview.Glyph")));
+            this.mnuBtnPrintPreview.Id = 4;
+            this.mnuBtnPrintPreview.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnPrintPreview.LargeGlyph")));
+            this.mnuBtnPrintPreview.Name = "mnuBtnPrintPreview";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -165,10 +183,10 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 670);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 662);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(919, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(919, 31);
             // 
             // labelControl1
             // 
@@ -748,24 +766,14 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
-        private DevExpress.XtraBars.BarButtonItem mnuBtnSave;
-        private DevExpress.XtraBars.BarButtonItem mnuBtnClose;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit txtChurchID;
-        private DevExpress.XtraEditors.TextEdit txtFname;
-        private DevExpress.XtraEditors.TextEdit txtMName;
-        private DevExpress.XtraEditors.TextEdit txtLName;
-        private DevExpress.XtraEditors.DateEdit dtBaptism;
-        private DevExpress.XtraEditors.TextEdit txtBaptizer;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbStatus;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.DateEdit dtBirth;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl11;
@@ -773,29 +781,41 @@
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbCivilStatus;
-        private DevExpress.XtraEditors.TextEdit txtStreet;
-        private DevExpress.XtraEditors.TextEdit txtBrgy;
-        private DevExpress.XtraEditors.TextEdit txtProvince;
-        private DevExpress.XtraEditors.TextEdit txtCity;
-        private DevExpress.XtraEditors.TextEdit txtRegion;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.LabelControl labelControl17;
         private DevExpress.XtraEditors.LabelControl labelControl18;
         private DevExpress.XtraEditors.LabelControl labelControl19;
-        private DevExpress.XtraEditors.TextEdit txtEmployment;
-        private DevExpress.XtraEditors.TextEdit txtContactNo;
-        private DevExpress.XtraEditors.TextEdit txtContactPerson;
-        private DevExpress.XtraEditors.TextEdit txtContactPersonNumber;
-        private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbGender;
-        private DevExpress.XtraEditors.LookUpEdit lueLocale;
-        private DevExpress.XtraEditors.LookUpEdit lueGroup;
-        private DevExpress.XtraEditors.PictureEdit peSketch;
-        private DevExpress.XtraEditors.SimpleButton btnUpload;
-        private DevExpress.XtraEditors.PictureEdit peBrethren;
-        private DevExpress.XtraEditors.SimpleButton btnBrowse;
         private DevExpress.XtraEditors.LabelControl labelControl20;
-        private System.Windows.Forms.CheckBox chkMember;
+        public DevExpress.XtraBars.BarButtonItem mnuBtnSave;
+        public DevExpress.XtraBars.BarButtonItem mnuBtnClose;
+        public DevExpress.XtraEditors.DateEdit dtBaptism;
+        public DevExpress.XtraEditors.TextEdit txtBaptizer;
+        public DevExpress.XtraEditors.ComboBoxEdit cmbStatus;
+        public DevExpress.XtraEditors.DateEdit dtBirth;
+        public DevExpress.XtraEditors.ComboBoxEdit cmbCivilStatus;
+        public DevExpress.XtraEditors.TextEdit txtStreet;
+        public DevExpress.XtraEditors.TextEdit txtBrgy;
+        public DevExpress.XtraEditors.TextEdit txtProvince;
+        public DevExpress.XtraEditors.TextEdit txtCity;
+        public DevExpress.XtraEditors.TextEdit txtRegion;
+        public DevExpress.XtraEditors.TextEdit txtEmployment;
+        public DevExpress.XtraEditors.TextEdit txtContactNo;
+        public DevExpress.XtraEditors.TextEdit txtContactPerson;
+        public DevExpress.XtraEditors.TextEdit txtContactPersonNumber;
+        public DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
+        public DevExpress.XtraEditors.ComboBoxEdit cmbGender;
+        public DevExpress.XtraEditors.LookUpEdit lueLocale;
+        public DevExpress.XtraEditors.LookUpEdit lueGroup;
+        public DevExpress.XtraEditors.PictureEdit peSketch;
+        public DevExpress.XtraEditors.SimpleButton btnUpload;
+        public DevExpress.XtraEditors.PictureEdit peBrethren;
+        public DevExpress.XtraEditors.SimpleButton btnBrowse;
+        public System.Windows.Forms.CheckBox chkMember;
+        public DevExpress.XtraEditors.TextEdit txtChurchID;
+        public DevExpress.XtraEditors.TextEdit txtFname;
+        public DevExpress.XtraEditors.TextEdit txtMName;
+        public DevExpress.XtraEditors.TextEdit txtLName;
+        private DevExpress.XtraBars.BarButtonItem mnuBtnPrint;
+        public DevExpress.XtraBars.BarButtonItem mnuBtnPrintPreview;
     }
 }

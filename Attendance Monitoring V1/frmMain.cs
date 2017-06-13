@@ -17,6 +17,7 @@ namespace AMS
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         DataTable dtStatusCount = new DataTable();
+        DataTable dtTempAttendance = new DataTable();
         public static int userPrivilege = 0;
         public frmMain()
         {
@@ -57,7 +58,8 @@ namespace AMS
 
         private void mnuBtnAttendance_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Instances.attendanceMontoring.ShowDialog();
+            Instances.attendanceMontoring.Show();
+            this.Hide();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -67,15 +69,38 @@ namespace AMS
             //Region rg = new Region(gp);
             //peUserImage.Region = rg;
 
-            if (!string.IsNullOrWhiteSpace(frmLogin.User_Image_Path))
-            {   
-                if (Directory.Exists(frmLogin.User_Image_Path)) { 
-                    peUserImage.Image = Image.FromFile(frmLogin.User_Image_Path);
-                }
+            using(SqlDataAdapter adapt = new SqlDataAdapter("GET_TEMP_ATTENDANCE", Utilities.con))
+            {
+                adapt.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapt.Fill(dtTempAttendance);
             }
-            else peUserImage.Image = null;
+
+            if (dtTempAttendance.Rows.Count > 0)
+            {
+                mnuBtnAttendance.Visibility = BarItemVisibility.Always;
+                barButtonItem5.Visibility = BarItemVisibility.Never;
+                barButtonItem6.Visibility = BarItemVisibility.Never;
+            }
+            else
+            {
+                mnuBtnAttendance.Visibility = BarItemVisibility.Never;
+                barButtonItem5.Visibility = BarItemVisibility.Always;
+                barButtonItem6.Visibility = BarItemVisibility.Always;
+            }
             
-            lblWelcomeMessage.Text = "Hi!\n" + frmLogin.Username + "\n" + frmLogin.Locale;
+            if (!string.IsNullOrEmpty(frmLogin.User_Image_Path))
+            {
+                if (File.Exists(frmLogin.User_Image_Path))
+                    peUserImage.Image = Image.FromFile(frmLogin.User_Image_Path);
+                else
+                    peUserImage.Image = Properties.Resources.default_user_image;
+            }
+            else
+            {
+                peUserImage.Image = null;
+            }
+
+            lblWelcomeMessage.Text = "Hello \n" + frmLogin.Username + "\n" + frmLogin.Locale;
             Privilege();
         }
 

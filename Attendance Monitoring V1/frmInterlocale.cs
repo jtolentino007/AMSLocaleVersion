@@ -235,7 +235,7 @@ namespace AMS
                         Utilities.SuccessMessage(InterlocaleName + " Successfully Timed In");
                         Instances.attendanceMontoring.lblStatus.Text = txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY TIMED IN";
 
-                        Instances.attendanceMontoring.peBrethren.Image = null;
+                        //Instances.attendanceMontoring.peBrethren.Image = null;
 
                         frmAttendanceMonitoring.drAttendance = frmAttendanceMonitoring.dtAttendance.NewRow();
                         var dr = frmAttendanceMonitoring.drAttendance;

@@ -303,6 +303,12 @@
     <Compile Include="frmSystemLogs.Designer.cs">
       <DependentUpon>frmSystemLogs.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +339,12 @@
     </Compile>
     <Compile Include="WaitFormLogin.Designer.cs">
       <DependentUpon>WaitFormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReportBrethren.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReportBrethren.Designer.cs">
+      <DependentUpon>XtraReportBrethren.cs</DependentUpon>
     </Compile>
     <Compile Include="XtraReportODT.cs">
       <SubType>Component</SubType>
@@ -460,6 +472,9 @@
     <EmbeddedResource Include="frmSystemLogs.resx">
       <DependentUpon>frmSystemLogs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUserRegistration.resx">
       <DependentUpon>frmUserRegistration.cs</DependentUpon>
     </EmbeddedResource>
@@ -483,6 +498,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WaitFormLogin.resx">
       <DependentUpon>WaitFormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReportBrethren.resx">
+      <DependentUpon>XtraReportBrethren.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XtraReportODT.resx">
       <DependentUpon>XtraReportODT.cs</DependentUpon>
@@ -657,6 +675,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\default-user-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visible-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View File-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default_sketch.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -213,6 +213,16 @@ namespace AMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap default_sketch {
+            get {
+                object obj = ResourceManager.GetObject("default_sketch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap default_user_image {
             get {
                 object obj = ResourceManager.GetObject("default_user_image", resourceCulture);
@@ -403,6 +413,16 @@ namespace AMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images1 {
+            get {
+                object obj = ResourceManager.GetObject("images1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap layers {
             get {
                 object obj = ResourceManager.GetObject("layers", resourceCulture);
@@ -523,6 +543,16 @@ namespace AMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap test {
+            get {
+                object obj = ResourceManager.GetObject("test", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Time_Card_Filled_50 {
             get {
                 object obj = ResourceManager.GetObject("Time Card Filled-50", resourceCulture);
@@ -576,6 +606,26 @@ namespace AMS.Properties {
         internal static System.Drawing.Bitmap users_1 {
             get {
                 object obj = ResourceManager.GetObject("users-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap View_File_16 {
+            get {
+                object obj = ResourceManager.GetObject("View File-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Visible_16 {
+            get {
+                object obj = ResourceManager.GetObject("Visible-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

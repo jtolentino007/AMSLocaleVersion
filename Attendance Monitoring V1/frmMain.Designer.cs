@@ -68,6 +68,8 @@
             this.barButtonCelebrantReport = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonNewlyBaptizedReport = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPageCategory2 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -89,8 +91,6 @@
             this.peUserImage = new DevExpress.XtraEditors.PictureEdit();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dashboardViewer1 = new DevExpress.DashboardWin.DashboardViewer(this.components);
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
@@ -114,6 +114,7 @@
             // ribbonControl1
             // 
             this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(99)))));
+            this.ribbonControl1.BackgroundImage = global::AMS.Properties.Resources.test;
             this.ribbonControl1.Controller = this.barAndDockingController1;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -455,6 +456,22 @@
             this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
             this.barButtonItem4.Name = "barButtonItem4";
             // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "New Gathering";
+            this.barButtonItem5.Id = 247;
+            this.barButtonItem5.LargeGlyph = global::AMS.Properties.Resources.New_Slide_Filled_50;
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "View/Edit List of Gatherings";
+            this.barButtonItem6.Id = 248;
+            this.barButtonItem6.LargeGlyph = global::AMS.Properties.Resources.Year_View_Filled_50;
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
+            // 
             // ribbonPageCategory1
             // 
             this.ribbonPageCategory1.Name = "ribbonPageCategory1";
@@ -595,14 +612,14 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.panel1.BackgroundImage = global::AMS.Properties.Resources.test;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.peUserImage);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 147);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(238, 537);
+            this.panel1.Size = new System.Drawing.Size(232, 537);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -613,13 +630,13 @@
             this.panel3.Controls.Add(this.lblWelcomeMessage);
             this.panel3.Location = new System.Drawing.Point(0, 92);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(238, 73);
+            this.panel3.Size = new System.Drawing.Size(232, 73);
             this.panel3.TabIndex = 11;
             // 
             // lblWelcomeMessage
             // 
-            this.lblWelcomeMessage.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.lblWelcomeMessage.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcomeMessage.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.lblWelcomeMessage.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcomeMessage.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblWelcomeMessage.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblWelcomeMessage.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
@@ -628,7 +645,7 @@
             this.lblWelcomeMessage.Margin = new System.Windows.Forms.Padding(0);
             this.lblWelcomeMessage.Name = "lblWelcomeMessage";
             this.lblWelcomeMessage.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.lblWelcomeMessage.Size = new System.Drawing.Size(238, 73);
+            this.lblWelcomeMessage.Size = new System.Drawing.Size(232, 73);
             this.lblWelcomeMessage.TabIndex = 9;
             this.lblWelcomeMessage.Text = "Hi\r\nUser!\r\n";
             this.lblWelcomeMessage.Click += new System.EventHandler(this.lblWelcomeMessage_Click);
@@ -636,10 +653,10 @@
             // peUserImage
             // 
             this.peUserImage.EditValue = ((object)(resources.GetObject("peUserImage.EditValue")));
-            this.peUserImage.Location = new System.Drawing.Point(82, 16);
+            this.peUserImage.Location = new System.Drawing.Point(80, 25);
             this.peUserImage.MenuManager = this.ribbonControl1;
             this.peUserImage.Name = "peUserImage";
-            this.peUserImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.peUserImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peUserImage.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peUserImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.peUserImage.Size = new System.Drawing.Size(76, 70);
@@ -650,45 +667,33 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(99)))));
             this.panel2.Controls.Add(this.dashboardViewer1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(238, 147);
+            this.panel2.Location = new System.Drawing.Point(232, 147);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(825, 537);
+            this.panel2.Size = new System.Drawing.Size(831, 537);
             this.panel2.TabIndex = 14;
             // 
             // dashboardViewer1
             // 
+            this.dashboardViewer1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
             this.dashboardViewer1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.dashboardViewer1.Appearance.Options.UseBackColor = true;
             this.dashboardViewer1.Appearance.Options.UseForeColor = true;
             this.dashboardViewer1.AutoScroll = true;
-            this.dashboardViewer1.DashboardSource = new System.Uri("C:\\Program Files\\Attendance Monitoring System\\dashboard.xml", System.UriKind.Absolute);
+            this.dashboardViewer1.BackgroundImage = global::AMS.Properties.Resources.test;
+            this.dashboardViewer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dashboardViewer1.DashboardSource = "C:/Program%20Files/Attendance%20Monitoring%20System/dashboard.xml";
             this.dashboardViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardViewer1.Location = new System.Drawing.Point(0, 0);
             this.dashboardViewer1.Name = "dashboardViewer1";
-            this.dashboardViewer1.Padding = new System.Windows.Forms.Padding(20);
-            this.dashboardViewer1.Size = new System.Drawing.Size(825, 537);
+            this.dashboardViewer1.Padding = new System.Windows.Forms.Padding(0, 20, 10, 20);
+            this.dashboardViewer1.Size = new System.Drawing.Size(831, 537);
             this.dashboardViewer1.TabIndex = 0;
             this.dashboardViewer1.Load += new System.EventHandler(this.dashboardViewer1_Load);
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "New Gathering";
-            this.barButtonItem5.Id = 247;
-            this.barButtonItem5.LargeGlyph = global::AMS.Properties.Resources.New_Slide_Filled_50;
-            this.barButtonItem5.Name = "barButtonItem5";
-            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
-            // 
-            // barButtonItem6
-            // 
-            this.barButtonItem6.Caption = "View/Edit List of Gatherings";
-            this.barButtonItem6.Id = 248;
-            this.barButtonItem6.LargeGlyph = global::AMS.Properties.Resources.Year_View_Filled_50;
-            this.barButtonItem6.Name = "barButtonItem6";
-            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
             // frmMain
             // 
             this.ActiveGlowColor = System.Drawing.Color.DodgerBlue;
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(134)))), ((int)(((byte)(149)))));
+            this.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -719,8 +724,6 @@
         }
 
         #endregion
-
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem mnuBtnClose;
@@ -736,7 +739,6 @@
         private DevExpress.XtraBars.BarButtonItem mnuBtnGroupings;
         private DevExpress.XtraBars.BarButtonItem mnuBtnCommittees;
         private DevExpress.XtraBars.BarButtonItem mnuBtnOfficers;
-        private DevExpress.XtraBars.BarButtonItem mnuBtnAttendance;
         private DevExpress.XtraBars.BarButtonItem mnuBtnAttendanceReport;
         private DevExpress.XtraBars.BarButtonItem mnuBtnInactiveReport;
         private DevExpress.XtraBars.BarButtonItem mnuBtnBrethrenDetailed;
@@ -778,8 +780,10 @@
         private DevExpress.XtraBars.BarButtonItem barButtonCelebrantReport;
         private DevExpress.XtraBars.BarButtonItem barButtonNewlyBaptizedReport;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        public DevExpress.XtraBars.BarButtonItem mnuBtnAttendance;
+        public DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        public DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        public DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
     }
 }
 

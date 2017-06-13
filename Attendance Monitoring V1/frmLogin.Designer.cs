@@ -183,7 +183,7 @@
             this.panel1.Controls.Add(this.labelControl1);
             this.panel1.Location = new System.Drawing.Point(-6, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(398, 69);
+            this.panel1.Size = new System.Drawing.Size(398, 82);
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -217,7 +217,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(386, 377);
             this.Controls.Add(this.hlRegistration);
             this.Controls.Add(this.statusStrip1);

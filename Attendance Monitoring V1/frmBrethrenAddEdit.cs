@@ -61,14 +61,20 @@ namespace AMS
             ImagePath = drBrethren["Sketch_Path"].ToString();
 
             if (!string.IsNullOrWhiteSpace(BrethrenImagePath))
-                peBrethren.Image = Image.FromFile(drBrethren["Image_Path"].ToString());
+                if (File.Exists(BrethrenImagePath))
+                    peBrethren.Image = Image.FromFile(drBrethren["Image_Path"].ToString());
+                else
+                    peBrethren.Image = Properties.Resources.default_user_image;
             else
-                peBrethren.Image = null;
+                peBrethren.Image = Properties.Resources.default_user_image;
 
             if (!string.IsNullOrWhiteSpace(ImagePath))
-                peSketch.Image = Image.FromFile(drBrethren["Sketch_Path"].ToString());
+                if (File.Exists(ImagePath))
+                    peSketch.Image = Image.FromFile(drBrethren["Sketch_Path"].ToString());
+                else
+                    peSketch.Image = Properties.Resources.default_sketch;
             else
-                peSketch.Image = null;
+                peSketch.Image = Properties.Resources.default_sketch;
 
             txtContactPerson.Text = drBrethren["Contact_Person"].ToString();
             txtContactPersonNumber.Text = drBrethren["Contact_Person_no"].ToString();

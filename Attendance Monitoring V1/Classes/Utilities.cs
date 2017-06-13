@@ -4,7 +4,9 @@ using System.Data;
 using System.Configuration;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraBars;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace AMS.Classes
 {
@@ -30,6 +32,20 @@ namespace AMS.Classes
             }
         }
 
+        public static void ToggleDisableAllControls(Control control)
+        {
+            foreach (var c in control.Controls)
+            {
+                if (c is TextEdit)
+                {
+                    if (((TextEdit)c).Enabled == true)
+                        ((TextEdit)c).Enabled = false;
+                    else
+                        ((TextEdit)c).Enabled = true;
+                }
+            }
+        }
+
         public static string SQLConnectionStatus()
         {
             if (con.State == ConnectionState.Open)
@@ -40,6 +56,19 @@ namespace AMS.Classes
                 return "Error on Database/Invalid Connection on Server";
             else
                 return "Application Connecting to Server";
+        }
+
+        public static bool IsImageExists(string ImagePath)
+        {
+            if (!string.IsNullOrEmpty(ImagePath))
+            {
+                if (File.Exists(ImagePath))
+                    return true;
+                else
+                    return false;
+            }
+            else
+                return false;
         }
         
         public enum FormMode
