@@ -178,9 +178,13 @@ namespace AMS
                         ImagePath = dr["user_img_path"].ToString();
                         if (!string.IsNullOrWhiteSpace(ImagePath))
                         {
-                            if (Directory.Exists(ImagePath))
+                            if (File.Exists(ImagePath))
                             {
                                 peUser.Image = Image.FromFile(ImagePath);
+                            }
+                            else
+                            {
+                                peUser.Image = Properties.Resources.default_user_image;
                             }
                         }
                         else

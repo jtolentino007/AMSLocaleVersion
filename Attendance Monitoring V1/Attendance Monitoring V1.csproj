@@ -691,6 +691,12 @@
   <ItemGroup>
     <None Include="Resources\default_sketch.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-User Menu Male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18816620_1528985750453720_649529771_n.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

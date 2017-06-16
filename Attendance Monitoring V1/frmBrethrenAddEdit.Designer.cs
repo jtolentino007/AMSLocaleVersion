@@ -132,7 +132,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(919, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(927, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mnuBtnSave
@@ -183,10 +183,10 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 662);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 670);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(919, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(927, 23);
             // 
             // labelControl1
             // 
@@ -629,7 +629,7 @@
             // peBrethren
             // 
             this.peBrethren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.peBrethren.Location = new System.Drawing.Point(713, 167);
+            this.peBrethren.Location = new System.Drawing.Point(721, 167);
             this.peBrethren.MenuManager = this.ribbonControl1;
             this.peBrethren.Name = "peBrethren";
             this.peBrethren.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -640,7 +640,7 @@
             // btnBrowse
             // 
             this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowse.Location = new System.Drawing.Point(714, 259);
+            this.btnBrowse.Location = new System.Drawing.Point(722, 259);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(100, 24);
             this.btnBrowse.TabIndex = 86;
@@ -669,7 +669,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 693);
+            this.ClientSize = new System.Drawing.Size(927, 693);
             this.Controls.Add(this.chkMember);
             this.Controls.Add(this.labelControl20);
             this.Controls.Add(this.btnBrowse);

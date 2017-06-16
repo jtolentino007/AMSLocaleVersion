@@ -63,6 +63,16 @@ namespace AMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _18816620_1528985750453720_649529771_n {
+            get {
+                object obj = ResourceManager.GetObject("18816620_1528985750453720_649529771_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _36173397_background {
             get {
                 object obj = ResourceManager.GetObject("36173397-background", resourceCulture);
@@ -366,6 +376,16 @@ namespace AMS.Properties {
         internal static System.Drawing.Bitmap house {
             get {
                 object obj = ResourceManager.GetObject("house", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_User_Menu_Male_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-User Menu Male-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

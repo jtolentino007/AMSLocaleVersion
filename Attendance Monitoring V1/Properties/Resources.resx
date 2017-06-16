@@ -127,6 +127,9 @@
   <data name="user-delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="default_sketch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default_sketch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Search-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,6 +177,9 @@
   </data>
   <data name="36173397-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\36173397-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-User Menu Male-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-User Menu Male-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="default_user_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\default-user-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,6 +262,9 @@
   <data name="committee-delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\committee-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="View File-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\View File-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Shutdown-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shutdown-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -289,10 +298,7 @@
   <data name="Year View Filled-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Year View Filled-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="View File-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\View File-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="default_sketch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\default_sketch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="18816620_1528985750453720_649529771_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\18816620_1528985750453720_649529771_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

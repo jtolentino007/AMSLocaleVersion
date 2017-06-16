@@ -85,19 +85,21 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblWelcomeMessage = new DevExpress.XtraEditors.LabelControl();
             this.peUserImage = new DevExpress.XtraEditors.PictureEdit();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dashboardViewer1 = new DevExpress.DashboardWin.DashboardViewer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.peUserImage.Properties)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardViewer1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,9 +201,9 @@
             // 
             // mnuBtnBrethren
             // 
-            this.mnuBtnBrethren.Caption = "Brethren Management";
+            this.mnuBtnBrethren.Caption = "Brethren Masterlist";
             this.mnuBtnBrethren.Id = 3;
-            this.mnuBtnBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnBrethren.LargeGlyph")));
+            this.mnuBtnBrethren.LargeGlyph = global::AMS.Properties.Resources.icons8_User_Menu_Male_48;
             this.mnuBtnBrethren.Name = "mnuBtnBrethren";
             this.mnuBtnBrethren.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnBrethren_ItemClick);
             // 
@@ -609,86 +611,116 @@
             this.defaultLookAndFeel1.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.White;
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
             // 
-            // panel1
+            // tableLayoutPanel1
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BackgroundImage = global::AMS.Properties.Resources.test;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.peUserImage);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 147);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(232, 537);
-            this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.tableLayoutPanel1.BackgroundImage = global::AMS.Properties.Resources.test;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 147);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1063, 537);
+            this.tableLayoutPanel1.TabIndex = 16;
             // 
-            // panel3
+            // tableLayoutPanel2
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.lblWelcomeMessage);
-            this.panel3.Location = new System.Drawing.Point(0, 92);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(232, 73);
-            this.panel3.TabIndex = 11;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel2.Controls.Add(this.lblWelcomeMessage, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.peUserImage, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureEdit1, 2, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1063, 53);
+            this.tableLayoutPanel2.TabIndex = 13;
             // 
             // lblWelcomeMessage
             // 
             this.lblWelcomeMessage.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
-            this.lblWelcomeMessage.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcomeMessage.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcomeMessage.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lblWelcomeMessage.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblWelcomeMessage.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblWelcomeMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblWelcomeMessage.Location = new System.Drawing.Point(0, 0);
+            this.lblWelcomeMessage.Location = new System.Drawing.Point(53, 0);
             this.lblWelcomeMessage.Margin = new System.Windows.Forms.Padding(0);
             this.lblWelcomeMessage.Name = "lblWelcomeMessage";
             this.lblWelcomeMessage.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.lblWelcomeMessage.Size = new System.Drawing.Size(232, 73);
-            this.lblWelcomeMessage.TabIndex = 9;
+            this.lblWelcomeMessage.Size = new System.Drawing.Size(956, 53);
+            this.lblWelcomeMessage.TabIndex = 12;
             this.lblWelcomeMessage.Text = "Hi\r\nUser!\r\n";
-            this.lblWelcomeMessage.Click += new System.EventHandler(this.lblWelcomeMessage_Click);
             // 
             // peUserImage
             // 
+            this.peUserImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.peUserImage.EditValue = ((object)(resources.GetObject("peUserImage.EditValue")));
-            this.peUserImage.Location = new System.Drawing.Point(80, 25);
+            this.peUserImage.Location = new System.Drawing.Point(10, 5);
+            this.peUserImage.Margin = new System.Windows.Forms.Padding(10, 5, 5, 0);
             this.peUserImage.MenuManager = this.ribbonControl1;
             this.peUserImage.Name = "peUserImage";
             this.peUserImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peUserImage.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peUserImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.peUserImage.Size = new System.Drawing.Size(76, 70);
-            this.peUserImage.TabIndex = 10;
+            this.peUserImage.Size = new System.Drawing.Size(38, 48);
+            this.peUserImage.TabIndex = 14;
             // 
-            // panel2
+            // pictureEdit1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(99)))));
-            this.panel2.Controls.Add(this.dashboardViewer1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(232, 147);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(831, 537);
-            this.panel2.TabIndex = 14;
+            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureEdit1.EditValue = global::AMS.Properties.Resources._18816620_1528985750453720_649529771_n;
+            this.pictureEdit1.Location = new System.Drawing.Point(1009, 0);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureEdit1.MenuManager = this.ribbonControl1;
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit1.Size = new System.Drawing.Size(54, 53);
+            this.pictureEdit1.TabIndex = 15;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.dashboardViewer1, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 56);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1057, 478);
+            this.tableLayoutPanel3.TabIndex = 14;
             // 
             // dashboardViewer1
             // 
-            this.dashboardViewer1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.dashboardViewer1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.dashboardViewer1.Appearance.ForeColor = System.Drawing.Color.White;
             this.dashboardViewer1.Appearance.Options.UseBackColor = true;
             this.dashboardViewer1.Appearance.Options.UseForeColor = true;
             this.dashboardViewer1.AutoScroll = true;
-            this.dashboardViewer1.BackgroundImage = global::AMS.Properties.Resources.test;
             this.dashboardViewer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dashboardViewer1.DashboardSource = "C:/Program%20Files/Attendance%20Monitoring%20System/dashboard.xml";
             this.dashboardViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashboardViewer1.Location = new System.Drawing.Point(0, 0);
+            this.dashboardViewer1.Location = new System.Drawing.Point(5, 0);
+            this.dashboardViewer1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.dashboardViewer1.Name = "dashboardViewer1";
-            this.dashboardViewer1.Padding = new System.Windows.Forms.Padding(0, 20, 10, 20);
-            this.dashboardViewer1.Size = new System.Drawing.Size(831, 537);
-            this.dashboardViewer1.TabIndex = 0;
-            this.dashboardViewer1.Load += new System.EventHandler(this.dashboardViewer1_Load);
+            this.dashboardViewer1.Size = new System.Drawing.Size(1047, 478);
+            this.dashboardViewer1.TabIndex = 12;
             // 
             // frmMain
             // 
@@ -698,8 +730,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 684);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl1;
@@ -713,10 +744,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.peUserImage.Properties)).EndInit();
-            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dashboardViewer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -756,18 +788,12 @@
         private DevExpress.XtraBars.BarButtonItem barBtnProfile;
         private DevExpress.XtraBars.BarButtonItem barBtnBatches;
         private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory1;
-        private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraBars.BarAndDockingController barAndDockingController1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraBars.BarButtonItem barBtnDashboardSettings;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
-        public DevExpress.DashboardWin.DashboardViewer dashboardViewer1;
         private DevExpress.XtraBars.BarButtonItem barBtnSaveTheme;
-        public DevExpress.XtraEditors.PictureEdit peUserImage;
         private DevExpress.XtraBars.BarButtonItem ribbonSystemLogs;
-        public DevExpress.XtraEditors.LabelControl lblWelcomeMessage;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem2;
         private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory2;
         private DevExpress.XtraBars.BarButtonItem barButtonSaveTheme;
@@ -784,6 +810,13 @@
         public DevExpress.XtraBars.BarButtonItem barButtonItem5;
         public DevExpress.XtraBars.BarButtonItem barButtonItem6;
         public DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        public DevExpress.XtraEditors.LabelControl lblWelcomeMessage;
+        public DevExpress.XtraEditors.PictureEdit peUserImage;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        public DevExpress.DashboardWin.DashboardViewer dashboardViewer1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
     }
 }
 

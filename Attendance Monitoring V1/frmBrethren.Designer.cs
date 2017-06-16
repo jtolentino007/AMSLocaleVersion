@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBrethren));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.mnuBtnClose = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -102,7 +102,7 @@
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowQatLocationSelector = false;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(788, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(788, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -184,22 +184,22 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 522);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 530);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(788, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(788, 23);
             // 
             // gridBrethren
             // 
             this.gridBrethren.Cursor = System.Windows.Forms.Cursors.Default;
             this.gridBrethren.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBrethren.Location = new System.Drawing.Point(0, 143);
+            this.gridBrethren.Location = new System.Drawing.Point(0, 147);
             this.gridBrethren.MainView = this.gridView1;
             this.gridBrethren.MenuManager = this.ribbonControl1;
             this.gridBrethren.Name = "gridBrethren";
             this.gridBrethren.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnViewDetails});
-            this.gridBrethren.Size = new System.Drawing.Size(788, 379);
+            this.gridBrethren.Size = new System.Drawing.Size(788, 383);
             this.gridBrethren.TabIndex = 6;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -471,7 +471,7 @@
             this.btnViewDetails.Appearance.Options.UseForeColor = true;
             this.btnViewDetails.AutoHeight = false;
             this.btnViewDetails.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "View Details", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleLeft, global::AMS.Properties.Resources.View_File_16, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "View Details", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleLeft, global::AMS.Properties.Resources.View_File_16, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.btnViewDetails.Name = "btnViewDetails";
             this.btnViewDetails.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 

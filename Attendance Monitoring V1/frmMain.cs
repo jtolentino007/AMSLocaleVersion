@@ -100,7 +100,7 @@ namespace AMS
                 peUserImage.Image = null;
             }
 
-            lblWelcomeMessage.Text = "Hello \n" + frmLogin.Username + "\n" + frmLogin.Locale;
+            lblWelcomeMessage.Text = "Hello! " + frmLogin.Username + "\nLocale of " + frmLogin.Locale;
             Privilege();
         }
 
