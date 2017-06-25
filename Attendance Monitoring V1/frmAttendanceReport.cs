@@ -69,8 +69,11 @@ namespace AMS
                     SetHeaders();
 
                     GroupField gfBatch = new GroupField(dtAttendance.Columns["batch_time"].ToString());
+                    GroupField gfInterlocale = new GroupField(dtAttendance.Columns["Interlocale_Status"].ToString());
+                    attendanceReport.GroupHeader.GroupFields.Add(gfInterlocale);
                     attendanceReport.GroupHeader.GroupFields.Add(gfBatch);
 
+                    attendanceReport.xrLabelInterlocale.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["Interlocale_Status"].ToString());
                     attendanceReport.xrLabelBatch.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["batch_time_lbl"].ToString());
                     attendanceReport.xrTableCellChurchID.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["Church_Id"].ToString());
                     attendanceReport.xrTableCellName.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["BrethrenName"].ToString());

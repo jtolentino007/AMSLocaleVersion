@@ -132,7 +132,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(935, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(935, 143);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mnuBtnSave
@@ -183,24 +183,28 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 670);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 662);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(935, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(935, 31);
             // 
             // labelControl1
             // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl1.Location = new System.Drawing.Point(75, 209);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(75, 13);
+            this.labelControl1.Size = new System.Drawing.Size(81, 13);
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "* CHURCH ID : ";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(80, 241);
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl2.Location = new System.Drawing.Point(79, 241);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(70, 13);
+            this.labelControl2.Size = new System.Drawing.Size(76, 13);
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "* FULL NAME :";
             // 
@@ -232,9 +236,11 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(45, 328);
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl6.Location = new System.Drawing.Point(39, 328);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(105, 13);
+            this.labelControl6.Size = new System.Drawing.Size(116, 13);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Text = "* DATE OF BAPTISM :";
             // 
@@ -358,17 +364,21 @@
             // 
             // labelControl9
             // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl9.Location = new System.Drawing.Point(477, 328);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(92, 13);
+            this.labelControl9.Size = new System.Drawing.Size(100, 13);
             this.labelControl9.TabIndex = 26;
             this.labelControl9.Text = "* DATE OF BIRTH :";
             // 
             // labelControl10
             // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl10.Location = new System.Drawing.Point(96, 361);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(54, 13);
+            this.labelControl10.Size = new System.Drawing.Size(57, 13);
             this.labelControl10.TabIndex = 28;
             this.labelControl10.Text = "* LOCALE :";
             // 
