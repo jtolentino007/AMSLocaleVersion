@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBrethren));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -73,6 +74,7 @@
             this.gridColumn26 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridButtonView = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnViewDetails = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.reportGenerator1 = new DevExpress.XtraReports.ReportGeneration.ReportGenerator(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBrethren)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -92,7 +94,7 @@
             this.mnuBtnRemoveBrethren,
             this.mnuBtnSearch});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 7;
+            this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -102,7 +104,7 @@
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowQatLocationSelector = false;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(788, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(788, 143);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -184,22 +186,22 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 530);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 522);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(788, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(788, 31);
             // 
             // gridBrethren
             // 
             this.gridBrethren.Cursor = System.Windows.Forms.Cursors.Default;
             this.gridBrethren.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBrethren.Location = new System.Drawing.Point(0, 147);
+            this.gridBrethren.Location = new System.Drawing.Point(0, 143);
             this.gridBrethren.MainView = this.gridView1;
             this.gridBrethren.MenuManager = this.ribbonControl1;
             this.gridBrethren.Name = "gridBrethren";
             this.gridBrethren.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnViewDetails});
-            this.gridBrethren.Size = new System.Drawing.Size(788, 383);
+            this.gridBrethren.Size = new System.Drawing.Size(788, 379);
             this.gridBrethren.TabIndex = 6;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -543,5 +545,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn Name;
         private DevExpress.XtraGrid.Columns.GridColumn gridButtonView;
         public DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnViewDetails;
+        private DevExpress.XtraReports.ReportGeneration.ReportGenerator reportGenerator1;
     }
 }

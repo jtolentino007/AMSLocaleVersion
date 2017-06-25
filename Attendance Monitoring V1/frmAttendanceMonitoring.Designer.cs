@@ -404,10 +404,11 @@
             // peBrethren
             // 
             this.peBrethren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.peBrethren.EditValue = global::AMS.Properties.Resources.default_user_image;
             this.peBrethren.Location = new System.Drawing.Point(1091, 65);
             this.peBrethren.MenuManager = this.ribbonControl1;
             this.peBrethren.Name = "peBrethren";
-            this.peBrethren.Properties.InitialImage = ((System.Drawing.Image)(resources.GetObject("peBrethren.Properties.InitialImage")));
+            this.peBrethren.Properties.InitialImage = global::AMS.Properties.Resources.default_user_image;
             this.peBrethren.Properties.ReadOnly = true;
             this.peBrethren.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peBrethren.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;

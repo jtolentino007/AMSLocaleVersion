@@ -49,7 +49,6 @@
             this.mnuBtnLocale = new DevExpress.XtraBars.BarButtonItem();
             this.barHeadName = new DevExpress.XtraBars.BarHeaderItem();
             this.barBtnUsers = new DevExpress.XtraBars.BarButtonItem();
-            this.barBtnLocale = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnLogs = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnProfile = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnBatches = new DevExpress.XtraBars.BarButtonItem();
@@ -137,7 +136,6 @@
             this.mnuBtnLocale,
             this.barHeadName,
             this.barBtnUsers,
-            this.barBtnLocale,
             this.barBtnLogs,
             this.barBtnProfile,
             this.barBtnBatches,
@@ -166,10 +164,10 @@
             this.ribbonPageCategory2});
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
+            this.ribbonAdmin,
             this.ribbonRef,
             this.ribbonTransact,
-            this.ribbonReport,
-            this.ribbonAdmin});
+            this.ribbonReport});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemSpinEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
@@ -180,6 +178,7 @@
             this.ribbonControl1.Size = new System.Drawing.Size(1063, 147);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // mnuBtnClose
             // 
@@ -252,10 +251,10 @@
             // 
             // mnuBtnAttendance
             // 
-            this.mnuBtnAttendance.Caption = "Attendance Monitoring";
+            this.mnuBtnAttendance.Caption = "Continue Attendance Monitoring";
             this.mnuBtnAttendance.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAttendance.Glyph")));
             this.mnuBtnAttendance.Id = 10;
-            this.mnuBtnAttendance.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAttendance.LargeGlyph")));
+            this.mnuBtnAttendance.LargeGlyph = global::AMS.Properties.Resources.icons8_Realtime_Protection_96;
             this.mnuBtnAttendance.Name = "mnuBtnAttendance";
             this.mnuBtnAttendance.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.mnuBtnAttendance.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnAttendance_ItemClick);
@@ -265,7 +264,7 @@
             this.mnuBtnAttendanceReport.Caption = "Attendance Report";
             this.mnuBtnAttendanceReport.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAttendanceReport.Glyph")));
             this.mnuBtnAttendanceReport.Id = 11;
-            this.mnuBtnAttendanceReport.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAttendanceReport.LargeGlyph")));
+            this.mnuBtnAttendanceReport.LargeGlyph = global::AMS.Properties.Resources.icons8_Report_Card_96;
             this.mnuBtnAttendanceReport.Name = "mnuBtnAttendanceReport";
             this.mnuBtnAttendanceReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnAttendanceReport_ItemClick);
             // 
@@ -301,18 +300,9 @@
             this.barBtnUsers.Caption = "User\r\nManagement";
             this.barBtnUsers.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnUsers.Glyph")));
             this.barBtnUsers.Id = 227;
-            this.barBtnUsers.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnUsers.LargeGlyph")));
+            this.barBtnUsers.LargeGlyph = global::AMS.Properties.Resources.icons8_Podium_With_Speaker_96;
             this.barBtnUsers.Name = "barBtnUsers";
             this.barBtnUsers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnUsers_ItemClick);
-            // 
-            // barBtnLocale
-            // 
-            this.barBtnLocale.Caption = "Locale Management";
-            this.barBtnLocale.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnLocale.Glyph")));
-            this.barBtnLocale.Id = 228;
-            this.barBtnLocale.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnLocale.LargeGlyph")));
-            this.barBtnLocale.Name = "barBtnLocale";
-            this.barBtnLocale.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnLocale_ItemClick);
             // 
             // barBtnLogs
             // 
@@ -324,10 +314,10 @@
             // 
             // barBtnProfile
             // 
-            this.barBtnProfile.Caption = "Profile Settings";
+            this.barBtnProfile.Caption = "Update my Profile";
             this.barBtnProfile.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnProfile.Glyph")));
             this.barBtnProfile.Id = 230;
-            this.barBtnProfile.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnProfile.LargeGlyph")));
+            this.barBtnProfile.LargeGlyph = global::AMS.Properties.Resources.icons8_Administrative_Tools_96;
             this.barBtnProfile.Name = "barBtnProfile";
             this.barBtnProfile.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnProfile_ItemClick);
             // 
@@ -344,7 +334,7 @@
             this.barBtnDashboardSettings.Caption = "Dashboard Management";
             this.barBtnDashboardSettings.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnDashboardSettings.Glyph")));
             this.barBtnDashboardSettings.Id = 232;
-            this.barBtnDashboardSettings.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnDashboardSettings.LargeGlyph")));
+            this.barBtnDashboardSettings.LargeGlyph = global::AMS.Properties.Resources.icons8_Speed_96;
             this.barBtnDashboardSettings.Name = "barBtnDashboardSettings";
             this.barBtnDashboardSettings.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDashboardSettings_ItemClick);
             // 
@@ -371,7 +361,7 @@
             this.ribbonSystemLogs.Caption = "System Logs";
             this.ribbonSystemLogs.Glyph = ((System.Drawing.Image)(resources.GetObject("ribbonSystemLogs.Glyph")));
             this.ribbonSystemLogs.Id = 236;
-            this.ribbonSystemLogs.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("ribbonSystemLogs.LargeGlyph")));
+            this.ribbonSystemLogs.LargeGlyph = global::AMS.Properties.Resources.icons8_Server_96;
             this.ribbonSystemLogs.Name = "ribbonSystemLogs";
             this.ribbonSystemLogs.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick_1);
             // 
@@ -394,7 +384,7 @@
             this.barBtnODTReport.Caption = "ODT Report";
             this.barBtnODTReport.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnODTReport.Glyph")));
             this.barBtnODTReport.Id = 239;
-            this.barBtnODTReport.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnODTReport.LargeGlyph")));
+            this.barBtnODTReport.LargeGlyph = global::AMS.Properties.Resources.icons8_Students_96;
             this.barBtnODTReport.Name = "barBtnODTReport";
             this.barBtnODTReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnODTReport_ItemClick);
             // 
@@ -403,7 +393,7 @@
             this.barBtnGatheringTypes.Caption = "Gathering Management";
             this.barBtnGatheringTypes.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnGatheringTypes.Glyph")));
             this.barBtnGatheringTypes.Id = 240;
-            this.barBtnGatheringTypes.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnGatheringTypes.LargeGlyph")));
+            this.barBtnGatheringTypes.LargeGlyph = global::AMS.Properties.Resources.icons8_Data_Sheet_96;
             this.barBtnGatheringTypes.Name = "barBtnGatheringTypes";
             this.barBtnGatheringTypes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnGatheringTypes_ItemClick);
             // 
@@ -412,7 +402,7 @@
             this.barButtonInterlocaleReport.Caption = "Interlocale Report";
             this.barButtonInterlocaleReport.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonInterlocaleReport.Glyph")));
             this.barButtonInterlocaleReport.Id = 241;
-            this.barButtonInterlocaleReport.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonInterlocaleReport.LargeGlyph")));
+            this.barButtonInterlocaleReport.LargeGlyph = global::AMS.Properties.Resources.icons8_Transfer_Between_Users_96;
             this.barButtonInterlocaleReport.Name = "barButtonInterlocaleReport";
             this.barButtonInterlocaleReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonInterlocaleReport_ItemClick);
             // 
@@ -437,7 +427,7 @@
             this.barButtonCelebrantReport.Caption = "Celebrants Report";
             this.barButtonCelebrantReport.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonCelebrantReport.Glyph")));
             this.barButtonCelebrantReport.Id = 244;
-            this.barButtonCelebrantReport.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonCelebrantReport.LargeGlyph")));
+            this.barButtonCelebrantReport.LargeGlyph = global::AMS.Properties.Resources.icons8_Event_Accepted_96;
             this.barButtonCelebrantReport.Name = "barButtonCelebrantReport";
             this.barButtonCelebrantReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonCelebrantReport_ItemClick);
             // 
@@ -446,7 +436,7 @@
             this.barButtonNewlyBaptizedReport.Caption = "Newly Baptized Report";
             this.barButtonNewlyBaptizedReport.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonNewlyBaptizedReport.Glyph")));
             this.barButtonNewlyBaptizedReport.Id = 245;
-            this.barButtonNewlyBaptizedReport.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonNewlyBaptizedReport.LargeGlyph")));
+            this.barButtonNewlyBaptizedReport.LargeGlyph = global::AMS.Properties.Resources.icons8_Boy_96;
             this.barButtonNewlyBaptizedReport.Name = "barButtonNewlyBaptizedReport";
             this.barButtonNewlyBaptizedReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNewlyBaptizedReport_ItemClick);
             // 
@@ -581,7 +571,6 @@
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.barBtnUsers);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barBtnLocale);
             this.ribbonPageGroup5.ItemLinks.Add(this.barBtnDashboardSettings);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.ShowCaptionButton = false;
@@ -649,7 +638,7 @@
             // lblWelcomeMessage
             // 
             this.lblWelcomeMessage.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
-            this.lblWelcomeMessage.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcomeMessage.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcomeMessage.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblWelcomeMessage.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblWelcomeMessage.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -763,13 +752,10 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonTransact;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonRef;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
-        private DevExpress.XtraBars.BarButtonItem mnuBtnBrethren;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarButtonItem mnuBtnBatches;
-        private DevExpress.XtraBars.BarButtonItem mnuBtnGroupings;
-        private DevExpress.XtraBars.BarButtonItem mnuBtnCommittees;
         private DevExpress.XtraBars.BarButtonItem mnuBtnOfficers;
         private DevExpress.XtraBars.BarButtonItem mnuBtnAttendanceReport;
         private DevExpress.XtraBars.BarButtonItem mnuBtnInactiveReport;
@@ -777,16 +763,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonReport;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-        private DevExpress.XtraBars.BarButtonItem mnuBtnLocale;
         private DevExpress.XtraBars.BarHeaderItem barHeadName;
         private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryItemSpinEdit1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonAdmin;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.BarButtonItem barBtnUsers;
-        private DevExpress.XtraBars.BarButtonItem barBtnLocale;
         private DevExpress.XtraBars.BarButtonItem barBtnLogs;
         private DevExpress.XtraBars.BarButtonItem barBtnProfile;
-        private DevExpress.XtraBars.BarButtonItem barBtnBatches;
         private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory1;
         private DevExpress.XtraBars.BarAndDockingController barAndDockingController1;
         private DevExpress.XtraBars.BarButtonItem barBtnDashboardSettings;
@@ -798,7 +781,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory2;
         private DevExpress.XtraBars.BarButtonItem barButtonSaveTheme;
         private DevExpress.XtraBars.BarButtonItem barBtnODTReport;
-        private DevExpress.XtraBars.BarButtonItem barBtnGatheringTypes;
         private DevExpress.XtraBars.BarButtonItem barButtonInterlocaleReport;
         private DevExpress.XtraBars.BarButtonItem barButtonCommitteeReport;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
@@ -817,6 +799,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         public DevExpress.DashboardWin.DashboardViewer dashboardViewer1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        public DevExpress.XtraBars.BarButtonItem mnuBtnBrethren;
+        public DevExpress.XtraBars.BarButtonItem mnuBtnGroupings;
+        public DevExpress.XtraBars.BarButtonItem mnuBtnCommittees;
+        public DevExpress.XtraBars.BarButtonItem mnuBtnLocale;
+        public DevExpress.XtraBars.BarButtonItem barBtnBatches;
+        public DevExpress.XtraBars.BarButtonItem barBtnGatheringTypes;
     }
 }
 

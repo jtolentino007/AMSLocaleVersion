@@ -1015,9 +1015,9 @@ C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\bin\Debug\de\
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
-C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.csprojResolveAssemblyReference.cache
-C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmAMSSplash.resources
+C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.Custom_report.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmAttendanceMonitoring.resources
+C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmConfiguration.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmODTReport.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmCelebrantsReport.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmGroupingsReport.resources
@@ -1044,12 +1044,13 @@ C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmNewlyBaptized.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmDashboardDesign.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmSystemLogs.resources
-C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmTest.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmUserRegistration.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmUsers.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.Properties.Resources.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.rpt_Viewer.resources
-C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.WaitFormLogin.resources
+C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.SplashScreen1.resources
+C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.WaitForm1.resources
+C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.XtraReportAdvance.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.XtraReportBrethren.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.XtraReportODT.resources
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.XtraReportCelebrants.resources
@@ -1062,3 +1063,4 @@ C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Att
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe.licenses
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.pdb
+C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.csprojResolveAssemblyReference.cache

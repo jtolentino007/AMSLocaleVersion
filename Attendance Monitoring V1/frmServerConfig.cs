@@ -34,5 +34,9 @@ namespace AMS
         {
 
         }
+
+        private void frmDashboardDesign_FormClosed(object sender, FormClosedEventArgs e)
+        {
+        }
     }
 }

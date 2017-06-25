@@ -83,6 +83,7 @@ namespace AMS
 
         private void frmInterlocaleReport_Load(object sender, EventArgs e)
         {
+            dtDateGathering.EditValue = DateTime.Now.ToShortDateString();
             Utilities.FillLookUpEdit(lueGatheringType, "GET_GATHERING_TYPES", "gathering", "gathering_id");
             Utilities.FillLookUpEdit(lueLocale, "GET_INTERLOCALE_LOCALE", "Locale", "Locale");
         }

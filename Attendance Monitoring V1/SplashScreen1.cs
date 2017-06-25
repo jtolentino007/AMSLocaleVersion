@@ -9,9 +9,9 @@ using DevExpress.XtraSplashScreen;
 
 namespace AMS
 {
-    public partial class frmAMSSplash : SplashScreen
+    public partial class SplashScreen1 : SplashScreen
     {
-        public frmAMSSplash()
+        public SplashScreen1()
         {
             InitializeComponent();
         }
@@ -27,11 +27,6 @@ namespace AMS
 
         public enum SplashScreenCommand
         {
-        }
-
-        private void frmAMSSplash_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }

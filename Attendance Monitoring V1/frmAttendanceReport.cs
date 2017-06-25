@@ -77,10 +77,11 @@ namespace AMS
                     attendanceReport.xrTableCellTimeIn.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["time_in"].ToString());
                     attendanceReport.xrTableCellStatus.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["AttendanceStatus"].ToString());
                     attendanceReport.xrTableCellLocale.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["remarks"].ToString());
+
                     attendanceReport.CreateDocument();
 
                     ReportPrintTool printTool = new ReportPrintTool(attendanceReport);
-                    printTool.ShowPreview();
+                    printTool.ShowPreviewDialog();
                     this.Close();
                 }
             }

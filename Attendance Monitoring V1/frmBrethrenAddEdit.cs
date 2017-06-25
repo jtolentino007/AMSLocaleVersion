@@ -155,9 +155,9 @@ namespace AMS
             txtFname.Text = string.Empty;
             txtMName.Text = string.Empty;
             txtLName.Text = string.Empty;
-            dtBaptism.Text = string.Empty;
-            dtBirth.Text = string.Empty;
-            cmbGender.Text = string.Empty;
+            dtBaptism.Text = DateTime.Now.ToShortDateString();
+            dtBirth.Text = DateTime.Now.ToShortDateString();
+            cmbGender.SelectedItem = 1;
             cmbCivilStatus.SelectedIndex = -1;
             txtStreet.Text = string.Empty;
             txtBrgy.Text = string.Empty;
@@ -169,13 +169,12 @@ namespace AMS
             txtContactPerson.Text = string.Empty;
             txtContactPersonNumber.Text = string.Empty;
             cmbStatus.SelectedIndex = -1;
-            lueGroup.Reset();
-            lueLocale.EditValue = null;
-            checkedComboBoxEdit1.EditValue = null;
-            checkedComboBoxEdit1.Text = string.Empty;
+            lueGroup.ItemIndex = 0;
+            lueLocale.ItemIndex = 1;
+            checkedComboBoxEdit1.SetEditValue(null);
             txtBaptizer.Text = string.Empty;
-            peSketch.Image = null;
-            peBrethren.Image = null;
+            peSketch.Image = Properties.Resources.default_sketch;
+            peBrethren.Image = Properties.Resources.default_user_image;
             txtChurchID.Select();
         }
 
@@ -232,6 +231,7 @@ namespace AMS
                 cmd.ExecuteNonQuery();
 
                 drBrethren["Church_Id"] = txtChurchID.Text;
+                drBrethren["BrethrenName"] = txtFname.Text + " " + txtLName.Text;
                 drBrethren["Firstname"] = txtFname.Text;
                 drBrethren["Middlename"] = txtMName.Text;
                 drBrethren["Lastname"] = txtLName.Text;
@@ -303,6 +303,7 @@ namespace AMS
                 DataRow dr = dtBrethren.NewRow();
 
                 dr["brethren_id"] = BrethrenID();
+                dr["BrethrenName"] = txtFname.Text + " " + txtLName.Text;
                 dr["Church_Id"] = txtChurchID.Text;
                 dr["Firstname"] = txtFname.Text;
                 dr["Middlename"] = txtMName.Text;

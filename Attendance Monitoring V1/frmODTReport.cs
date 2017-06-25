@@ -64,10 +64,6 @@ namespace AMS
             {
                 Utilities.ErrorMessage("Number of absents must not set to zero");
             }
-            else if (string.IsNullOrEmpty(cmbAddress.Text))
-            {
-                Utilities.ErrorMessage("Address is required");
-            }
             else
             {
                 BindAttendanceToReport();

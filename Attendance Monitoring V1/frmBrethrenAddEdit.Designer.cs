@@ -132,7 +132,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(927, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(935, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mnuBtnSave
@@ -186,7 +186,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 670);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(927, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(935, 23);
             // 
             // labelControl1
             // 
@@ -287,8 +287,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtBaptism.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtBaptism.Properties.EditFormat.FormatString = "mm/dd/yyyy";
-            this.dtBaptism.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.dtBaptism.Properties.NullValuePrompt = "[Enter Date of Baptism]";
             this.dtBaptism.Size = new System.Drawing.Size(197, 20);
             this.dtBaptism.TabIndex = 4;
@@ -352,8 +350,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtBirth.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtBirth.Properties.EditFormat.FormatString = "mm/dd/yyyy";
-            this.dtBirth.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.dtBirth.Properties.MaxValue = new System.DateTime(9999, 12, 31, 0, 0, 0, 0);
             this.dtBirth.Properties.NullDate = new System.DateTime(2016, 11, 11, 13, 47, 19, 0);
             this.dtBirth.Properties.NullValuePrompt = "[Enter Birthdate]";
@@ -629,7 +625,7 @@
             // peBrethren
             // 
             this.peBrethren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.peBrethren.Location = new System.Drawing.Point(721, 167);
+            this.peBrethren.Location = new System.Drawing.Point(729, 167);
             this.peBrethren.MenuManager = this.ribbonControl1;
             this.peBrethren.Name = "peBrethren";
             this.peBrethren.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -640,7 +636,7 @@
             // btnBrowse
             // 
             this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowse.Location = new System.Drawing.Point(722, 259);
+            this.btnBrowse.Location = new System.Drawing.Point(730, 259);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(100, 24);
             this.btnBrowse.TabIndex = 86;
@@ -669,7 +665,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 693);
+            this.ClientSize = new System.Drawing.Size(935, 693);
             this.Controls.Add(this.chkMember);
             this.Controls.Add(this.labelControl20);
             this.Controls.Add(this.btnBrowse);

@@ -68,8 +68,8 @@ namespace AMS
             //gp.AddEllipse(0, 0, peUserImage.Width - 3, peUserImage.Height - 3);
             //Region rg = new Region(gp);
             //peUserImage.Region = rg;
-
-            using(SqlDataAdapter adapt = new SqlDataAdapter("GET_TEMP_ATTENDANCE", Utilities.con))
+            Privilege();
+            using (SqlDataAdapter adapt = new SqlDataAdapter("GET_TEMP_ATTENDANCE", Utilities.con))
             {
                 adapt.SelectCommand.CommandType = CommandType.StoredProcedure;
                 adapt.Fill(dtTempAttendance);
@@ -97,11 +97,10 @@ namespace AMS
             }
             else
             {
-                peUserImage.Image = null;
+                peUserImage.Image = Properties.Resources.default_user_image;
             }
 
             lblWelcomeMessage.Text = "Hello! " + frmLogin.Username + "\nLocale of " + frmLogin.Locale;
-            Privilege();
         }
 
         private void barBtnUsers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -114,7 +113,12 @@ namespace AMS
             int UserRight = userPrivilege;
             if (UserRight == 1)
             {
-                ribbonRef.Visible = false;
+                ribbonRef.Visible = true;
+                mnuBtnAttendance.Visibility = BarItemVisibility.Never;
+                mnuBtnBrethren.Visibility = BarItemVisibility.Never;
+                mnuBtnCommittees.Visibility = BarItemVisibility.Always;
+                mnuBtnLocale.Visibility = BarItemVisibility.Always;
+                barBtnGatheringTypes.Visibility = BarItemVisibility.Always;
                 ribbonTransact.Visible = false;
                 ribbonReport.Visible = false;
                 ribbonSystemLogs.Caption = "Users Logs";
@@ -123,6 +127,10 @@ namespace AMS
             else if (UserRight == 2)
             {
                 ribbonRef.Visible = true;
+                mnuBtnAttendance.Visibility = BarItemVisibility.Always;
+                mnuBtnCommittees.Visibility = BarItemVisibility.Never;
+                mnuBtnLocale.Visibility = BarItemVisibility.Never;
+                barBtnGatheringTypes.Visibility = BarItemVisibility.Never;
                 ribbonTransact.Visible = true;
                 ribbonReport.Visible = true;
                 ribbonSystemLogs.Caption = "My Logs";
@@ -302,6 +310,11 @@ namespace AMS
         private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
         {
             Instances.viewGatherings.ShowDialog();
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

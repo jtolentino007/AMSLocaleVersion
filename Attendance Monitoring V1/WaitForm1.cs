@@ -9,9 +9,9 @@ using DevExpress.XtraWaitForm;
 
 namespace AMS
 {
-    public partial class WaitFormLogin : WaitForm
+    public partial class WaitForm1 : WaitForm
     {
-        public WaitFormLogin()
+        public WaitForm1()
         {
             InitializeComponent();
             this.progressPanel1.AutoHeight = true;

@@ -207,5 +207,26 @@ namespace AMS
                 }
             }
         }
+
+        private DataSet FillDatasetFromGrid()
+        {
+            AMSDBDataSet ds = new AMSDBDataSet();
+            int rowHandle;
+            DataRow gridRow;
+            for (int i = 0; i < gridView1.RowCount; i++)
+            {
+                rowHandle = gridView1.GetVisibleRowHandle(i);
+                if (!gridView1.IsGroupRow(rowHandle))
+                {
+                    gridRow = gridView1.GetDataRow(rowHandle);
+                    ds.Tables[0].Rows.Add(gridRow.ItemArray);
+                }
+            }
+            return ds;
+        }
+
+        private void barButtonItemGenerateReport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+        }
     }
 }

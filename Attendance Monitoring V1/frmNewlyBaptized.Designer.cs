@@ -104,11 +104,12 @@
             // 
             // labelControl1
             // 
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl1.Location = new System.Drawing.Point(33, 216);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(47, 13);
+            this.labelControl1.Size = new System.Drawing.Size(56, 13);
             this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Firstname";
+            this.labelControl1.Text = "Firstname *";
             // 
             // labelControl2
             // 
@@ -120,11 +121,12 @@
             // 
             // labelControl3
             // 
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl3.Location = new System.Drawing.Point(33, 309);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(46, 13);
+            this.labelControl3.Size = new System.Drawing.Size(55, 13);
             this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "Lastname";
+            this.labelControl3.Text = "Lastname *";
             // 
             // labelControl4
             // 
@@ -177,6 +179,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.MaximizeBox = false;
             this.Name = "frmNewlyBaptized";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
