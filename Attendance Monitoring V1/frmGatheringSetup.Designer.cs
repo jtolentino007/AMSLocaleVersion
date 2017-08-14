@@ -45,6 +45,7 @@
             this.lueBatch = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbGatheringType = new DevExpress.XtraEditors.LookUpEdit();
             this.btnSet = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddBatch = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbViewingType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDateGathering.Properties.CalendarTimeProperties)).BeginInit();
@@ -69,13 +70,13 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(361, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(369, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // mnuBtnSave
             // 
-            this.mnuBtnSave.Caption = "SAVE";
+            this.mnuBtnSave.Caption = "ACCEPT";
             this.mnuBtnSave.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnSave.Glyph")));
             this.mnuBtnSave.Id = 1;
             this.mnuBtnSave.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnSave.LargeGlyph")));
@@ -84,9 +85,10 @@
             // 
             // mnuBtnClose
             // 
-            this.mnuBtnClose.Caption = "CLOSE";
+            this.mnuBtnClose.Caption = "CANCEL";
+            this.mnuBtnClose.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnClose.Glyph")));
             this.mnuBtnClose.Id = 2;
-            this.mnuBtnClose.LargeGlyph = global::AMS.Properties.Resources.error;
+            this.mnuBtnClose.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnClose.LargeGlyph")));
             this.mnuBtnClose.Name = "mnuBtnClose";
             this.mnuBtnClose.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnClose_ItemClick);
             // 
@@ -109,7 +111,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 408);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(361, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(369, 23);
             // 
             // labelControl1
             // 
@@ -175,6 +177,7 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnEdit.Image = global::AMS.Properties.Resources.Edit_18;
             this.btnEdit.Location = new System.Drawing.Point(285, 198);
             this.btnEdit.Name = "btnEdit";
@@ -232,12 +235,24 @@
             this.btnSet.Visible = false;
             this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
             // 
+            // btnAddBatch
+            // 
+            this.btnAddBatch.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnAddBatch.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBatch.Image")));
+            this.btnAddBatch.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnAddBatch.Location = new System.Drawing.Point(315, 294);
+            this.btnAddBatch.Name = "btnAddBatch";
+            this.btnAddBatch.Size = new System.Drawing.Size(22, 20);
+            this.btnAddBatch.TabIndex = 30;
+            this.btnAddBatch.Click += new System.EventHandler(this.btnAddBatch_Click);
+            // 
             // frmGatheringSetup
             // 
             this.ActiveGlowColor = System.Drawing.Color.DodgerBlue;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 431);
+            this.ClientSize = new System.Drawing.Size(369, 431);
+            this.Controls.Add(this.btnAddBatch);
             this.Controls.Add(this.lueBatch);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.labelControl4);
@@ -284,8 +299,9 @@
         private DevExpress.XtraEditors.DateEdit dtDateGathering;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.SimpleButton btnEdit;
-        private DevExpress.XtraEditors.LookUpEdit lueBatch;
-        private DevExpress.XtraEditors.LookUpEdit cmbGatheringType;
         private DevExpress.XtraEditors.SimpleButton btnSet;
+        private DevExpress.XtraEditors.SimpleButton btnAddBatch;
+        public DevExpress.XtraEditors.LookUpEdit cmbGatheringType;
+        public DevExpress.XtraEditors.LookUpEdit lueBatch;
     }
 }

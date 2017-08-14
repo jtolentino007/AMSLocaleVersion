@@ -89,7 +89,7 @@
             // 
             // barBtnSave
             // 
-            this.barBtnSave.Caption = "Save";
+            this.barBtnSave.Caption = "SAVE";
             this.barBtnSave.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnSave.Glyph")));
             this.barBtnSave.Id = 1;
             this.barBtnSave.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnSave.LargeGlyph")));
@@ -98,9 +98,10 @@
             // 
             // barBtnClose
             // 
-            this.barBtnClose.Caption = "Close";
+            this.barBtnClose.Caption = "CLOSE";
+            this.barBtnClose.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnClose.Glyph")));
             this.barBtnClose.Id = 2;
-            this.barBtnClose.LargeGlyph = global::AMS.Properties.Resources.error;
+            this.barBtnClose.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnClose.LargeGlyph")));
             this.barBtnClose.Name = "barBtnClose";
             this.barBtnClose.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnClose_ItemClick);
             // 

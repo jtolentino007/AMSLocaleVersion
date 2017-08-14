@@ -9,6 +9,7 @@ using System.Drawing;
 using DevExpress.XtraReports.UI;
 using DevExpress.XtraReports.ReportGeneration;
 using System.Collections.Generic;
+using DevExpress.XtraGrid.Views.Grid;
 
 namespace AMS
 {
@@ -20,6 +21,7 @@ namespace AMS
         public static DateTime Time;
         public static DataRow drAttendance;
         public static bool _isGatheringSetup = false;
+        public static Form amsForm { get; set; }
 
         public static int Status = 1;
         public frmAttendanceMonitoring()
@@ -44,6 +46,8 @@ namespace AMS
 
         private void frmAttendanceMonitoring_Load(object sender, EventArgs e)
         {
+            gridView1.IndicatorWidth = 35;
+            gridView2.IndicatorWidth = 35;
             RecoverGathering();
             if (dtAttendance.Rows.Count > 0)
             {
@@ -52,8 +56,8 @@ namespace AMS
                 GetAttendedBrethren();
                 GatheringID = dtAttendance.Rows[0][2].ToString();
                 barStaticGatheringID.Caption = GatheringID;
-                barStaticGatheringType.Caption = dtAttendance.Rows[0][9].ToString();
-                lblTimerGathering.Text = dtAttendance.Rows[0][9].ToString().ToUpper();
+                barStaticGatheringType.Caption = dtAttendance.Rows[0]["gathering"].ToString();
+                lblTimerGathering.Text = dtAttendance.Rows[0]["gathering"].ToString().ToUpper();
                 lblStatus.Text = "READY";
                 mnuBtnInterlocale.Visibility = BarItemVisibility.Always;
                 barBtnTimeIn.Visibility = BarItemVisibility.Always;
@@ -83,7 +87,7 @@ namespace AMS
 
         public void GetBrethrenList()
         {
-            using (var adapt = new SqlDataAdapter("GET_BRETHREN", Utilities.con))
+            using (var adapt = new SqlDataAdapter("GET_BRETHREN_LIST", Utilities.con))
             {
                 dtBrethren.Clear();
                 adapt.SelectCommand.CommandType = CommandType.StoredProcedure;
@@ -101,6 +105,11 @@ namespace AMS
                 Attendance.Fill(dtAttendance);
                 gridAttendance.DataSource = dtAttendance;
             }
+        }
+        
+        void gridView1_CustomDrawRowIndicator(object sender, RowIndicatorCustomDrawEventArgs e)
+        {
+            
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -155,21 +164,20 @@ namespace AMS
                     lblStatus.Text = "No Brethren Selected";
                 else if (gridView2.RowCount == 0)
                     lblStatus.Text = "No Brethren Found";
-                else if (Utilities.CheckBrethrenIfAttended(GatheringID, gridView2.GetRowCellValue(row, "brethren_id").ToString()))
-                    lblStatus.Text = "Brethren Already Timed In";
+                //else if (Utilities.CheckBrethrenIfAttended(GatheringID, gridView2.GetRowCellValue(row, "brethren_id").ToString()))
+                //    lblStatus.Text = "Brethren Already Timed In";
                 else
                 {
-                    //splashScreenManager1.ShowWaitForm();
                     using (var cmd = new SqlCommand("INSERT_TEMP_ATTENDANCE", Utilities.con))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@tempGathering_ID", GatheringID);
-                        cmd.Parameters.AddWithValue("@tempChurch_ID", gridView2.GetRowCellValue(row, "Church_Id"));
+                        //cmd.Parameters.AddWithValue("@tempChurch_ID", gridView2.GetRowCellValue(row, "Church_Id"));
                         cmd.Parameters.AddWithValue("@tempAttendance_Status", Status);
                         cmd.Parameters.AddWithValue("@tempReal_Time", DateTime.Now.ToShortTimeString());
-                        cmd.Parameters.AddWithValue("@is_interlocale", false);
-                        cmd.Parameters.AddWithValue("@remarks", "");
-                        cmd.Parameters.AddWithValue("@temp_brethren_id", gridView2.GetRowCellValue(row, "brethren_id"));
+                        cmd.Parameters.AddWithValue("@is_interlocale", gridView2.GetRowCellValue(row, "is_interlocale").ToString());
+                        cmd.Parameters.AddWithValue("@locale", gridView2.GetRowCellValue(row, "locale").ToString());
+                        cmd.Parameters.AddWithValue("@temp_brethren_id", gridView2.GetRowCellValue(row, "brethren_id").ToString());
                         cmd.ExecuteNonQuery();
 
                         if (!string.IsNullOrWhiteSpace(gridView2.GetRowCellValue(row, "Image_Path").ToString()))
@@ -186,8 +194,8 @@ namespace AMS
                     drAttendance["Name"] = gridView2.GetRowCellValue(row, "BrethrenName").ToString();
                     drAttendance["tempReal_Time"] = DateTime.Now.ToShortTimeString();
                     drAttendance["tempAttendance_Status"] = (Status == 1 ? "TIMED IN" : "LATE");
-                    drAttendance["is_interlocale"] = "NO";
-                    drAttendance["remarks"] = "";
+                    drAttendance["is_interlocale"] = (Convert.ToInt16(gridView2.GetRowCellValue(row, "is_interlocale")) == 1 ? "YES" : "NO");
+                    drAttendance["locale"] = gridView2.GetRowCellValue(row, "locale").ToString();
                     dtAttendance.Rows.Add(drAttendance);
                     dtAttendance.AcceptChanges();
 
@@ -241,21 +249,8 @@ namespace AMS
                 if (gridView1.RowCount == 0)
                     Utilities.ErrorMessage("No Brethren Attended in this Batch");
                 else
-                {
-                    using (var cmdAttendance = new SqlCommand("INSERT_ATTENDANCE", Utilities.con))
-                    {
-                        cmdAttendance.CommandType = CommandType.StoredProcedure;
-                        cmdAttendance.ExecuteNonQuery();
-                        GetCurrentAttendance();
-                        ReturnAttendanceToNormal();
-                        Instances.main.barButtonItem5.Visibility = BarItemVisibility.Always;
-                        Instances.main.barButtonItem6.Visibility = BarItemVisibility.Always;
-                        Instances.main.mnuBtnAttendance.Visibility = BarItemVisibility.Never;
-                        Utilities.SuccessMessage("Attendance Successfully ended");
-                        Instances.main.Show();
-                        this.Hide();
-                    }
-                }
+                    Instances.assignees.ShowDialog();
+
             }
         }
 
@@ -269,6 +264,10 @@ namespace AMS
             if (e.KeyCode == Keys.Enter)
             {
                 barBtnTimeIn.PerformClick();
+            }
+            else if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Up)
+            {
+                gridBrethren.Focus();
             }
         }
 
@@ -315,6 +314,26 @@ namespace AMS
         private void gridAttendance_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridBrethren_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                barBtnTimeIn.PerformClick();
+                txtSearch.Focus();
+            }
+        }
+        private void gridView1_CustomDrawRowIndicator_1(object sender, RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.RowHandle >= 0)
+                e.Info.DisplayText = (e.RowHandle + 1).ToString();
+        }
+
+        private void gridView2_CustomDrawRowIndicator(object sender, RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.RowHandle >= 0)
+                e.Info.DisplayText = (e.RowHandle + 1).ToString();
         }
     }
 }

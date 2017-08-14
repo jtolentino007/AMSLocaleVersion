@@ -91,11 +91,11 @@ namespace AMS
                 {
                     TimeIn.CommandType = CommandType.StoredProcedure;
                     TimeIn.Parameters.AddWithValue("@tempGathering_ID", frmAttendanceMonitoring.GatheringID);
-                    TimeIn.Parameters.AddWithValue("@tempChurch_ID", txtChurchID.Text);
+                    //TimeIn.Parameters.AddWithValue("@tempChurch_ID", txtChurchID.Text);
                     TimeIn.Parameters.AddWithValue("@tempAttendance_Status", frmAttendanceMonitoring.Status);
                     TimeIn.Parameters.AddWithValue("@tempReal_Time", DateTime.Now.ToShortTimeString());
                     TimeIn.Parameters.AddWithValue("@is_interlocale", false);
-                    TimeIn.Parameters.AddWithValue("@remarks", "");
+                    TimeIn.Parameters.AddWithValue("@locale", "");
                     TimeIn.Parameters.AddWithValue("@temp_brethren_id", Utilities.GetLastCodeFromTable("brethren_id", "Brethren"));
                     TimeIn.ExecuteNonQuery();
                 }
@@ -108,7 +108,7 @@ namespace AMS
                 dr["tempReal_Time"] = DateTime.Now.ToShortTimeString();
                 dr["tempAttendance_Status"] = (frmAttendanceMonitoring.Status == 1 ? "TIMED IN" : "LATE");
                 dr["is_interlocale"] = "NO";
-                dr["remarks"] = "";
+                dr["locale"] = "";
                 frmAttendanceMonitoring.dtAttendance.Rows.Add(dr);
                 frmAttendanceMonitoring.dtAttendance.AcceptChanges();
 

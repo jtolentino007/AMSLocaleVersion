@@ -128,11 +128,37 @@ namespace AMS
 
         private void gridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
+            
+        }
+
+        private DataSet FillDatasetFromGrid()
+        {
+            AMSDBDataSet ds = new AMSDBDataSet();
+            int rowHandle;
+            DataRow gridRow;
+            for (int i = 0; i < gridView1.RowCount; i++)
+            {
+                rowHandle = gridView1.GetVisibleRowHandle(i);
+                if (!gridView1.IsGroupRow(rowHandle))
+                {
+                    gridRow = gridView1.GetDataRow(rowHandle);
+                    ds.Tables[0].Rows.Add(gridRow.ItemArray);
+                }
+            }
+            return ds;
+        }
+
+        private void barButtonItemGenerateReport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+        }
+
+        private void gridView1_RowCellClick_1(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
             if (e.Column.FieldName == "btnView")
             {
                 string brethren_id = gridView1.GetFocusedRowCellValue("brethren_id").ToString();
 
-                using (var cmd = new SqlCommand("GET_BRETHREN_BY_ID",Utilities.con))
+                using (var cmd = new SqlCommand("GET_BRETHREN_BY_ID", Utilities.con))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@brethren_id", brethren_id);
@@ -149,6 +175,8 @@ namespace AMS
                             reportBrethren.xrPictureBoxSketch.Image = Image.FromFile(rd["Sketch_Path"].ToString());
                         else
                             reportBrethren.xrPictureBoxSketch.Image = Properties.Resources.default_sketch;
+
+                        reportBrethren.xrLabelStatus.BackColor = Color.Transparent;
 
                         switch (rd["Status"].ToString())
                         {
@@ -203,30 +231,8 @@ namespace AMS
 
                     ReportPrintTool printTool = new ReportPrintTool(reportBrethren);
                     printTool.ShowPreview();
-                    this.Close();
                 }
             }
-        }
-
-        private DataSet FillDatasetFromGrid()
-        {
-            AMSDBDataSet ds = new AMSDBDataSet();
-            int rowHandle;
-            DataRow gridRow;
-            for (int i = 0; i < gridView1.RowCount; i++)
-            {
-                rowHandle = gridView1.GetVisibleRowHandle(i);
-                if (!gridView1.IsGroupRow(rowHandle))
-                {
-                    gridRow = gridView1.GetDataRow(rowHandle);
-                    ds.Tables[0].Rows.Add(gridRow.ItemArray);
-                }
-            }
-            return ds;
-        }
-
-        private void barButtonItemGenerateReport_ItemClick(object sender, ItemClickEventArgs e)
-        {
         }
     }
 }

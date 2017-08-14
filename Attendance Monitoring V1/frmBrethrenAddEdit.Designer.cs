@@ -84,6 +84,10 @@
             this.btnBrowse = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.chkMember = new System.Windows.Forms.CheckBox();
+            this.radioButtonMale = new System.Windows.Forms.RadioButton();
+            this.radioButtonFemale = new System.Windows.Forms.RadioButton();
+            this.btnAddCommittee = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddGroup = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtChurchID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFname.Properties)).BeginInit();
@@ -132,7 +136,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(935, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(959, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mnuBtnSave
@@ -183,10 +187,10 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 662);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 670);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(935, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(959, 23);
             // 
             // labelControl1
             // 
@@ -568,7 +572,7 @@
             // 
             // cmbGender
             // 
-            this.cmbGender.Location = new System.Drawing.Point(581, 358);
+            this.cmbGender.Location = new System.Drawing.Point(372, 474);
             this.cmbGender.MenuManager = this.ribbonControl1;
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -579,6 +583,7 @@
             this.cmbGender.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbGender.Size = new System.Drawing.Size(197, 20);
             this.cmbGender.TabIndex = 11;
+            this.cmbGender.Visible = false;
             // 
             // lueLocale
             // 
@@ -635,7 +640,7 @@
             // peBrethren
             // 
             this.peBrethren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.peBrethren.Location = new System.Drawing.Point(729, 167);
+            this.peBrethren.Location = new System.Drawing.Point(753, 167);
             this.peBrethren.MenuManager = this.ribbonControl1;
             this.peBrethren.Name = "peBrethren";
             this.peBrethren.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -646,7 +651,7 @@
             // btnBrowse
             // 
             this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowse.Location = new System.Drawing.Point(730, 259);
+            this.btnBrowse.Location = new System.Drawing.Point(754, 259);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(100, 24);
             this.btnBrowse.TabIndex = 86;
@@ -664,18 +669,70 @@
             // chkMember
             // 
             this.chkMember.AutoSize = true;
+            this.chkMember.BackColor = System.Drawing.Color.Transparent;
             this.chkMember.Location = new System.Drawing.Point(708, 577);
             this.chkMember.Name = "chkMember";
             this.chkMember.Size = new System.Drawing.Size(79, 17);
             this.chkMember.TabIndex = 92;
             this.chkMember.Text = "is Member?";
-            this.chkMember.UseVisualStyleBackColor = true;
+            this.chkMember.UseVisualStyleBackColor = false;
+            // 
+            // radioButtonMale
+            // 
+            this.radioButtonMale.AutoSize = true;
+            this.radioButtonMale.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonMale.Checked = true;
+            this.radioButtonMale.Location = new System.Drawing.Point(610, 361);
+            this.radioButtonMale.Name = "radioButtonMale";
+            this.radioButtonMale.Size = new System.Drawing.Size(47, 17);
+            this.radioButtonMale.TabIndex = 95;
+            this.radioButtonMale.TabStop = true;
+            this.radioButtonMale.Text = "Male";
+            this.radioButtonMale.UseVisualStyleBackColor = false;
+            // 
+            // radioButtonFemale
+            // 
+            this.radioButtonFemale.AutoSize = true;
+            this.radioButtonFemale.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonFemale.Location = new System.Drawing.Point(687, 361);
+            this.radioButtonFemale.Name = "radioButtonFemale";
+            this.radioButtonFemale.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonFemale.TabIndex = 96;
+            this.radioButtonFemale.TabStop = true;
+            this.radioButtonFemale.Text = "Female";
+            this.radioButtonFemale.UseVisualStyleBackColor = false;
+            // 
+            // btnAddCommittee
+            // 
+            this.btnAddCommittee.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.btnAddCommittee.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCommittee.Image")));
+            this.btnAddCommittee.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnAddCommittee.Location = new System.Drawing.Point(360, 389);
+            this.btnAddCommittee.Name = "btnAddCommittee";
+            this.btnAddCommittee.Size = new System.Drawing.Size(25, 20);
+            this.btnAddCommittee.TabIndex = 99;
+            this.btnAddCommittee.Click += new System.EventHandler(this.btnAddCommittee_Click);
+            // 
+            // btnAddGroup
+            // 
+            this.btnAddGroup.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.btnAddGroup.Image = ((System.Drawing.Image)(resources.GetObject("btnAddGroup.Image")));
+            this.btnAddGroup.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnAddGroup.Location = new System.Drawing.Point(360, 419);
+            this.btnAddGroup.Name = "btnAddGroup";
+            this.btnAddGroup.Size = new System.Drawing.Size(25, 20);
+            this.btnAddGroup.TabIndex = 100;
+            this.btnAddGroup.Click += new System.EventHandler(this.btnAddGroup_Click_1);
             // 
             // frmBrethrenAddEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 693);
+            this.ClientSize = new System.Drawing.Size(959, 693);
+            this.Controls.Add(this.btnAddGroup);
+            this.Controls.Add(this.btnAddCommittee);
+            this.Controls.Add(this.radioButtonFemale);
+            this.Controls.Add(this.radioButtonMale);
             this.Controls.Add(this.chkMember);
             this.Controls.Add(this.labelControl20);
             this.Controls.Add(this.btnBrowse);
@@ -823,5 +880,9 @@
         public DevExpress.XtraEditors.TextEdit txtLName;
         private DevExpress.XtraBars.BarButtonItem mnuBtnPrint;
         public DevExpress.XtraBars.BarButtonItem mnuBtnPrintPreview;
+        private System.Windows.Forms.RadioButton radioButtonMale;
+        private System.Windows.Forms.RadioButton radioButtonFemale;
+        private DevExpress.XtraEditors.SimpleButton btnAddCommittee;
+        private DevExpress.XtraEditors.SimpleButton btnAddGroup;
     }
 }

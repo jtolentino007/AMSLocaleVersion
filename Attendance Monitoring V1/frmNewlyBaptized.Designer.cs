@@ -60,13 +60,13 @@
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(374, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(382, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // barBtnSave
             // 
-            this.barBtnSave.Caption = "SAVE";
+            this.barBtnSave.Caption = "SAVE AND TIME IN";
             this.barBtnSave.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnSave.Glyph")));
             this.barBtnSave.Id = 1;
             this.barBtnSave.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnSave.LargeGlyph")));
@@ -100,7 +100,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 413);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(374, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(382, 23);
             // 
             // labelControl1
             // 
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 436);
+            this.ClientSize = new System.Drawing.Size(382, 436);
             this.Controls.Add(this.txtLastname);
             this.Controls.Add(this.txtMiddlename);
             this.Controls.Add(this.txtFirstname);

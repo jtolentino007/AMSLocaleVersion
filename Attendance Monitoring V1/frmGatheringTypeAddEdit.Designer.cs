@@ -77,8 +77,9 @@
             // barBtnExit
             // 
             this.barBtnExit.Caption = "CLOSE";
+            this.barBtnExit.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnExit.Glyph")));
             this.barBtnExit.Id = 2;
-            this.barBtnExit.LargeGlyph = global::AMS.Properties.Resources.error;
+            this.barBtnExit.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnExit.LargeGlyph")));
             this.barBtnExit.Name = "barBtnExit";
             this.barBtnExit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 

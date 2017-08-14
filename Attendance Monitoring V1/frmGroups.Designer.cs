@@ -82,26 +82,27 @@
             // mnuBtnAddGroup
             // 
             this.mnuBtnAddGroup.Caption = "New Group";
+            this.mnuBtnAddGroup.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAddGroup.Glyph")));
             this.mnuBtnAddGroup.Id = 2;
-            this.mnuBtnAddGroup.LargeGlyph = global::AMS.Properties.Resources.group_add;
+            this.mnuBtnAddGroup.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAddGroup.LargeGlyph")));
             this.mnuBtnAddGroup.Name = "mnuBtnAddGroup";
             this.mnuBtnAddGroup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnAddGroup_ItemClick);
             // 
             // mnuBtnEditGroup
             // 
             this.mnuBtnEditGroup.Caption = "Edit Group";
-            this.mnuBtnEditGroup.Glyph = global::AMS.Properties.Resources.edit;
+            this.mnuBtnEditGroup.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnEditGroup.Glyph")));
             this.mnuBtnEditGroup.Id = 3;
-            this.mnuBtnEditGroup.LargeGlyph = global::AMS.Properties.Resources.group_edit;
+            this.mnuBtnEditGroup.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnEditGroup.LargeGlyph")));
             this.mnuBtnEditGroup.Name = "mnuBtnEditGroup";
             this.mnuBtnEditGroup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnEditGroup_ItemClick);
             // 
             // mnuBtnDeleteGroup
             // 
             this.mnuBtnDeleteGroup.Caption = "Delete Group";
-            this.mnuBtnDeleteGroup.Glyph = global::AMS.Properties.Resources.Delete_96;
+            this.mnuBtnDeleteGroup.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnDeleteGroup.Glyph")));
             this.mnuBtnDeleteGroup.Id = 4;
-            this.mnuBtnDeleteGroup.LargeGlyph = global::AMS.Properties.Resources.group_delete;
+            this.mnuBtnDeleteGroup.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnDeleteGroup.LargeGlyph")));
             this.mnuBtnDeleteGroup.Name = "mnuBtnDeleteGroup";
             this.mnuBtnDeleteGroup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnDeleteGroup_ItemClick);
             // 

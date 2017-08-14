@@ -77,6 +77,7 @@ namespace AMS
                     odtReport.xrTableCellNoGathering.DataBindings.Add("Text", dtODT, dtODT.Columns["no_gathering"].ToString());
                     odtReport.xrTableCellNoAbsents.DataBindings.Add("Text", dtODT, dtODT.Columns["total_absences"].ToString());
                     odtReport.xrTableCellAddress.DataBindings.Add("Text", dtODT, dtODT.Columns["Address"].ToString());
+                    odtReport.Name = cmbAddress.Text + "ODT_REPORT";
                     odtReport.CreateDocument();
 
                     ReportPrintTool printTool = new ReportPrintTool(odtReport);

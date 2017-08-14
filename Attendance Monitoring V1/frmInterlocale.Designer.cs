@@ -45,23 +45,26 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtMiddlename = new DevExpress.XtraEditors.TextEdit();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblDateOfBaptism = new System.Windows.Forms.Label();
-            this.btnBaptism = new System.Windows.Forms.Button();
-            this.btnBoth = new System.Windows.Forms.Button();
-            this.btnChurchID = new System.Windows.Forms.Button();
             this.dateBaptism = new DevExpress.XtraEditors.DateEdit();
             this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.txtChurchID = new DevExpress.XtraEditors.TextEdit();
-            this.lblChurchBaptism = new System.Windows.Forms.Label();
-            this.txtLocale = new DevExpress.XtraEditors.TextEdit();
+            this.txtLocale2 = new DevExpress.XtraEditors.TextEdit();
             this.label3 = new System.Windows.Forms.Label();
             this.txtLastname = new DevExpress.XtraEditors.TextEdit();
             this.txtFirstname = new DevExpress.XtraEditors.TextEdit();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtLocale = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.LabelDoB = new System.Windows.Forms.Label();
+            this.LabelCI = new System.Windows.Forms.Label();
+            this.btnBaptism = new System.Windows.Forms.Button();
+            this.btnBoth = new System.Windows.Forms.Button();
+            this.btnChurchID = new System.Windows.Forms.Button();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gridInterlocale = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -80,9 +83,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateBaptism.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateBaptism.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtChurchID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLocale.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLocale2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastname.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstname.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLocale.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridInterlocale)).BeginInit();
@@ -114,7 +118,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(871, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(312, 143);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -166,11 +170,12 @@
             // 
             // barBtnAccept
             // 
-            this.barBtnAccept.Caption = "Accept";
+            this.barBtnAccept.Caption = "ACCEPT";
             this.barBtnAccept.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnAccept.Glyph")));
             this.barBtnAccept.Id = 7;
             this.barBtnAccept.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnAccept.LargeGlyph")));
             this.barBtnAccept.Name = "barBtnAccept";
+            this.barBtnAccept.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.barBtnAccept.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnAccept_ItemClick);
             // 
             // barButtonItem6
@@ -187,7 +192,7 @@
             // 
             // barBtnClose
             // 
-            this.barBtnClose.Caption = "Close";
+            this.barBtnClose.Caption = "CLOSE";
             this.barBtnClose.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnClose.Glyph")));
             this.barBtnClose.Id = 10;
             this.barBtnClose.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnClose.LargeGlyph")));
@@ -210,10 +215,10 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 518);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 510);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(871, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(312, 31);
             // 
             // groupControl1
             // 
@@ -222,28 +227,44 @@
             this.groupControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.groupControl1.Controls.Add(this.label6);
+            this.groupControl1.Controls.Add(this.label5);
             this.groupControl1.Controls.Add(this.txtMiddlename);
             this.groupControl1.Controls.Add(this.label4);
-            this.groupControl1.Controls.Add(this.lblDateOfBaptism);
-            this.groupControl1.Controls.Add(this.btnBaptism);
-            this.groupControl1.Controls.Add(this.btnBoth);
-            this.groupControl1.Controls.Add(this.btnChurchID);
             this.groupControl1.Controls.Add(this.dateBaptism);
             this.groupControl1.Controls.Add(this.btnClear);
             this.groupControl1.Controls.Add(this.btnSave);
             this.groupControl1.Controls.Add(this.txtChurchID);
-            this.groupControl1.Controls.Add(this.lblChurchBaptism);
-            this.groupControl1.Controls.Add(this.txtLocale);
+            this.groupControl1.Controls.Add(this.txtLocale2);
             this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.txtLastname);
             this.groupControl1.Controls.Add(this.txtFirstname);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
+            this.groupControl1.Controls.Add(this.txtLocale);
             this.groupControl1.Location = new System.Drawing.Point(12, 148);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(287, 355);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Add New Interlocale Attendee";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(16, 244);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Date of Baptism :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Church ID :";
             // 
             // txtMiddlename
             // 
@@ -262,50 +283,10 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Middle name : ";
             // 
-            // lblDateOfBaptism
-            // 
-            this.lblDateOfBaptism.AutoSize = true;
-            this.lblDateOfBaptism.Location = new System.Drawing.Point(21, 242);
-            this.lblDateOfBaptism.Name = "lblDateOfBaptism";
-            this.lblDateOfBaptism.Size = new System.Drawing.Size(83, 13);
-            this.lblDateOfBaptism.TabIndex = 11;
-            this.lblDateOfBaptism.Text = "Date of Baptism";
-            this.lblDateOfBaptism.Visible = false;
-            // 
-            // btnBaptism
-            // 
-            this.btnBaptism.Location = new System.Drawing.Point(183, 52);
-            this.btnBaptism.Name = "btnBaptism";
-            this.btnBaptism.Size = new System.Drawing.Size(90, 23);
-            this.btnBaptism.TabIndex = 10;
-            this.btnBaptism.Text = "BAPTISM DATE";
-            this.btnBaptism.UseVisualStyleBackColor = true;
-            this.btnBaptism.Click += new System.EventHandler(this.btnBaptism_Click);
-            // 
-            // btnBoth
-            // 
-            this.btnBoth.Location = new System.Drawing.Point(103, 52);
-            this.btnBoth.Name = "btnBoth";
-            this.btnBoth.Size = new System.Drawing.Size(79, 23);
-            this.btnBoth.TabIndex = 9;
-            this.btnBoth.Text = "BOTH";
-            this.btnBoth.UseVisualStyleBackColor = true;
-            this.btnBoth.Click += new System.EventHandler(this.btnBoth_Click);
-            // 
-            // btnChurchID
-            // 
-            this.btnChurchID.Location = new System.Drawing.Point(20, 52);
-            this.btnChurchID.Name = "btnChurchID";
-            this.btnChurchID.Size = new System.Drawing.Size(82, 23);
-            this.btnChurchID.TabIndex = 8;
-            this.btnChurchID.Text = "CHURCH ID";
-            this.btnChurchID.UseVisualStyleBackColor = true;
-            this.btnChurchID.Click += new System.EventHandler(this.btnChurchID_Click);
-            // 
             // dateBaptism
             // 
             this.dateBaptism.EditValue = null;
-            this.dateBaptism.Location = new System.Drawing.Point(20, 54);
+            this.dateBaptism.Location = new System.Drawing.Point(19, 262);
             this.dateBaptism.MenuManager = this.ribbonControl1;
             this.dateBaptism.Name = "dateBaptism";
             this.dateBaptism.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -314,11 +295,10 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateBaptism.Size = new System.Drawing.Size(253, 20);
             this.dateBaptism.TabIndex = 7;
-            this.dateBaptism.Visible = false;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(149, 287);
+            this.btnClear.Location = new System.Drawing.Point(149, 294);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(103, 23);
             this.btnClear.TabIndex = 5;
@@ -327,7 +307,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(40, 287);
+            this.btnSave.Location = new System.Drawing.Point(40, 294);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(103, 23);
             this.btnSave.TabIndex = 4;
@@ -341,24 +321,15 @@
             this.txtChurchID.Name = "txtChurchID";
             this.txtChurchID.Size = new System.Drawing.Size(253, 20);
             this.txtChurchID.TabIndex = 0;
-            this.txtChurchID.Visible = false;
             // 
-            // lblChurchBaptism
+            // txtLocale2
             // 
-            this.lblChurchBaptism.AutoSize = true;
-            this.lblChurchBaptism.Location = new System.Drawing.Point(17, 37);
-            this.lblChurchBaptism.Name = "lblChurchBaptism";
-            this.lblChurchBaptism.Size = new System.Drawing.Size(62, 13);
-            this.lblChurchBaptism.TabIndex = 6;
-            this.lblChurchBaptism.Text = "Church ID :";
-            // 
-            // txtLocale
-            // 
-            this.txtLocale.Location = new System.Drawing.Point(19, 219);
-            this.txtLocale.MenuManager = this.ribbonControl1;
-            this.txtLocale.Name = "txtLocale";
-            this.txtLocale.Size = new System.Drawing.Size(253, 20);
-            this.txtLocale.TabIndex = 3;
+            this.txtLocale2.Location = new System.Drawing.Point(19, 323);
+            this.txtLocale2.MenuManager = this.ribbonControl1;
+            this.txtLocale2.Name = "txtLocale2";
+            this.txtLocale2.Size = new System.Drawing.Size(253, 20);
+            this.txtLocale2.TabIndex = 3;
+            this.txtLocale2.Visible = false;
             // 
             // label3
             // 
@@ -403,6 +374,70 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "First name : ";
             // 
+            // txtLocale
+            // 
+            this.txtLocale.Location = new System.Drawing.Point(19, 219);
+            this.txtLocale.MenuManager = this.ribbonControl1;
+            this.txtLocale.Name = "txtLocale";
+            this.txtLocale.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtLocale.Properties.LookAndFeel.SkinMaskColor = System.Drawing.Color.DodgerBlue;
+            this.txtLocale.Properties.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.White;
+            this.txtLocale.Size = new System.Drawing.Size(254, 20);
+            this.txtLocale.TabIndex = 16;
+            // 
+            // LabelDoB
+            // 
+            this.LabelDoB.AutoSize = true;
+            this.LabelDoB.Location = new System.Drawing.Point(191, 93);
+            this.LabelDoB.Name = "LabelDoB";
+            this.LabelDoB.Size = new System.Drawing.Size(83, 13);
+            this.LabelDoB.TabIndex = 11;
+            this.LabelDoB.Text = "Date of Baptism";
+            this.LabelDoB.Visible = false;
+            // 
+            // LabelCI
+            // 
+            this.LabelCI.AutoSize = true;
+            this.LabelCI.Location = new System.Drawing.Point(191, 80);
+            this.LabelCI.Name = "LabelCI";
+            this.LabelCI.Size = new System.Drawing.Size(62, 13);
+            this.LabelCI.TabIndex = 6;
+            this.LabelCI.Text = "Church ID :";
+            // 
+            // btnBaptism
+            // 
+            this.btnBaptism.Location = new System.Drawing.Point(468, 80);
+            this.btnBaptism.Name = "btnBaptism";
+            this.btnBaptism.Size = new System.Drawing.Size(90, 23);
+            this.btnBaptism.TabIndex = 10;
+            this.btnBaptism.Text = "BAPTISM DATE";
+            this.btnBaptism.UseVisualStyleBackColor = true;
+            this.btnBaptism.Visible = false;
+            this.btnBaptism.Click += new System.EventHandler(this.btnBaptism_Click);
+            // 
+            // btnBoth
+            // 
+            this.btnBoth.Location = new System.Drawing.Point(388, 80);
+            this.btnBoth.Name = "btnBoth";
+            this.btnBoth.Size = new System.Drawing.Size(79, 23);
+            this.btnBoth.TabIndex = 9;
+            this.btnBoth.Text = "BOTH";
+            this.btnBoth.UseVisualStyleBackColor = true;
+            this.btnBoth.Visible = false;
+            this.btnBoth.Click += new System.EventHandler(this.btnBoth_Click);
+            // 
+            // btnChurchID
+            // 
+            this.btnChurchID.Location = new System.Drawing.Point(305, 80);
+            this.btnChurchID.Name = "btnChurchID";
+            this.btnChurchID.Size = new System.Drawing.Size(82, 23);
+            this.btnChurchID.TabIndex = 8;
+            this.btnChurchID.Text = "CHURCH ID";
+            this.btnChurchID.UseVisualStyleBackColor = true;
+            this.btnChurchID.Visible = false;
+            this.btnChurchID.Click += new System.EventHandler(this.btnChurchID_Click);
+            // 
             // groupControl2
             // 
             this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -414,18 +449,19 @@
             this.groupControl2.Controls.Add(this.gridInterlocale);
             this.groupControl2.Location = new System.Drawing.Point(305, 148);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(554, 355);
+            this.groupControl2.Size = new System.Drawing.Size(0, 355);
             this.groupControl2.TabIndex = 4;
             this.groupControl2.Text = "Select Interlocale Attendee";
+            this.groupControl2.Visible = false;
             // 
             // gridInterlocale
             // 
             this.gridInterlocale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridInterlocale.Location = new System.Drawing.Point(2, 21);
+            this.gridInterlocale.Location = new System.Drawing.Point(1, 20);
             this.gridInterlocale.MainView = this.gridView1;
             this.gridInterlocale.MenuManager = this.ribbonControl1;
             this.gridInterlocale.Name = "gridInterlocale";
-            this.gridInterlocale.Size = new System.Drawing.Size(550, 332);
+            this.gridInterlocale.Size = new System.Drawing.Size(0, 333);
             this.gridInterlocale.TabIndex = 0;
             this.gridInterlocale.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -506,10 +542,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(871, 541);
+            this.ClientSize = new System.Drawing.Size(312, 541);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.ribbonStatusBar1);
+            this.Controls.Add(this.LabelDoB);
             this.Controls.Add(this.groupControl1);
+            this.Controls.Add(this.btnBaptism);
+            this.Controls.Add(this.btnBoth);
+            this.Controls.Add(this.btnChurchID);
+            this.Controls.Add(this.LabelCI);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "frmInterlocale";
             this.Ribbon = this.ribbonControl1;
@@ -526,9 +567,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateBaptism.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateBaptism.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtChurchID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLocale.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLocale2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastname.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstname.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLocale.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridInterlocale)).EndInit();
@@ -560,10 +602,10 @@
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.TextEdit txtFirstname;
         private DevExpress.XtraEditors.TextEdit txtLastname;
-        private DevExpress.XtraEditors.TextEdit txtLocale;
+        private DevExpress.XtraEditors.TextEdit txtLocale2;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.TextEdit txtChurchID;
-        private System.Windows.Forms.Label lblChurchBaptism;
+        private System.Windows.Forms.Label LabelCI;
         private DevExpress.XtraEditors.SimpleButton btnClear;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraGrid.GridControl gridInterlocale;
@@ -578,10 +620,13 @@
         private System.Windows.Forms.Button btnBaptism;
         private System.Windows.Forms.Button btnBoth;
         private System.Windows.Forms.Button btnChurchID;
-        private System.Windows.Forms.Label lblDateOfBaptism;
+        private System.Windows.Forms.Label LabelDoB;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraEditors.TextEdit txtMiddlename;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private DevExpress.XtraEditors.ComboBoxEdit txtLocale;
     }
 }

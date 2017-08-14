@@ -104,7 +104,7 @@
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowQatLocationSelector = false;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(788, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(983, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -113,7 +113,7 @@
             this.mnuBtnClose.Caption = "CLOSE";
             this.mnuBtnClose.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnClose.Glyph")));
             this.mnuBtnClose.Id = 1;
-            this.mnuBtnClose.LargeGlyph = global::AMS.Properties.Resources.error;
+            this.mnuBtnClose.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnClose.LargeGlyph")));
             this.mnuBtnClose.Name = "mnuBtnClose";
             this.mnuBtnClose.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnClose_ItemClick);
             // 
@@ -128,25 +128,25 @@
             this.mBtnAddBrethren.Caption = "New Brethren";
             this.mBtnAddBrethren.Glyph = ((System.Drawing.Image)(resources.GetObject("mBtnAddBrethren.Glyph")));
             this.mBtnAddBrethren.Id = 3;
-            this.mBtnAddBrethren.LargeGlyph = global::AMS.Properties.Resources.user_add;
+            this.mBtnAddBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mBtnAddBrethren.LargeGlyph")));
             this.mBtnAddBrethren.Name = "mBtnAddBrethren";
             this.mBtnAddBrethren.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mBtnAddBrethren_ItemClick);
             // 
             // mnuBtnEditBrethren
             // 
             this.mnuBtnEditBrethren.Caption = "Edit Brethren";
-            this.mnuBtnEditBrethren.Glyph = global::AMS.Properties.Resources.user_edit;
+            this.mnuBtnEditBrethren.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnEditBrethren.Glyph")));
             this.mnuBtnEditBrethren.Id = 4;
-            this.mnuBtnEditBrethren.LargeGlyph = global::AMS.Properties.Resources.user_edit;
+            this.mnuBtnEditBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnEditBrethren.LargeGlyph")));
             this.mnuBtnEditBrethren.Name = "mnuBtnEditBrethren";
             this.mnuBtnEditBrethren.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnEditBrethren_ItemClick);
             // 
             // mnuBtnRemoveBrethren
             // 
             this.mnuBtnRemoveBrethren.Caption = "Remove Brethren";
-            this.mnuBtnRemoveBrethren.Glyph = global::AMS.Properties.Resources.user_delete;
+            this.mnuBtnRemoveBrethren.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnRemoveBrethren.Glyph")));
             this.mnuBtnRemoveBrethren.Id = 5;
-            this.mnuBtnRemoveBrethren.LargeGlyph = global::AMS.Properties.Resources.user_delete;
+            this.mnuBtnRemoveBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnRemoveBrethren.LargeGlyph")));
             this.mnuBtnRemoveBrethren.Name = "mnuBtnRemoveBrethren";
             this.mnuBtnRemoveBrethren.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnRemoveBrethren_ItemClick);
             // 
@@ -186,22 +186,22 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 522);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 578);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(788, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(983, 23);
             // 
             // gridBrethren
             // 
             this.gridBrethren.Cursor = System.Windows.Forms.Cursors.Default;
             this.gridBrethren.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBrethren.Location = new System.Drawing.Point(0, 143);
+            this.gridBrethren.Location = new System.Drawing.Point(0, 147);
             this.gridBrethren.MainView = this.gridView1;
             this.gridBrethren.MenuManager = this.ribbonControl1;
             this.gridBrethren.Name = "gridBrethren";
             this.gridBrethren.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnViewDetails});
-            this.gridBrethren.Size = new System.Drawing.Size(788, 379);
+            this.gridBrethren.Size = new System.Drawing.Size(983, 431);
             this.gridBrethren.TabIndex = 6;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -241,10 +241,7 @@
             this.gridView1.GridControl = this.gridBrethren;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsSelection.MultiSelect = true;
-            this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
+            this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick_1);
             // 
             // gridColumn24
             // 
@@ -260,8 +257,8 @@
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
-            this.gridColumn1.Width = 150;
+            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 76;
             // 
             // Name
             // 
@@ -270,8 +267,8 @@
             this.Name.Name = "Name";
             this.Name.OptionsColumn.AllowEdit = false;
             this.Name.Visible = true;
-            this.Name.VisibleIndex = 2;
-            this.Name.Width = 179;
+            this.Name.VisibleIndex = 1;
+            this.Name.Width = 91;
             // 
             // gridColumn2
             // 
@@ -301,8 +298,8 @@
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowEdit = false;
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 3;
-            this.gridColumn5.Width = 153;
+            this.gridColumn5.VisibleIndex = 2;
+            this.gridColumn5.Width = 86;
             // 
             // gridColumn6
             // 
@@ -318,8 +315,8 @@
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowEdit = false;
             this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 4;
-            this.gridColumn7.Width = 91;
+            this.gridColumn7.VisibleIndex = 3;
+            this.gridColumn7.Width = 77;
             // 
             // gridColumn8
             // 
@@ -368,14 +365,18 @@
             this.gridColumn14.Caption = "Employment";
             this.gridColumn14.FieldName = "Employment";
             this.gridColumn14.Name = "gridColumn14";
-            this.gridColumn14.Width = 197;
+            this.gridColumn14.Visible = true;
+            this.gridColumn14.VisibleIndex = 4;
+            this.gridColumn14.Width = 93;
             // 
             // gridColumn15
             // 
             this.gridColumn15.Caption = "Contact #";
             this.gridColumn15.FieldName = "Phone_no";
             this.gridColumn15.Name = "gridColumn15";
-            this.gridColumn15.Width = 203;
+            this.gridColumn15.Visible = true;
+            this.gridColumn15.VisibleIndex = 5;
+            this.gridColumn15.Width = 96;
             // 
             // gridColumn16
             // 
@@ -404,8 +405,8 @@
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.OptionsColumn.AllowEdit = false;
             this.gridColumn18.Visible = true;
-            this.gridColumn18.VisibleIndex = 5;
-            this.gridColumn18.Width = 119;
+            this.gridColumn18.VisibleIndex = 6;
+            this.gridColumn18.Width = 56;
             // 
             // gridColumn19
             // 
@@ -419,14 +420,18 @@
             this.gridColumn20.Caption = "Group";
             this.gridColumn20.FieldName = "Group_name";
             this.gridColumn20.Name = "gridColumn20";
-            this.gridColumn20.Width = 103;
+            this.gridColumn20.Visible = true;
+            this.gridColumn20.VisibleIndex = 7;
+            this.gridColumn20.Width = 48;
             // 
             // gridColumn21
             // 
             this.gridColumn21.Caption = "Committees";
             this.gridColumn21.FieldName = "Committee_Names";
             this.gridColumn21.Name = "gridColumn21";
-            this.gridColumn21.Width = 225;
+            this.gridColumn21.Visible = true;
+            this.gridColumn21.VisibleIndex = 8;
+            this.gridColumn21.Width = 106;
             // 
             // gridColumn22
             // 
@@ -456,12 +461,15 @@
             // 
             // gridButtonView
             // 
+            this.gridButtonView.AppearanceCell.Options.UseTextOptions = true;
+            this.gridButtonView.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridButtonView.Caption = "Action";
             this.gridButtonView.ColumnEdit = this.btnViewDetails;
             this.gridButtonView.FieldName = "btnView";
             this.gridButtonView.Name = "gridButtonView";
             this.gridButtonView.Visible = true;
-            this.gridButtonView.VisibleIndex = 6;
-            this.gridButtonView.Width = 100;
+            this.gridButtonView.VisibleIndex = 9;
+            this.gridButtonView.Width = 54;
             // 
             // btnViewDetails
             // 
@@ -473,7 +481,7 @@
             this.btnViewDetails.Appearance.Options.UseForeColor = true;
             this.btnViewDetails.AutoHeight = false;
             this.btnViewDetails.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "View Details", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleLeft, global::AMS.Properties.Resources.View_File_16, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "View Details", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleLeft, ((System.Drawing.Image)(resources.GetObject("btnViewDetails.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.btnViewDetails.Name = "btnViewDetails";
             this.btnViewDetails.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -481,7 +489,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 553);
+            this.ClientSize = new System.Drawing.Size(983, 601);
             this.Controls.Add(this.gridBrethren);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
@@ -513,8 +521,13 @@
         private DevExpress.XtraBars.BarButtonItem mnuBtnEditBrethren;
         private DevExpress.XtraBars.BarButtonItem mnuBtnRemoveBrethren;
         private DevExpress.XtraGrid.GridControl gridBrethren;
+        private DevExpress.XtraBars.BarButtonItem mnuBtnSearch;
+        public DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnViewDetails;
+        private DevExpress.XtraReports.ReportGeneration.ReportGenerator reportGenerator1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn Name;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
@@ -530,6 +543,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn27;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
@@ -537,14 +551,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn21;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
-        private DevExpress.XtraBars.BarButtonItem mnuBtnSearch;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn25;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn26;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn27;
-        private DevExpress.XtraGrid.Columns.GridColumn Name;
         private DevExpress.XtraGrid.Columns.GridColumn gridButtonView;
-        public DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnViewDetails;
-        private DevExpress.XtraReports.ReportGeneration.ReportGenerator reportGenerator1;
     }
 }

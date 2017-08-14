@@ -20,7 +20,8 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\jdevb\Documents\DeployedAMS\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -32,8 +33,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -59,11 +60,23 @@
     <StartupObject>AMS.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>18816620_1528985750453720_649529771_n %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>AMS-LOGO %281%29.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <Win32Resource>
     </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>02A4081173A57B3C84424F63F30C9092C8A69AAA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Attendance Monitoring V1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -155,14 +168,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AMSDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Custom_report.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="frmConfiguration.cs">
+    <Compile Include="Classes\Defaults.cs" />
+    <Compile Include="frmAdvanceReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConfiguration.Designer.cs">
-      <DependentUpon>frmConfiguration.cs</DependentUpon>
+    <Compile Include="frmAdvanceReport.Designer.cs">
+      <DependentUpon>frmAdvanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssignees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssignees.Designer.cs">
+      <DependentUpon>frmAssignees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGatheringSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGatheringSelection.Designer.cs">
+      <DependentUpon>frmGatheringSelection.cs</DependentUpon>
     </Compile>
     <Compile Include="frmODTReport.cs">
       <SubType>Form</SubType>
@@ -419,14 +442,17 @@
     <Compile Include="XtraReportInterlocale.Designer.cs">
       <DependentUpon>XtraReportInterlocale.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Custom_report.resx">
-      <DependentUpon>Custom_report.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdvanceReport.resx">
+      <DependentUpon>frmAdvanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAssignees.resx">
+      <DependentUpon>frmAssignees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAttendanceMonitoring.resx">
       <DependentUpon>frmAttendanceMonitoring.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConfiguration.resx">
-      <DependentUpon>frmConfiguration.cs</DependentUpon>
+    <EmbeddedResource Include="frmGatheringSelection.resx">
+      <DependentUpon>frmGatheringSelection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmODTReport.resx">
       <DependentUpon>frmODTReport.cs</DependentUpon>
@@ -574,6 +600,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Attendance Monitoring V1_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -775,6 +802,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="18816620_1528985750453720_649529771_n %281%29.ico" />
+    <Content Include="AMS-LOGO %281%29.ico" />
     <None Include="Resources\icons8-Print-96.png" />
   </ItemGroup>
   <ItemGroup>

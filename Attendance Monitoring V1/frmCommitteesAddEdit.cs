@@ -2,6 +2,7 @@
 using AMS.Classes;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace AMS
 {
@@ -17,10 +18,11 @@ namespace AMS
         private void GenerateDeptCode()
         {
             string CommitteeCode = Utilities.GetLastCodeFromTable("committee_code", "Committee");
+
             if (CommitteeCode == null)
-                txtCommitteeCode.Text = "DEPT-1000";
+                txtCommitteeCode.Text = "COMM-1000";
             else
-                txtCommitteeCode.Text = "DEPT-" + (Convert.ToInt16(CommitteeCode.Replace("DEPT-", "")) + 1);
+                txtCommitteeCode.Text = "COMM-" + (Convert.ToInt16(CommitteeCode.Replace("COMM-", "")) + 1);
         }
 
         private void mnuBtnClose_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -88,7 +90,7 @@ namespace AMS
 
         private void frmCommitteesAddEdit_Load(object sender, EventArgs e)
         {
-            if (Utilities.FMode == "Add")
+            if (Utilities.FMode == "Add" || Utilities.SFMode == "Add")
             {
                 ClearControls();
                 GenerateDeptCode();
@@ -102,7 +104,7 @@ namespace AMS
         {
             if (IsValid())
             {
-                if(Utilities.FMode == "Add")
+                if(Utilities.FMode == "Add" || Utilities.SFMode == "Add") 
                 {
                     if (CommitteeInsert())
                     {

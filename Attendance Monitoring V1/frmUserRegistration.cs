@@ -21,14 +21,14 @@ namespace AMS
         {
             if (Utilities.FMode == "Add")
             {
-                frmLogin login = new frmLogin();
-                login.Show();
+                Instances.login.Show();
                 this.Hide();
             }
             else
             {
                 this.Hide();
             }
+            Instances.login.InitializeLogin();
         }
 
         private void ClearFields()

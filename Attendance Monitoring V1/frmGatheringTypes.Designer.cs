@@ -72,7 +72,7 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(844, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(844, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -87,25 +87,27 @@
             // barBtnAddGatheringType
             // 
             this.barBtnAddGatheringType.Caption = "New Gathering";
+            this.barBtnAddGatheringType.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnAddGatheringType.Glyph")));
             this.barBtnAddGatheringType.Id = 2;
-            this.barBtnAddGatheringType.LargeGlyph = global::AMS.Properties.Resources.Add_Gathering;
+            this.barBtnAddGatheringType.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnAddGatheringType.LargeGlyph")));
             this.barBtnAddGatheringType.Name = "barBtnAddGatheringType";
             this.barBtnAddGatheringType.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnAddGatheringType_ItemClick);
             // 
             // barBtnEditGatheringType
             // 
             this.barBtnEditGatheringType.Caption = "Edit Gathering";
-            this.barBtnEditGatheringType.Glyph = global::AMS.Properties.Resources.Edit_Gathering;
+            this.barBtnEditGatheringType.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnEditGatheringType.Glyph")));
             this.barBtnEditGatheringType.Id = 3;
-            this.barBtnEditGatheringType.LargeGlyph = global::AMS.Properties.Resources.Edit_Gathering;
+            this.barBtnEditGatheringType.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnEditGatheringType.LargeGlyph")));
             this.barBtnEditGatheringType.Name = "barBtnEditGatheringType";
             this.barBtnEditGatheringType.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnEditGatheringType_ItemClick);
             // 
             // barBtnDeleteGatheringType
             // 
             this.barBtnDeleteGatheringType.Caption = "Delete Gathering";
+            this.barBtnDeleteGatheringType.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnDeleteGatheringType.Glyph")));
             this.barBtnDeleteGatheringType.Id = 4;
-            this.barBtnDeleteGatheringType.LargeGlyph = global::AMS.Properties.Resources.Delete_Gathering;
+            this.barBtnDeleteGatheringType.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnDeleteGatheringType.LargeGlyph")));
             this.barBtnDeleteGatheringType.Name = "barBtnDeleteGatheringType";
             this.barBtnDeleteGatheringType.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDeleteGatheringType_ItemClick);
             // 
@@ -150,20 +152,20 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 550);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 558);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(844, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(844, 23);
             // 
             // gridGatheringType
             // 
             this.gridGatheringType.Cursor = System.Windows.Forms.Cursors.Default;
             this.gridGatheringType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridGatheringType.Location = new System.Drawing.Point(0, 143);
+            this.gridGatheringType.Location = new System.Drawing.Point(0, 147);
             this.gridGatheringType.MainView = this.gridView1;
             this.gridGatheringType.MenuManager = this.ribbonControl1;
             this.gridGatheringType.Name = "gridGatheringType";
-            this.gridGatheringType.Size = new System.Drawing.Size(844, 407);
+            this.gridGatheringType.Size = new System.Drawing.Size(844, 411);
             this.gridGatheringType.TabIndex = 5;
             this.gridGatheringType.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});

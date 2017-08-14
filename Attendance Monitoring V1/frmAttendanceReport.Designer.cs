@@ -39,6 +39,7 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.dtDateGathering = new DevExpress.XtraEditors.DateEdit();
             this.cmbGatheringType = new DevExpress.XtraEditors.LookUpEdit();
+            this.btnViewGatheringList = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDateGathering.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDateGathering.Properties)).BeginInit();
@@ -61,7 +62,7 @@
             this.ribbonControl1.ShowCategoryInCaption = false;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(371, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(368, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -98,10 +99,10 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 293);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 330);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(371, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(368, 23);
             // 
             // labelControl1
             // 
@@ -150,11 +151,23 @@
             this.cmbGatheringType.Size = new System.Drawing.Size(291, 20);
             this.cmbGatheringType.TabIndex = 4;
             // 
+            // btnViewGatheringList
+            // 
+            this.btnViewGatheringList.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.btnViewGatheringList.Appearance.Options.UseBackColor = true;
+            this.btnViewGatheringList.Location = new System.Drawing.Point(33, 264);
+            this.btnViewGatheringList.Name = "btnViewGatheringList";
+            this.btnViewGatheringList.Size = new System.Drawing.Size(291, 23);
+            this.btnViewGatheringList.TabIndex = 8;
+            this.btnViewGatheringList.Text = "Choose among the list";
+            this.btnViewGatheringList.Click += new System.EventHandler(this.btnViewGatheringList_Click);
+            // 
             // frmAttendanceReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 316);
+            this.ClientSize = new System.Drawing.Size(368, 353);
+            this.Controls.Add(this.btnViewGatheringList);
             this.Controls.Add(this.dtDateGathering);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
@@ -167,7 +180,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.StatusBar = this.ribbonStatusBar1;
-            this.Text = "Generate Gathering Report";
+            this.Text = "Gathering Report";
             this.Load += new System.EventHandler(this.frmAttendanceReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDateGathering.Properties.CalendarTimeProperties)).EndInit();
@@ -190,5 +203,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.DateEdit dtDateGathering;
         private DevExpress.XtraEditors.LookUpEdit cmbGatheringType;
+        private DevExpress.XtraEditors.SimpleButton btnViewGatheringList;
     }
 }

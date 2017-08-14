@@ -40,6 +40,7 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtSearch = new DevExpress.XtraEditors.TextEdit();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.mnuBtnClose = new DevExpress.XtraBars.BarButtonItem();
@@ -85,6 +86,7 @@
             this.reportGenerator1 = new DevExpress.XtraReports.ReportGeneration.ReportGenerator(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBrethren)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
@@ -113,13 +115,14 @@
             this.gridBrethren.TabIndex = 24;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
+            this.gridBrethren.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridBrethren_KeyDown);
             // 
             // gridView2
             // 
             this.gridView2.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridView2.Appearance.FocusedRow.Options.UseFont = true;
             this.gridView2.Appearance.HeaderPanel.BackColor = System.Drawing.Color.Transparent;
-            this.gridView2.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView2.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridView2.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.gridView2.Appearance.HeaderPanel.Options.UseFont = true;
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -127,7 +130,9 @@
             this.gridColumn4,
             this.gridColumn5,
             this.gridColumn8,
-            this.gridColumn14});
+            this.gridColumn14,
+            this.gridColumn17,
+            this.gridColumn18});
             this.gridView2.GridControl = this.gridBrethren;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsBehavior.Editable = false;
@@ -137,6 +142,7 @@
             this.gridView2.OptionsFind.ShowCloseButton = false;
             this.gridView2.OptionsFind.ShowFindButton = false;
             this.gridView2.OptionsView.ShowGroupPanel = false;
+            this.gridView2.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.gridView2_CustomDrawRowIndicator);
             // 
             // gridColumn6
             // 
@@ -146,23 +152,23 @@
             // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "Church ID";
+            this.gridColumn4.Caption = "CHURCH ID";
             this.gridColumn4.FieldName = "Church_Id";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 0;
-            this.gridColumn4.Width = 120;
+            this.gridColumn4.Width = 93;
             // 
             // gridColumn5
             // 
             this.gridColumn5.AppearanceHeader.BackColor = System.Drawing.Color.Navy;
             this.gridColumn5.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn5.Caption = "Brethren name";
+            this.gridColumn5.Caption = "NAME";
             this.gridColumn5.FieldName = "BrethrenName";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 1;
-            this.gridColumn5.Width = 241;
+            this.gridColumn5.Width = 211;
             // 
             // gridColumn8
             // 
@@ -175,6 +181,15 @@
             this.gridColumn14.Caption = "Brethren_ID";
             this.gridColumn14.FieldName = "brethren_id";
             this.gridColumn14.Name = "gridColumn14";
+            // 
+            // gridColumn17
+            // 
+            this.gridColumn17.Caption = "LOCALE";
+            this.gridColumn17.FieldName = "locale";
+            this.gridColumn17.Name = "gridColumn17";
+            this.gridColumn17.Visible = true;
+            this.gridColumn17.VisibleIndex = 2;
+            this.gridColumn17.Width = 150;
             // 
             // txtSearch
             // 
@@ -229,6 +244,7 @@
             // mnuBtnClose
             // 
             this.mnuBtnClose.Caption = "CLOSE";
+            this.mnuBtnClose.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnClose.Glyph")));
             this.mnuBtnClose.Id = 1;
             this.mnuBtnClose.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnClose.LargeGlyph")));
             this.mnuBtnClose.Name = "mnuBtnClose";
@@ -428,7 +444,7 @@
             this.gridView1.Appearance.FocusedRow.Options.UseFont = true;
             this.gridView1.Appearance.FocusedRow.Options.UseForeColor = true;
             this.gridView1.Appearance.HeaderPanel.BackColor = System.Drawing.Color.White;
-            this.gridView1.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView1.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridView1.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
             this.gridView1.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.gridView1.Appearance.HeaderPanel.Options.UseFont = true;
@@ -442,10 +458,12 @@
             this.gridColumn7,
             this.gridColumn13});
             this.gridView1.GridControl = this.gridAttendance;
+            this.gridView1.IndicatorWidth = 30;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsSelection.MultiSelect = true;
             this.gridView1.OptionsSelection.UseIndicatorForSelection = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.gridView1_CustomDrawRowIndicator_1);
             // 
             // gridColumn16
             // 
@@ -455,7 +473,7 @@
             // 
             // gridColumn15
             // 
-            this.gridColumn15.Caption = "Church ID";
+            this.gridColumn15.Caption = "CHURCH ID";
             this.gridColumn15.FieldName = "tempChurch_ID";
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.OptionsColumn.AllowEdit = false;
@@ -464,7 +482,7 @@
             // 
             // gridColumn1
             // 
-            this.gridColumn1.Caption = "Name";
+            this.gridColumn1.Caption = "NAME";
             this.gridColumn1.FieldName = "Name";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
@@ -482,7 +500,7 @@
             // 
             // gridColumn3
             // 
-            this.gridColumn3.Caption = "Status";
+            this.gridColumn3.Caption = "STATUS";
             this.gridColumn3.FieldName = "tempAttendance_Status";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
@@ -491,7 +509,7 @@
             // 
             // gridColumn7
             // 
-            this.gridColumn7.Caption = "Interlocale";
+            this.gridColumn7.Caption = "INTERLOCALE";
             this.gridColumn7.FieldName = "is_interlocale";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowEdit = false;
@@ -500,9 +518,9 @@
             // 
             // gridColumn13
             // 
-            this.gridColumn13.Caption = "Remarks";
+            this.gridColumn13.Caption = "LOCALE";
             this.gridColumn13.ColumnEdit = this.repositoryItemTextEdit1;
-            this.gridColumn13.FieldName = "remarks";
+            this.gridColumn13.FieldName = "locale";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 4;
@@ -602,7 +620,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(475, 23);
             this.label1.TabIndex = 40;
-            this.label1.Text = "Brethren Masterlist";
+            this.label1.Text = "Brethren/Interlocale Masterlist";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -617,6 +635,12 @@
             this.label2.TabIndex = 41;
             this.label2.Text = "List of Attended Brethren";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gridColumn18
+            // 
+            this.gridColumn18.Caption = "Interlocale";
+            this.gridColumn18.FieldName = "is_interlocale";
+            this.gridColumn18.Name = "gridColumn18";
             // 
             // frmAttendanceMonitoring
             // 
@@ -712,5 +736,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
     }
 }

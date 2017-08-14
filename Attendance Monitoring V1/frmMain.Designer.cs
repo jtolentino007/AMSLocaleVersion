@@ -73,6 +73,8 @@
             this.ribbonPageCategory2 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonAdmin = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonRef = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonTransact = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -80,8 +82,6 @@
             this.ribbonReport = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonAdmin = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -201,8 +201,9 @@
             // mnuBtnBrethren
             // 
             this.mnuBtnBrethren.Caption = "Brethren Masterlist";
+            this.mnuBtnBrethren.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnBrethren.Glyph")));
             this.mnuBtnBrethren.Id = 3;
-            this.mnuBtnBrethren.LargeGlyph = global::AMS.Properties.Resources.icons8_User_Menu_Male_48;
+            this.mnuBtnBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnBrethren.LargeGlyph")));
             this.mnuBtnBrethren.Name = "mnuBtnBrethren";
             this.mnuBtnBrethren.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnBrethren_ItemClick);
             // 
@@ -459,8 +460,9 @@
             // barButtonItem6
             // 
             this.barButtonItem6.Caption = "View/Edit List of Gatherings";
+            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
             this.barButtonItem6.Id = 248;
-            this.barButtonItem6.LargeGlyph = global::AMS.Properties.Resources.Year_View_Filled_50;
+            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
             this.barButtonItem6.Name = "barButtonItem6";
             this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
@@ -492,6 +494,22 @@
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "Tasks";
+            // 
+            // ribbonAdmin
+            // 
+            this.ribbonAdmin.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonAdmin.Appearance.Options.UseFont = true;
+            this.ribbonAdmin.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup5});
+            this.ribbonAdmin.Name = "ribbonAdmin";
+            this.ribbonAdmin.Text = "ADMINISTRATION";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.barBtnUsers);
+            this.ribbonPageGroup5.ItemLinks.Add(this.barBtnDashboardSettings);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            this.ribbonPageGroup5.ShowCaptionButton = false;
             // 
             // ribbonRef
             // 
@@ -558,22 +576,6 @@
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.ShowCaptionButton = false;
             this.ribbonPageGroup6.Text = "Brethren Related Reports";
-            // 
-            // ribbonAdmin
-            // 
-            this.ribbonAdmin.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonAdmin.Appearance.Options.UseFont = true;
-            this.ribbonAdmin.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5});
-            this.ribbonAdmin.Name = "ribbonAdmin";
-            this.ribbonAdmin.Text = "ADMINISTRATION";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barBtnUsers);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barBtnDashboardSettings);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.ShowCaptionButton = false;
             // 
             // repositoryItemSpinEdit1
             // 
