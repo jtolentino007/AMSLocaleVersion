@@ -41,6 +41,7 @@
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtSearch = new DevExpress.XtraEditors.TextEdit();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.mnuBtnClose = new DevExpress.XtraBars.BarButtonItem();
@@ -86,7 +87,6 @@
             this.reportGenerator1 = new DevExpress.XtraReports.ReportGeneration.ReportGenerator(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBrethren)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
@@ -111,7 +111,7 @@
             this.gridBrethren.Location = new System.Drawing.Point(12, 275);
             this.gridBrethren.MainView = this.gridView2;
             this.gridBrethren.Name = "gridBrethren";
-            this.gridBrethren.Size = new System.Drawing.Size(475, 266);
+            this.gridBrethren.Size = new System.Drawing.Size(483, 266);
             this.gridBrethren.TabIndex = 24;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -191,6 +191,12 @@
             this.gridColumn17.VisibleIndex = 2;
             this.gridColumn17.Width = 150;
             // 
+            // gridColumn18
+            // 
+            this.gridColumn18.Caption = "Interlocale";
+            this.gridColumn18.FieldName = "is_interlocale";
+            this.gridColumn18.Name = "gridColumn18";
+            // 
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -202,7 +208,7 @@
             this.txtSearch.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.txtSearch.Properties.NullValuePrompt = "Enter Church ID or Name";
             this.txtSearch.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtSearch.Size = new System.Drawing.Size(475, 40);
+            this.txtSearch.Size = new System.Drawing.Size(483, 40);
             this.txtSearch.TabIndex = 29;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
@@ -237,7 +243,7 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1200, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(1208, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -334,7 +340,7 @@
             // 
             // barBtnNewlyBaptized
             // 
-            this.barBtnNewlyBaptized.Caption = "Register Brethren";
+            this.barBtnNewlyBaptized.Caption = "Register Member";
             this.barBtnNewlyBaptized.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnNewlyBaptized.Glyph")));
             this.barBtnNewlyBaptized.Id = 14;
             this.barBtnNewlyBaptized.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnNewlyBaptized.LargeGlyph")));
@@ -415,13 +421,13 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 586);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1200, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1208, 23);
             // 
             // peBrethren
             // 
             this.peBrethren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.peBrethren.EditValue = global::AMS.Properties.Resources.default_user_image;
-            this.peBrethren.Location = new System.Drawing.Point(1091, 65);
+            this.peBrethren.Location = new System.Drawing.Point(1099, 65);
             this.peBrethren.MenuManager = this.ribbonControl1;
             this.peBrethren.Name = "peBrethren";
             this.peBrethren.Properties.InitialImage = global::AMS.Properties.Resources.default_user_image;
@@ -532,7 +538,7 @@
             gridLevelNode1.RelationName = "Level1";
             this.gridAttendance.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.gridAttendance.Location = new System.Drawing.Point(495, 275);
+            this.gridAttendance.Location = new System.Drawing.Point(503, 275);
             this.gridAttendance.MainView = this.gridView1;
             this.gridAttendance.Name = "gridAttendance";
             this.gridAttendance.Size = new System.Drawing.Size(695, 266);
@@ -587,7 +593,7 @@
             this.lblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblStatus.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(58)))));
-            this.lblStatus.Location = new System.Drawing.Point(495, 201);
+            this.lblStatus.Location = new System.Drawing.Point(503, 201);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(695, 46);
             this.lblStatus.TabIndex = 34;
@@ -604,7 +610,7 @@
             this.lblTimerGathering.ForeColor = System.Drawing.Color.White;
             this.lblTimerGathering.Location = new System.Drawing.Point(0, 152);
             this.lblTimerGathering.Name = "lblTimerGathering";
-            this.lblTimerGathering.Size = new System.Drawing.Size(1200, 40);
+            this.lblTimerGathering.Size = new System.Drawing.Size(1208, 40);
             this.lblTimerGathering.TabIndex = 37;
             this.lblTimerGathering.Text = "NO ACTIVE GATHERING";
             this.lblTimerGathering.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -618,9 +624,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 252);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(475, 23);
+            this.label1.Size = new System.Drawing.Size(483, 23);
             this.label1.TabIndex = 40;
-            this.label1.Text = "Brethren/Interlocale Masterlist";
+            this.label1.Text = "Member/Interlocale Masterlist";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -629,18 +635,12 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(495, 252);
+            this.label2.Location = new System.Drawing.Point(503, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(695, 23);
             this.label2.TabIndex = 41;
             this.label2.Text = "List of Attended Brethren";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // gridColumn18
-            // 
-            this.gridColumn18.Caption = "Interlocale";
-            this.gridColumn18.FieldName = "is_interlocale";
-            this.gridColumn18.Name = "gridColumn18";
             // 
             // frmAttendanceMonitoring
             // 
@@ -648,7 +648,7 @@
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 609);
+            this.ClientSize = new System.Drawing.Size(1208, 609);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTimerGathering);

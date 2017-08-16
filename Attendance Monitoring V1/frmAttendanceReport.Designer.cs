@@ -62,7 +62,7 @@
             this.ribbonControl1.ShowCategoryInCaption = false;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(368, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(376, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -102,7 +102,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 330);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(368, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(376, 23);
             // 
             // labelControl1
             // 
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 353);
+            this.ClientSize = new System.Drawing.Size(376, 353);
             this.Controls.Add(this.btnViewGatheringList);
             this.Controls.Add(this.dtDateGathering);
             this.Controls.Add(this.labelControl2);

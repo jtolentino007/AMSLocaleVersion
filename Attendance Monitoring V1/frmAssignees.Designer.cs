@@ -67,7 +67,7 @@
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(443, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(451, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // barButtonItemInsertAssignee
@@ -107,7 +107,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 465);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(443, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(451, 23);
             // 
             // labelControl1
             // 
@@ -226,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 488);
+            this.ClientSize = new System.Drawing.Size(451, 488);
             this.Controls.Add(this.txtAddpro);
             this.Controls.Add(this.txtOfficers);
             this.Controls.Add(this.txtWorker);

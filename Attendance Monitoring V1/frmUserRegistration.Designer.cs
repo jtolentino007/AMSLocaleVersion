@@ -83,7 +83,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(702, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(710, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -125,7 +125,7 @@
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.ShowSizeGrip = false;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(702, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(710, 23);
             // 
             // labelControl1
             // 
@@ -273,7 +273,7 @@
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInfo.Location = new System.Drawing.Point(0, 147);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(702, 35);
+            this.panelInfo.Size = new System.Drawing.Size(710, 35);
             this.panelInfo.TabIndex = 19;
             // 
             // lblInfo
@@ -318,7 +318,7 @@
             // 
             this.peUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.peUser.EditValue = global::AMS.Properties.Resources._765_default_avatar;
-            this.peUser.Location = new System.Drawing.Point(604, 58);
+            this.peUser.Location = new System.Drawing.Point(612, 58);
             this.peUser.MenuManager = this.ribbonControl1;
             this.peUser.Name = "peUser";
             this.peUser.Properties.InitialImage = global::AMS.Properties.Resources._765_default_avatar;
@@ -330,7 +330,7 @@
             // btnBrowseImage
             // 
             this.btnBrowseImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowseImage.Location = new System.Drawing.Point(604, 123);
+            this.btnBrowseImage.Location = new System.Drawing.Point(612, 123);
             this.btnBrowseImage.Name = "btnBrowseImage";
             this.btnBrowseImage.Size = new System.Drawing.Size(86, 19);
             this.btnBrowseImage.TabIndex = 27;
@@ -341,7 +341,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 495);
+            this.ClientSize = new System.Drawing.Size(710, 495);
             this.Controls.Add(this.btnBrowseImage);
             this.Controls.Add(this.peUser);
             this.Controls.Add(this.labelControl8);

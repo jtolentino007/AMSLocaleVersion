@@ -44,8 +44,8 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridGathering = new DevExpress.XtraGrid.GridControl();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridGathering = new DevExpress.XtraGrid.GridControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridGathering)).BeginInit();
@@ -197,20 +197,6 @@
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 1;
             // 
-            // gridGathering
-            // 
-            this.gridGathering.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridGathering.Location = new System.Drawing.Point(0, 147);
-            this.gridGathering.MainView = this.gridView1;
-            this.gridGathering.MenuManager = this.ribbonControl1;
-            this.gridGathering.Name = "gridGathering";
-            this.gridGathering.Size = new System.Drawing.Size(992, 432);
-            this.gridGathering.TabIndex = 2;
-            this.gridGathering.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            this.gridGathering.Click += new System.EventHandler(this.gridGathering_Click);
-            this.gridGathering.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.gridGathering_MouseDoubleClick);
-            // 
             // gridColumn6
             // 
             this.gridColumn6.AppearanceCell.ForeColor = System.Drawing.Color.Black;
@@ -224,6 +210,20 @@
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
+            // 
+            // gridGathering
+            // 
+            this.gridGathering.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridGathering.Location = new System.Drawing.Point(0, 147);
+            this.gridGathering.MainView = this.gridView1;
+            this.gridGathering.MenuManager = this.ribbonControl1;
+            this.gridGathering.Name = "gridGathering";
+            this.gridGathering.Size = new System.Drawing.Size(992, 432);
+            this.gridGathering.TabIndex = 2;
+            this.gridGathering.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            this.gridGathering.Click += new System.EventHandler(this.gridGathering_Click);
+            this.gridGathering.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.gridGathering_MouseDoubleClick);
             // 
             // frmGatheringView
             // 

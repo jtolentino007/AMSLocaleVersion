@@ -200,7 +200,7 @@
             // 
             // mnuBtnBrethren
             // 
-            this.mnuBtnBrethren.Caption = "Brethren Masterlist";
+            this.mnuBtnBrethren.Caption = "Members Masterlist";
             this.mnuBtnBrethren.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnBrethren.Glyph")));
             this.mnuBtnBrethren.Id = 3;
             this.mnuBtnBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnBrethren.LargeGlyph")));

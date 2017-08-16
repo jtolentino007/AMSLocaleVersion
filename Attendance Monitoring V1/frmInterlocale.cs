@@ -264,8 +264,8 @@ namespace AMS
                     Utilities.ErrorMessage("No Interlocale(s) Selected");
                 else if (gridView1.RowCount == 0)
                     Utilities.ErrorMessage("No Record(s) Found");
-                else if (Utilities.CheckBrethrenIfAttended(frmAttendanceMonitoring.GatheringID, gridView1.GetRowCellValue(row, "Interlocale_Id").ToString()))
-                    Utilities.ErrorMessage("Interlocale Brethren Already Timed in");
+                //else if (Utilities.CheckBrethrenIfAttended(frmAttendanceMonitoring.GatheringID, gridView1.GetRowCellValue(row, "Interlocale_Id").ToString()))
+                //    Utilities.ErrorMessage("Interlocale Brethren Already Timed in");
                 else
                 {
                     using (var cmd = new SqlCommand("INSERT_TEMP_ATTENDANCE", Utilities.con))

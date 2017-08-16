@@ -1067,5 +1067,4 @@ C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Att
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.application
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.exe
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.pdb
-C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\Attendance Monitoring V1.csprojResolveAssemblyReference.cache
 C:\Users\jdevb\Documents\AMSLocaleVersion\Attendance Monitoring V1\obj\Debug\AMS.frmGatheringSelection.resources

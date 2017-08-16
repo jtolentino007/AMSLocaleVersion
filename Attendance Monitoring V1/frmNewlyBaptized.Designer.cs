@@ -60,7 +60,7 @@
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(382, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(390, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -100,7 +100,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 413);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(382, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(390, 23);
             // 
             // labelControl1
             // 
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 436);
+            this.ClientSize = new System.Drawing.Size(390, 436);
             this.Controls.Add(this.txtLastname);
             this.Controls.Add(this.txtMiddlename);
             this.Controls.Add(this.txtFirstname);
@@ -184,7 +184,7 @@
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
-            this.Text = "ADD NEW BRETHREN";
+            this.Text = "ADD NEW MEMBER";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

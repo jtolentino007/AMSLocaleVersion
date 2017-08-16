@@ -55,7 +55,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(284, 32);
+            this.ribbonControl1.Size = new System.Drawing.Size(292, 32);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // ribbonPage1
@@ -75,7 +75,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 267);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(284, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(292, 23);
             // 
             // labelControl1
             // 
@@ -159,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 290);
+            this.ClientSize = new System.Drawing.Size(292, 290);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.dtTime);

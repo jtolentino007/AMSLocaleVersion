@@ -104,7 +104,7 @@
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowQatLocationSelector = false;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(983, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(983, 143);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -125,7 +125,7 @@
             // 
             // mBtnAddBrethren
             // 
-            this.mBtnAddBrethren.Caption = "New Brethren";
+            this.mBtnAddBrethren.Caption = "New Member";
             this.mBtnAddBrethren.Glyph = ((System.Drawing.Image)(resources.GetObject("mBtnAddBrethren.Glyph")));
             this.mBtnAddBrethren.Id = 3;
             this.mBtnAddBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mBtnAddBrethren.LargeGlyph")));
@@ -134,7 +134,7 @@
             // 
             // mnuBtnEditBrethren
             // 
-            this.mnuBtnEditBrethren.Caption = "Edit Brethren";
+            this.mnuBtnEditBrethren.Caption = "Edit Member";
             this.mnuBtnEditBrethren.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnEditBrethren.Glyph")));
             this.mnuBtnEditBrethren.Id = 4;
             this.mnuBtnEditBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnEditBrethren.LargeGlyph")));
@@ -143,7 +143,7 @@
             // 
             // mnuBtnRemoveBrethren
             // 
-            this.mnuBtnRemoveBrethren.Caption = "Remove Brethren";
+            this.mnuBtnRemoveBrethren.Caption = "Remove Member";
             this.mnuBtnRemoveBrethren.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnRemoveBrethren.Glyph")));
             this.mnuBtnRemoveBrethren.Id = 5;
             this.mnuBtnRemoveBrethren.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnRemoveBrethren.LargeGlyph")));
@@ -152,7 +152,7 @@
             // 
             // mnuBtnSearch
             // 
-            this.mnuBtnSearch.Caption = "Find Brethren";
+            this.mnuBtnSearch.Caption = "Find Member";
             this.mnuBtnSearch.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnSearch.Glyph")));
             this.mnuBtnSearch.Id = 6;
             this.mnuBtnSearch.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnSearch.LargeGlyph")));
@@ -186,22 +186,22 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 578);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 570);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(983, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(983, 31);
             // 
             // gridBrethren
             // 
             this.gridBrethren.Cursor = System.Windows.Forms.Cursors.Default;
             this.gridBrethren.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBrethren.Location = new System.Drawing.Point(0, 147);
+            this.gridBrethren.Location = new System.Drawing.Point(0, 143);
             this.gridBrethren.MainView = this.gridView1;
             this.gridBrethren.MenuManager = this.ribbonControl1;
             this.gridBrethren.Name = "gridBrethren";
             this.gridBrethren.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnViewDetails});
-            this.gridBrethren.Size = new System.Drawing.Size(983, 431);
+            this.gridBrethren.Size = new System.Drawing.Size(983, 427);
             this.gridBrethren.TabIndex = 6;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -497,7 +497,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
-            this.Text = "BRETHREN";
+            this.Text = "MEMBERS";
             this.Load += new System.EventHandler(this.frmBrethren_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBrethren)).EndInit();

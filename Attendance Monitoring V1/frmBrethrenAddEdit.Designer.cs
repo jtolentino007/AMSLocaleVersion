@@ -136,7 +136,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(959, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(967, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mnuBtnSave
@@ -190,7 +190,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 670);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(959, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(967, 23);
             // 
             // labelControl1
             // 
@@ -640,7 +640,7 @@
             // peBrethren
             // 
             this.peBrethren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.peBrethren.Location = new System.Drawing.Point(753, 167);
+            this.peBrethren.Location = new System.Drawing.Point(761, 167);
             this.peBrethren.MenuManager = this.ribbonControl1;
             this.peBrethren.Name = "peBrethren";
             this.peBrethren.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -651,7 +651,7 @@
             // btnBrowse
             // 
             this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowse.Location = new System.Drawing.Point(754, 259);
+            this.btnBrowse.Location = new System.Drawing.Point(762, 259);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(100, 24);
             this.btnBrowse.TabIndex = 86;
@@ -728,7 +728,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 693);
+            this.ClientSize = new System.Drawing.Size(967, 693);
             this.Controls.Add(this.btnAddGroup);
             this.Controls.Add(this.btnAddCommittee);
             this.Controls.Add(this.radioButtonFemale);
@@ -789,7 +789,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
-            this.Text = "BRETHREN";
+            this.Text = "MEMBER";
             this.Load += new System.EventHandler(this.frmBrethrenAddEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtChurchID.Properties)).EndInit();
