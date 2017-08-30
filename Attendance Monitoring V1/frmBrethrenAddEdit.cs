@@ -29,14 +29,20 @@ namespace AMS
             FillLocale();
             FillCommittee();
             FillGroup();
+
             if (Utilities.FMode == "Add")
-            {
                 Clear();
-            }
             else if (Utilities.FMode == "Edit")
-            {
                 SetDetails();
-            }
+
+        }
+
+        private void SetGender()
+        {
+            if (drBrethren["Gender"].ToString() == "MALE")
+                radioButtonMale.Checked = true;
+            else
+                radioButtonFemale.Checked = true;
         }
 
         private void SetDetails()
@@ -48,7 +54,8 @@ namespace AMS
             txtLName.Text = drBrethren["Lastname"].ToString();
             dtBaptism.EditValue = drBrethren["Date_Baptism"].ToString();
             dtBirth.EditValue = drBrethren["Date_Birth"].ToString();
-            cmbGender.EditValue = drBrethren["Gender"].ToString();
+            SetGender();
+            //cmbGender.EditValue = drBrethren["Gender"].ToString();
             cmbCivilStatus.EditValue = drBrethren["Civil_Status"].ToString();
             txtStreet.Text = drBrethren["Street"].ToString();
             txtBrgy.Text = drBrethren["Brgy"].ToString();
@@ -61,14 +68,20 @@ namespace AMS
             ImagePath = drBrethren["Sketch_Path"].ToString();
 
             if (!string.IsNullOrWhiteSpace(BrethrenImagePath))
-                peBrethren.Image = Image.FromFile(drBrethren["Image_Path"].ToString());
+                if (File.Exists(BrethrenImagePath))
+                    peBrethren.Image = Image.FromFile(drBrethren["Image_Path"].ToString());
+                else
+                    peBrethren.Image = Properties.Resources.default_user_image;
             else
-                peBrethren.Image = null;
+                peBrethren.Image = Properties.Resources.default_user_image;
 
             if (!string.IsNullOrWhiteSpace(ImagePath))
-                peSketch.Image = Image.FromFile(drBrethren["Sketch_Path"].ToString());
+                if (File.Exists(ImagePath))
+                    peSketch.Image = Image.FromFile(drBrethren["Sketch_Path"].ToString());
+                else
+                    peSketch.Image = Properties.Resources.default_sketch;
             else
-                peSketch.Image = null;
+                peSketch.Image = Properties.Resources.default_sketch;
 
             txtContactPerson.Text = drBrethren["Contact_Person"].ToString();
             txtContactPersonNumber.Text = drBrethren["Contact_Person_no"].ToString();
@@ -149,9 +162,9 @@ namespace AMS
             txtFname.Text = string.Empty;
             txtMName.Text = string.Empty;
             txtLName.Text = string.Empty;
-            dtBaptism.Text = string.Empty;
-            dtBirth.Text = string.Empty;
-            cmbGender.Text = string.Empty;
+            dtBaptism.Text = DateTime.Now.ToShortDateString();
+            dtBirth.Text = DateTime.Now.ToShortDateString();
+            cmbGender.SelectedItem = 1;
             cmbCivilStatus.SelectedIndex = -1;
             txtStreet.Text = string.Empty;
             txtBrgy.Text = string.Empty;
@@ -163,13 +176,12 @@ namespace AMS
             txtContactPerson.Text = string.Empty;
             txtContactPersonNumber.Text = string.Empty;
             cmbStatus.SelectedIndex = -1;
-            lueGroup.Reset();
-            lueLocale.EditValue = null;
-            checkedComboBoxEdit1.EditValue = null;
-            checkedComboBoxEdit1.Text = string.Empty;
+            lueGroup.ItemIndex = 0;
+            lueLocale.ItemIndex = 1;
+            checkedComboBoxEdit1.SetEditValue(null);
             txtBaptizer.Text = string.Empty;
-            peSketch.Image = null;
-            peBrethren.Image = null;
+            peSketch.Image = Properties.Resources.default_sketch;
+            peBrethren.Image = Properties.Resources.default_user_image;
             txtChurchID.Select();
         }
 
@@ -181,12 +193,20 @@ namespace AMS
                 return 0;
         }
 
+        public string Gender()
+        {
+            if (radioButtonMale.Checked)
+                return "MALE";
+            else
+                return "FEMALE";
+        }
+
         public string BrethrenID()
         {
-            string BrethrenID = Utilities.GetLastCodeFromTable("brethren_id", "Brethren");
+            string BrethrenID = Utilities.GetLastAlphaNumericColumn("brethren_id", "Brethren");
 
             if (BrethrenID == null)
-                return "B-0001";
+                return "B-1";
             else
                 return "B-" + (Convert.ToInt16(BrethrenID.Replace("B-", "")) + 1);
         }
@@ -206,7 +226,7 @@ namespace AMS
                 cmd.Parameters.AddWithValue("@GroupID", Convert.ToInt32(lueGroup.EditValue));
                 cmd.Parameters.AddWithValue("@DateOfBaptism", dtBaptism.EditValue);
                 cmd.Parameters.AddWithValue("@DateOfBirth", dtBirth.EditValue);
-                cmd.Parameters.AddWithValue("@Gender", cmbGender.EditValue);
+                cmd.Parameters.AddWithValue("@Gender", Gender());
                 cmd.Parameters.AddWithValue("@CivilStatus", cmbCivilStatus.EditValue);
                 cmd.Parameters.AddWithValue("@Street", txtStreet.Text);
                 cmd.Parameters.AddWithValue("@Brgy", txtBrgy.Text);
@@ -226,12 +246,13 @@ namespace AMS
                 cmd.ExecuteNonQuery();
 
                 drBrethren["Church_Id"] = txtChurchID.Text;
+                drBrethren["BrethrenName"] = txtFname.Text + " " + txtLName.Text;
                 drBrethren["Firstname"] = txtFname.Text;
                 drBrethren["Middlename"] = txtMName.Text;
                 drBrethren["Lastname"] = txtLName.Text;
                 drBrethren["Date_Baptism"] = dtBaptism.EditValue;
                 drBrethren["Date_Birth"] = dtBirth.EditValue;
-                drBrethren["Gender"] = cmbGender.EditValue;
+                drBrethren["Gender"] = Gender();
                 drBrethren["Civil_Status"] = cmbCivilStatus.EditValue;
                 drBrethren["Street"] = txtStreet.Text;
                 drBrethren["Brgy"] = txtBrgy.Text;
@@ -276,7 +297,7 @@ namespace AMS
                 cmd.Parameters.AddWithValue("@GroupID", Convert.ToInt32(lueGroup.EditValue));
                 cmd.Parameters.AddWithValue("@DateOfBaptism", Convert.ToDateTime(dtBaptism.EditValue));
                 cmd.Parameters.AddWithValue("@DateOfBirth", Convert.ToDateTime(dtBirth.EditValue));
-                cmd.Parameters.AddWithValue("@Gender", cmbGender.EditValue);
+                cmd.Parameters.AddWithValue("@Gender", Gender());
                 cmd.Parameters.AddWithValue("@CivilStatus", cmbCivilStatus.EditValue);
                 cmd.Parameters.AddWithValue("@Street", txtStreet.Text);
                 cmd.Parameters.AddWithValue("@Brgy", txtBrgy.Text);
@@ -297,13 +318,14 @@ namespace AMS
                 DataRow dr = dtBrethren.NewRow();
 
                 dr["brethren_id"] = BrethrenID();
+                dr["BrethrenName"] = txtFname.Text + " " + txtLName.Text;
                 dr["Church_Id"] = txtChurchID.Text;
                 dr["Firstname"] = txtFname.Text;
                 dr["Middlename"] = txtMName.Text;
                 dr["Lastname"] = txtLName.Text;
                 dr["Date_Baptism"] = Convert.ToDateTime(dtBaptism.EditValue);
                 dr["Date_Birth"] = Convert.ToDateTime(dtBirth.EditValue);
-                dr["Gender"] = cmbGender.EditValue;
+                dr["Gender"] = Gender();
                 dr["Civil_Status"] = cmbCivilStatus.EditValue;
                 dr["Street"] = txtStreet.Text;
                 dr["Brgy"] = txtBrgy.Text;
@@ -348,6 +370,19 @@ namespace AMS
                 checkedComboBoxEdit1.Properties.ValueMember = "committee_name";
             }
         }
+
+        private void btnAddCommittee_Click(object sender, EventArgs e)
+        {
+            Utilities.SFMode = "Add";
+            Instances.committeeAddEdit.ShowDialog();
+        }
+
+        private void btnAddGroup_Click_1(object sender, EventArgs e)
+        {
+            Utilities.SFMode = "Add";
+            Instances.groupAdd.ShowDialog();
+        }
+
         public void FillLocale()
         {
             var dtLocale = new DataTable();
@@ -426,6 +461,8 @@ namespace AMS
                 {
                     UpdateBrethren();
                 }
+
+                frmLogin.main.dashboardViewer1.ReloadData();
             }
         }
 

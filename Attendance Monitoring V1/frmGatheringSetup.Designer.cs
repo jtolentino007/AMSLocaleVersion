@@ -44,6 +44,8 @@
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.lueBatch = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbGatheringType = new DevExpress.XtraEditors.LookUpEdit();
+            this.btnSet = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddBatch = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbViewingType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDateGathering.Properties.CalendarTimeProperties)).BeginInit();
@@ -68,13 +70,13 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(353, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(377, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // mnuBtnSave
             // 
-            this.mnuBtnSave.Caption = "SAVE";
+            this.mnuBtnSave.Caption = "ACCEPT";
             this.mnuBtnSave.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnSave.Glyph")));
             this.mnuBtnSave.Id = 1;
             this.mnuBtnSave.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnSave.LargeGlyph")));
@@ -83,9 +85,10 @@
             // 
             // mnuBtnClose
             // 
-            this.mnuBtnClose.Caption = "CLOSE";
+            this.mnuBtnClose.Caption = "CANCEL";
+            this.mnuBtnClose.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnClose.Glyph")));
             this.mnuBtnClose.Id = 2;
-            this.mnuBtnClose.LargeGlyph = global::AMS.Properties.Resources.error;
+            this.mnuBtnClose.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnClose.LargeGlyph")));
             this.mnuBtnClose.Name = "mnuBtnClose";
             this.mnuBtnClose.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnClose_ItemClick);
             // 
@@ -108,11 +111,11 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 408);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(353, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(377, 23);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(32, 230);
+            this.labelControl1.Location = new System.Drawing.Point(32, 223);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(85, 13);
             this.labelControl1.TabIndex = 2;
@@ -120,7 +123,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(32, 275);
+            this.labelControl2.Location = new System.Drawing.Point(32, 268);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(94, 13);
             this.labelControl2.TabIndex = 5;
@@ -128,7 +131,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(32, 324);
+            this.labelControl3.Location = new System.Drawing.Point(32, 317);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(71, 13);
             this.labelControl3.TabIndex = 6;
@@ -136,7 +139,7 @@
             // 
             // cmbViewingType
             // 
-            this.cmbViewingType.Location = new System.Drawing.Point(32, 343);
+            this.cmbViewingType.Location = new System.Drawing.Point(32, 336);
             this.cmbViewingType.MenuManager = this.ribbonControl1;
             this.cmbViewingType.Name = "cmbViewingType";
             this.cmbViewingType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -154,7 +157,7 @@
             // 
             this.dtDateGathering.EditValue = null;
             this.dtDateGathering.Enabled = false;
-            this.dtDateGathering.Location = new System.Drawing.Point(32, 198);
+            this.dtDateGathering.Location = new System.Drawing.Point(32, 191);
             this.dtDateGathering.MenuManager = this.ribbonControl1;
             this.dtDateGathering.Name = "dtDateGathering";
             this.dtDateGathering.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -166,7 +169,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(32, 179);
+            this.labelControl4.Location = new System.Drawing.Point(32, 172);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(26, 13);
             this.labelControl4.TabIndex = 19;
@@ -174,8 +177,9 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnEdit.Image = global::AMS.Properties.Resources.Edit_18;
-            this.btnEdit.Location = new System.Drawing.Point(285, 198);
+            this.btnEdit.Location = new System.Drawing.Point(285, 191);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(25, 20);
             this.btnEdit.TabIndex = 22;
@@ -184,7 +188,7 @@
             // 
             // lueBatch
             // 
-            this.lueBatch.Location = new System.Drawing.Point(32, 294);
+            this.lueBatch.Location = new System.Drawing.Point(32, 287);
             this.lueBatch.MenuManager = this.ribbonControl1;
             this.lueBatch.Name = "lueBatch";
             this.lueBatch.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -204,7 +208,7 @@
             // 
             // cmbGatheringType
             // 
-            this.cmbGatheringType.Location = new System.Drawing.Point(32, 249);
+            this.cmbGatheringType.Location = new System.Drawing.Point(32, 242);
             this.cmbGatheringType.MenuManager = this.ribbonControl1;
             this.cmbGatheringType.Name = "cmbGatheringType";
             this.cmbGatheringType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -221,12 +225,34 @@
             this.cmbGatheringType.TabIndex = 1;
             this.cmbGatheringType.TextChanged += new System.EventHandler(this.cmbGatheringyType_TextChanged);
             // 
+            // btnSet
+            // 
+            this.btnSet.Location = new System.Drawing.Point(285, 191);
+            this.btnSet.Name = "btnSet";
+            this.btnSet.Size = new System.Drawing.Size(25, 21);
+            this.btnSet.TabIndex = 28;
+            this.btnSet.Text = "SET";
+            this.btnSet.Visible = false;
+            this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
+            // 
+            // btnAddBatch
+            // 
+            this.btnAddBatch.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnAddBatch.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBatch.Image")));
+            this.btnAddBatch.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnAddBatch.Location = new System.Drawing.Point(316, 287);
+            this.btnAddBatch.Name = "btnAddBatch";
+            this.btnAddBatch.Size = new System.Drawing.Size(22, 20);
+            this.btnAddBatch.TabIndex = 30;
+            this.btnAddBatch.Click += new System.EventHandler(this.btnAddBatch_Click);
+            // 
             // frmGatheringSetup
             // 
             this.ActiveGlowColor = System.Drawing.Color.DodgerBlue;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 431);
+            this.ClientSize = new System.Drawing.Size(377, 431);
+            this.Controls.Add(this.btnAddBatch);
             this.Controls.Add(this.lueBatch);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.labelControl4);
@@ -237,6 +263,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.cmbGatheringType);
+            this.Controls.Add(this.btnSet);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -272,7 +299,9 @@
         private DevExpress.XtraEditors.DateEdit dtDateGathering;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.SimpleButton btnEdit;
-        private DevExpress.XtraEditors.LookUpEdit lueBatch;
-        private DevExpress.XtraEditors.LookUpEdit cmbGatheringType;
+        private DevExpress.XtraEditors.SimpleButton btnSet;
+        private DevExpress.XtraEditors.SimpleButton btnAddBatch;
+        public DevExpress.XtraEditors.LookUpEdit cmbGatheringType;
+        public DevExpress.XtraEditors.LookUpEdit lueBatch;
     }
 }

@@ -37,7 +37,7 @@ namespace AMS
             }
             else
             {
-                if (Utilities.FMode == "Add")
+                if (Utilities.FMode == "Add" || Utilities.SFMode == "Add")
                 {
                     if (GroupInsert())
                     {
@@ -45,7 +45,7 @@ namespace AMS
                         Utilities.GenerateSystemLog("Added Group " + txtGroupName.Text, "Group Management", 1);
 
                         Instances.group.GetGroup();
-
+                        Instances.brethrenAddEdit.FillGroup();
                         ClearControls();
 
                         this.Close();
@@ -133,7 +133,7 @@ namespace AMS
         {
             Utilities.FillLookUpEdit(lueGroupServant, "GET_BRETHREN", "BrethrenName", "brethren_id");
             Utilities.FillLookUpEdit(lueAsstGroupServant, "GET_BRETHREN", "BrethrenName", "brethren_id");
-            if (Utilities.FMode == "Add")
+            if (Utilities.FMode == "Add" || Utilities.SFMode == "Add")
             {
                 ClearControls();
             }

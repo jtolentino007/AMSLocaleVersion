@@ -68,7 +68,7 @@
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(771, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(787, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mnuBtnClose
@@ -89,26 +89,27 @@
             // mnuBtnAddCommitttee
             // 
             this.mnuBtnAddCommitttee.Caption = "New Committee";
+            this.mnuBtnAddCommitttee.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAddCommitttee.Glyph")));
             this.mnuBtnAddCommitttee.Id = 3;
-            this.mnuBtnAddCommitttee.LargeGlyph = global::AMS.Properties.Resources.committee_add;
+            this.mnuBtnAddCommitttee.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnAddCommitttee.LargeGlyph")));
             this.mnuBtnAddCommitttee.Name = "mnuBtnAddCommitttee";
             this.mnuBtnAddCommitttee.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnAddCommitttee_ItemClick);
             // 
             // mnuBtnEditCommitttee
             // 
             this.mnuBtnEditCommitttee.Caption = "Edit Committee";
-            this.mnuBtnEditCommitttee.Glyph = global::AMS.Properties.Resources.edit;
+            this.mnuBtnEditCommitttee.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnEditCommitttee.Glyph")));
             this.mnuBtnEditCommitttee.Id = 4;
-            this.mnuBtnEditCommitttee.LargeGlyph = global::AMS.Properties.Resources.committee_edit;
+            this.mnuBtnEditCommitttee.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnEditCommitttee.LargeGlyph")));
             this.mnuBtnEditCommitttee.Name = "mnuBtnEditCommitttee";
             this.mnuBtnEditCommitttee.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnEditCommitttee_ItemClick);
             // 
             // mnuBtnDeleteCommitttee
             // 
             this.mnuBtnDeleteCommitttee.Caption = "Remove Committee";
-            this.mnuBtnDeleteCommitttee.Glyph = global::AMS.Properties.Resources.Delete_96;
+            this.mnuBtnDeleteCommitttee.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnDeleteCommitttee.Glyph")));
             this.mnuBtnDeleteCommitttee.Id = 5;
-            this.mnuBtnDeleteCommitttee.LargeGlyph = global::AMS.Properties.Resources.committee_delete;
+            this.mnuBtnDeleteCommitttee.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnDeleteCommitttee.LargeGlyph")));
             this.mnuBtnDeleteCommitttee.Name = "mnuBtnDeleteCommitttee";
             this.mnuBtnDeleteCommitttee.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.mnuBtnDeleteCommitttee_ItemClick);
             // 
@@ -150,7 +151,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 500);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(771, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(787, 23);
             // 
             // gridCommittee
             // 
@@ -160,7 +161,7 @@
             this.gridCommittee.MainView = this.gridView1;
             this.gridCommittee.MenuManager = this.ribbonControl1;
             this.gridCommittee.Name = "gridCommittee";
-            this.gridCommittee.Size = new System.Drawing.Size(771, 353);
+            this.gridCommittee.Size = new System.Drawing.Size(787, 353);
             this.gridCommittee.TabIndex = 4;
             this.gridCommittee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -189,8 +190,6 @@
             this.gridColumn1.Caption = "Committee Code";
             this.gridColumn1.FieldName = "committee_code";
             this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
             this.gridColumn1.Width = 333;
             // 
             // gridColumn2
@@ -199,14 +198,14 @@
             this.gridColumn2.FieldName = "committee_name";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.VisibleIndex = 1;
             this.gridColumn2.Width = 335;
             // 
             // frmCommittees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 523);
+            this.ClientSize = new System.Drawing.Size(787, 523);
             this.Controls.Add(this.gridCommittee);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);

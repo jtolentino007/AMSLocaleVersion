@@ -19,13 +19,15 @@ namespace AMS
     {
         public static string Locale = "", Username = "", User_Image_Path = "";
         public static int User_id = 0;
-        frmMain main = new frmMain();
         frmUserRegistration userRegistration = new frmUserRegistration();
+        public static frmMain main = new frmMain();
 
         public frmLogin()
         {
             InitializeComponent();
             Utilities.SQLConnectionOpen();
+            Defaults.SetDefaultUser();
+            Defaults.SetDefaultCommittees();
             lblStatus.Text = Utilities.SQLConnectionStatus();
         }
 
@@ -70,13 +72,12 @@ namespace AMS
                         main.peUserImage.Image = Image.FromFile(User_Image_Path);
                     else
                         main.peUserImage.Image = Properties.Resources.default_user_image;
-                    
 
                     Utilities.GenerateSystemLog("Logged in", "Login", 1);
                     main.lblWelcomeMessage.Text = "Hi!\n" + Username + "\n" + Locale;
                     main.Privilege();
-                    frmMain mainMenu = new frmMain();
-                    mainMenu.Show();
+                    main.Show();
+                    main.AttendanceButtons();
                     this.Hide();
                 }
                 else
@@ -144,11 +145,16 @@ namespace AMS
 
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
+        public void InitializeLogin()
         {
-            Utilities.FillLookUpEdit(lueChurchID, "GET_USERS","church_id","");
+            Utilities.FillLookUpEdit(lueChurchID, "GET_USERS", "church_id", "");
             Utilities.con.Close();
             Utilities.SQLConnectionOpen();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            InitializeLogin();
         }
 
         private void hlRegistration_Click(object sender, EventArgs e)

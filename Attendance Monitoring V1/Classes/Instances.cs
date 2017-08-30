@@ -27,5 +27,8 @@ namespace AMS.Classes
         public static frmAttendanceReport attendanceReport = new frmAttendanceReport();
         public static frmGatheringTypeAddEdit gatheringTypeaddEdit = new frmGatheringTypeAddEdit();
         public static frmGatheringTypes gatheringTypes = new frmGatheringTypes();
+        public static frmAssignee assignees = new frmAssignee();
+        public static frmAttendanceForm attendanceForm = new frmAttendanceForm();
+        public static frmViewAttendees attendees = new frmViewAttendees();
     }
 }

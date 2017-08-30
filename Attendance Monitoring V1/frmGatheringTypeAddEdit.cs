@@ -56,7 +56,7 @@ namespace AMS
         private void AddRefreshGatheringType()
         {
             var dr = dtGatheringType.NewRow();
-
+            dr["gathering_id"] = Utilities.GetLastCodeFromTable("gathering_id","Gathering_types");
             dr["gathering_code"] = txtGatheringCode.Text;
             dr["gathering"] = txtGathering.Text;
 
@@ -80,14 +80,12 @@ namespace AMS
                 {
                     using (var cmd = new SqlCommand("INSERT_GATHERING_TYPE",Utilities.con))
                     {
-
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@GatheringCode", txtGatheringCode.Text);
                         cmd.Parameters.AddWithValue("@Gathering", txtGathering.Text);
                         cmd.ExecuteNonQuery();
 
                         Utilities.SuccessMessage("Gathering Type Successfully Saved");
-
                         AddRefreshGatheringType();
 
                         Clear();

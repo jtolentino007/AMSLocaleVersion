@@ -10,6 +10,8 @@ namespace AMS
     public partial class frmGatheringView : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         DataTable dtGathering = new DataTable();
+        DataTable dtAssignees = new DataTable();
+
         public static string GatheringInfo, GatheringID, viewAttendanceID;
 
         public frmGatheringView()
@@ -83,12 +85,13 @@ namespace AMS
         private void AcceptAttendance()
         {
             if (gridView1.SelectedRowsCount == 0)
-                Utilities.ErrorMessage("No selected row(s) found");
+                Utilities.ErrorMessage("No selected gathering(s) found");
             else
             {
                 viewAttendanceID = Instances.setupGathering.SetAttendanceID();
                 GetCurrentSelectedAttendance(gridView1.GetFocusedRowCellValue("Gathering_Id").ToString());
                 SetGathering();
+                Instances.attendanceMontoring.ShowDialog();
             }
         }
 

@@ -4,7 +4,9 @@ using System.Data;
 using System.Configuration;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraBars;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace AMS.Classes
 {
@@ -12,6 +14,7 @@ namespace AMS.Classes
     {
         public static SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["AMSConnection"].ConnectionString);
         public static string FMode;
+        public static string SFMode;
         public static int ID;
 
         public static void GenerateSystemLog(string Activity, string Module, int Status)
@@ -29,6 +32,35 @@ namespace AMS.Classes
                 LogsCmd.ExecuteNonQuery();
             }
         }
+        
+        public static void FillCheckedComboBoxEdit(string query, CheckedComboBoxEdit checkedComboBoxEditControl, string displayMember, string valueMember, DataTable dataTableForCheckedCombo)
+        {
+            dataTableForCheckedCombo = new DataTable();
+            
+            using (var adaptChecked = new SqlDataAdapter(query, Utilities.con))
+            {
+                adaptChecked.SelectCommand.CommandType = CommandType.StoredProcedure;
+                dataTableForCheckedCombo.Clear();
+                adaptChecked.Fill(dataTableForCheckedCombo);
+                checkedComboBoxEditControl.Properties.DataSource = dataTableForCheckedCombo;
+                checkedComboBoxEditControl.Properties.DisplayMember = displayMember;
+                checkedComboBoxEditControl.Properties.ValueMember = valueMember;
+            }
+        }
+
+        public static void ToggleDisableAllControls(Control control)
+        {
+            foreach (var c in control.Controls)
+            {
+                if (c is TextEdit)
+                {
+                    if (((TextEdit)c).Enabled == true)
+                        ((TextEdit)c).Enabled = false;
+                    else
+                        ((TextEdit)c).Enabled = true;
+                }
+            }
+        }
 
         public static string SQLConnectionStatus()
         {
@@ -40,6 +72,19 @@ namespace AMS.Classes
                 return "Error on Database/Invalid Connection on Server";
             else
                 return "Application Connecting to Server";
+        }
+
+        public static bool IsImageExists(string ImagePath)
+        {
+            if (!string.IsNullOrEmpty(ImagePath))
+            {
+                if (File.Exists(ImagePath))
+                    return true;
+                else
+                    return false;
+            }
+            else
+                return false;
         }
         
         public enum FormMode
@@ -96,6 +141,20 @@ namespace AMS.Classes
                     return true;
                 else
                     return false;
+            }
+        }
+
+        public static string GetLastAlphaNumericColumn(string ColumnName, string TableName)
+        {
+            using (var cmd = new SqlCommand("SELECT TOP 1 " + ColumnName + " FROM " + TableName + " ORDER BY CAST(SUBSTRING(" + ColumnName + " + '0', PATINDEX('%[0-9]%', "+ ColumnName +" + '0'), LEN("+ColumnName+" + '0')) AS INT) DESC", con))
+            {
+                using (var dr = cmd.ExecuteReader())
+                {
+                    if (dr.Read())
+                        return dr[ColumnName].ToString();
+                    else
+                        return null;
+                }
             }
         }
 

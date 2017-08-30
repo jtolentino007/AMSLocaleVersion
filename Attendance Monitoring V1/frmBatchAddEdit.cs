@@ -21,7 +21,7 @@ namespace AMS
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            if (Utilities.FMode == "Add")
+            if (Utilities.FMode == "Add" || Utilities.SFMode == "Add")
             {
                 using (var cmd = new SqlCommand("INSERT_BATCH", Utilities.con))
                 {
@@ -33,6 +33,8 @@ namespace AMS
                     Utilities.SuccessMessage("Batch Successfully Saved");
                     Utilities.GenerateSystemLog("Added " + "B" + txtBatchNo.Text + " on " + cboGathering.EditValue, "Batch Management", 1);
                     Instances.Batches.GetBatches();
+                    string gatheringCode = Instances.setupGathering.cmbGatheringType.GetColumnValue("gathering_code").ToString();
+                    Instances.setupGathering.FilterBatch(gatheringCode);
                     this.Close();
                 }
             }
@@ -67,6 +69,7 @@ namespace AMS
             dtTime.CustomFormat = "HH:mm tt";
             dtTime.Value = DateTime.Now.Date;
             txtBatchNo.Text = null;
+
             if (Utilities.FMode == "Edit")
             {
                 Utilities.ID = Convert.ToInt16(drBatch["Batch_ID"].ToString());
@@ -74,6 +77,10 @@ namespace AMS
                 cboGathering.EditValue = drBatch["gathering_id"];
                 cboGathering.RefreshEditValue();
                 dtTime.Value = Convert.ToDateTime(drBatch["Batch_Time"].ToString());
+            }
+            else if (Utilities.SFMode == "Add")
+            {
+                cboGathering.EditValue = frmGatheringSetup.sGatheringID;
             }
         }
     }

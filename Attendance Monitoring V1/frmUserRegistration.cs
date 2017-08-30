@@ -10,7 +10,7 @@ namespace AMS
 {
     public partial class frmUserRegistration : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        string Password;
+        string ChurchID, Password;
         string ImagePath, AppPath, ImageName;
         public frmUserRegistration()
         {
@@ -21,14 +21,14 @@ namespace AMS
         {
             if (Utilities.FMode == "Add")
             {
-                frmLogin login = new frmLogin();
-                login.Show();
+                Instances.login.Show();
                 this.Hide();
             }
             else
             {
                 this.Hide();
             }
+            Instances.login.InitializeLogin();
         }
 
         private void ClearFields()
@@ -61,7 +61,7 @@ namespace AMS
                         cmdInsert.Parameters.AddWithValue("@lname", txtLastname.Text);
                         cmdInsert.Parameters.AddWithValue("@privilege", cboPrivilege.EditValue);
                         cmdInsert.Parameters.AddWithValue("@locale_id", lueLocale.EditValue);
-                        cmdInsert.Parameters.AddWithValue("@user_img_path", "");
+                        cmdInsert.Parameters.AddWithValue("@user_img_path", (ImagePath == null ? "" : ImagePath));
                         cmdInsert.ExecuteNonQuery();
                         Utilities.SuccessMessage("You have successfully registered!, Please wait for the administrators approval.");
                         Utilities.GenerateSystemLog("User " + txtFirstname.Text + " " + txtLastname.Text + " Registered", "User Management", 1);
@@ -99,12 +99,14 @@ namespace AMS
                         Utilities.GenerateSystemLog("Wrong Password Entered...", "User Management", 3);
                     }
                 }
+
+
             }
         }
 
         private bool IsPasswordValid()
         {
-            if (txtPassword.Text == Password) return true;
+            if (Utilities.IsUserAuthenticated(ChurchID, txtPassword.Text)) return true;
             else return false;
         }
 
@@ -178,21 +180,23 @@ namespace AMS
                         ImagePath = dr["user_img_path"].ToString();
                         if (!string.IsNullOrWhiteSpace(ImagePath))
                         {
-                            if (Directory.Exists(ImagePath))
-                            {
+                            if (File.Exists(ImagePath))
                                 peUser.Image = Image.FromFile(ImagePath);
-                            }
+                            else
+                                peUser.Image = Properties.Resources.default_user_image;
                         }
                         else
-                            peUser.Image = null;
+                            peUser.Image = Properties.Resources.default_user_image;
 
                         cboPrivilege.SelectedIndex = Convert.ToInt16(dr["privilege"]) - 1;
+                        ChurchID = dr["church_id"].ToString();
                         Password = dr["password"].ToString();
                     }
                 }
             }
             else
             {
+                lueLocale.ItemIndex = 0;
                 lblInfo.Visible = true;
                 panelInfo.Visible = true;
             }

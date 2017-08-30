@@ -17,7 +17,10 @@ namespace AMS
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         DataTable dtStatusCount = new DataTable();
+        DataTable dtTempAttendance = new DataTable();
         public static int userPrivilege = 0;
+        public static int flag = 0;
+
         public frmMain()
         {
             InitializeComponent();
@@ -26,6 +29,7 @@ namespace AMS
         private void mnuBtnLogout_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Instances.login.ClearLogin();
+            Instances.login.InitializeLogin();
             Utilities.Logout(this);
         }
 
@@ -57,7 +61,31 @@ namespace AMS
 
         private void mnuBtnAttendance_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Instances.attendanceMontoring.ShowDialog();
+            flag = 1;
+            Instances.attendanceForm.Show();
+            this.Hide();
+        }
+
+        public void AttendanceButtons()
+        {
+            using (SqlDataAdapter adapt = new SqlDataAdapter("GET_TEMP_ATTENDANCE", Utilities.con))
+            {
+                adapt.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapt.Fill(dtTempAttendance);
+            }
+
+            if (dtTempAttendance.Rows.Count > 0)
+            {
+                mnuBtnAttendance.Visibility = BarItemVisibility.Always;
+                barButtonItem5.Visibility = BarItemVisibility.Never;
+                barButtonItem6.Visibility = BarItemVisibility.Never;
+            }
+            else
+            {
+                mnuBtnAttendance.Visibility = BarItemVisibility.Never;
+                barButtonItem5.Visibility = BarItemVisibility.Always;
+                barButtonItem6.Visibility = BarItemVisibility.Always;
+            }
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -66,17 +94,22 @@ namespace AMS
             //gp.AddEllipse(0, 0, peUserImage.Width - 3, peUserImage.Height - 3);
             //Region rg = new Region(gp);
             //peUserImage.Region = rg;
-
-            if (!string.IsNullOrWhiteSpace(frmLogin.User_Image_Path))
-            {   
-                if (Directory.Exists(frmLogin.User_Image_Path)) { 
-                    peUserImage.Image = Image.FromFile(frmLogin.User_Image_Path);
-                }
-            }
-            else peUserImage.Image = null;
-            
-            lblWelcomeMessage.Text = "Hi!\n" + frmLogin.Username + "\n" + frmLogin.Locale;
             Privilege();
+            AttendanceButtons();
+
+            if (!string.IsNullOrEmpty(frmLogin.User_Image_Path))
+            {
+                if (File.Exists(frmLogin.User_Image_Path))
+                    peUserImage.Image = Image.FromFile(frmLogin.User_Image_Path);
+                else
+                    peUserImage.Image = Properties.Resources.default_user_image;
+            }
+            else
+            {
+                peUserImage.Image = Properties.Resources.default_user_image;
+            }
+
+            lblWelcomeMessage.Text = "Hello! " + frmLogin.Username + "\nLocale of " + frmLogin.Locale;
         }
 
         private void barBtnUsers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -89,14 +122,24 @@ namespace AMS
             int UserRight = userPrivilege;
             if (UserRight == 1)
             {
-                ribbonRef.Visible = false;
-                ribbonTransact.Visible = false;
-                ribbonReport.Visible = false;
-                ribbonSystemLogs.Caption = "Users Logs";
+                mnuBtnAttendance.Visibility = BarItemVisibility.Always;
+                mnuBtnBrethren.Visibility = BarItemVisibility.Always;
+                mnuBtnCommittees.Visibility = BarItemVisibility.Always;
+                mnuBtnLocale.Visibility = BarItemVisibility.Always;
+                barBtnGatheringTypes.Visibility = BarItemVisibility.Always;
+                ribbonRef.Visible = true;
+                ribbonTransact.Visible = true;
+                ribbonReport.Visible = true;
                 ribbonAdmin.Visible = true;
+                ribbonSystemLogs.Caption = "Users Logs";
             }
             else if (UserRight == 2)
             {
+                mnuBtnBrethren.Visibility = BarItemVisibility.Always;
+                mnuBtnAttendance.Visibility = BarItemVisibility.Always;
+                mnuBtnCommittees.Visibility = BarItemVisibility.Never;
+                mnuBtnLocale.Visibility = BarItemVisibility.Never;
+                barBtnGatheringTypes.Visibility = BarItemVisibility.Never;
                 ribbonRef.Visible = true;
                 ribbonTransact.Visible = true;
                 ribbonReport.Visible = true;
@@ -267,6 +310,21 @@ namespace AMS
                 ReportPrintTool printTool = new ReportPrintTool(celebrantsReport);
                 printTool.ShowPreview();
             }
+        }
+
+        private void barButtonItem5_ItemClick_1(object sender, ItemClickEventArgs e)
+        {
+            Instances.setupGathering.ShowDialog();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Instances.viewGatherings.ShowDialog();
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -90,30 +90,30 @@ namespace AMS
                 using (var TimeIn = new SqlCommand("INSERT_TEMP_ATTENDANCE", Utilities.con))
                 {
                     TimeIn.CommandType = CommandType.StoredProcedure;
-                    TimeIn.Parameters.AddWithValue("@tempGathering_ID", frmAttendanceMonitoring.GatheringID);
-                    TimeIn.Parameters.AddWithValue("@tempChurch_ID", txtChurchID.Text);
-                    TimeIn.Parameters.AddWithValue("@tempAttendance_Status", frmAttendanceMonitoring.Status);
+                    TimeIn.Parameters.AddWithValue("@tempGathering_ID", frmAttendanceForm.GatheringID);
+                    //TimeIn.Parameters.AddWithValue("@tempChurch_ID", txtChurchID.Text);
+                    TimeIn.Parameters.AddWithValue("@tempAttendance_Status", frmAttendanceForm.Status);
                     TimeIn.Parameters.AddWithValue("@tempReal_Time", DateTime.Now.ToShortTimeString());
                     TimeIn.Parameters.AddWithValue("@is_interlocale", false);
-                    TimeIn.Parameters.AddWithValue("@remarks", "");
+                    TimeIn.Parameters.AddWithValue("@locale", "");
                     TimeIn.Parameters.AddWithValue("@temp_brethren_id", Utilities.GetLastCodeFromTable("brethren_id", "Brethren"));
                     TimeIn.ExecuteNonQuery();
                 }
-                
-                frmAttendanceMonitoring.drAttendance = frmAttendanceMonitoring.dtAttendance.NewRow();
-                var dr = frmAttendanceMonitoring.drAttendance;
+
+                frmAttendanceForm.drAttendance = frmAttendanceForm.dtAttendance.NewRow();
+                var dr = frmAttendanceForm.drAttendance;
                 dr["temp_brethren_id"] = Utilities.GetLastCodeFromTable("brethren_id", "Brethren");
                 dr["tempChurch_ID"] = txtChurchID.Text;
                 dr["Name"] = txtFirstname.Text + " " + txtLastname.Text;
                 dr["tempReal_Time"] = DateTime.Now.ToShortTimeString();
-                dr["tempAttendance_Status"] = (frmAttendanceMonitoring.Status == 1 ? "TIMED IN" : "LATE");
+                dr["tempAttendance_Status"] = (frmAttendanceForm.Status == 1 ? "TIMED IN" : "LATE");
                 dr["is_interlocale"] = "NO";
-                dr["remarks"] = "";
-                frmAttendanceMonitoring.dtAttendance.Rows.Add(dr);
-                frmAttendanceMonitoring.dtAttendance.AcceptChanges();
+                dr["locale"] = "";
+                frmAttendanceForm.dtAttendance.Rows.Add(dr);
+                frmAttendanceForm.dtAttendance.AcceptChanges();
 
                 Utilities.SuccessMessage(txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY REGISTERED AND TIMED IN");
-                Instances.attendanceMontoring.lblStatus.Text = txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY REGISTERED AND TIMED IN";
+                Utilities.SuccessMessage(txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY REGISTERED AND TIMED IN");
                 ClearFields();
                 this.Hide();
             }

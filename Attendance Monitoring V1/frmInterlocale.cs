@@ -10,6 +10,7 @@ namespace AMS
     public partial class frmInterlocale : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         DataTable dtInterlocale = new DataTable();
+        DataTable dtInterlocaleLocale = new DataTable();
         string InterlocaleIDValue;
         public static string GatheringID;
         public frmInterlocale()
@@ -19,13 +20,12 @@ namespace AMS
 
         private string InterlocaleID()
         {
-            //string LastInsertedID = Utilities.GetLastCodeFromTable("Interlocale_Id", "Interlocale");
+            string LastInsertedID = Utilities.GetLastAlphaNumericColumn("Interlocale_Id", "Interlocale");
 
-            //if (LastInsertedID == null)
-            //    return "IL-1"+DateTime.Now.ToLongTimeString();
-            //else
-            //    return "IL-" + (Convert.ToInt16(LastInsertedID.Replace("IL-", "")) + 1);
-            return Guid.NewGuid().ToString("N");
+            if (LastInsertedID == null)
+                return "IL-1";
+            else
+                return "IL-" + (Convert.ToInt16(LastInsertedID.Replace("IL-", "")) + 1);
         }
 
         private void LoadInterlocale()
@@ -42,15 +42,15 @@ namespace AMS
 
         private void InitializeInterlocaleInput()
         {
-            txtChurchID.Hide();
-            lblChurchBaptism.Text = "Select Input :";
+            LabelDoB.Show();
+            LabelCI.Text = "Church ID :";
+            LabelCI.Hide();
             dateBaptism.EditValue = DateTime.Now.ToShortDateString();
-            dateBaptism.Hide();
-            lblDateOfBaptism.Hide();
-            dateBaptism.Location = new Point(20, 54);
-            btnChurchID.Show();
-            btnBoth.Show();
-            btnBaptism.Show();
+            LabelDoB.Hide();
+            dateBaptism.Location = new Point(20, 258);
+            //btnChurchID.Show();
+            //btnBoth.Show();
+            //btnBaptism.Show();
         }
 
         private void HideButtons()
@@ -58,6 +58,22 @@ namespace AMS
             btnChurchID.Hide();
             btnBoth.Hide();
             btnBaptism.Hide();
+        }
+
+        public void FillComboBoxLocale()
+        {
+            using(var adapt = new SqlDataAdapter("GET_INTERLOCALE_LOCALE", Utilities.con))
+            {
+                adapt.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapt.Fill(dtInterlocaleLocale);
+            }
+
+            foreach (DataRow Row in dtInterlocaleLocale.Rows)
+            {
+                txtLocale.Properties.Items.Add(Row["Locale"]);
+            }
+            txtLocale.Properties.Sorted = true;
+
         }
 
         private void frmInterlocale_Load(object sender, EventArgs e)
@@ -68,6 +84,7 @@ namespace AMS
             gridView1.ShowFindPanel();
             ClearFields();
             LoadInterlocale();
+            FillComboBoxLocale();
         }
 
         private void barBtnClose_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -134,19 +151,50 @@ namespace AMS
                         Utilities.SuccessMessage("New Interlocale has been successfully saved!");
                         Utilities.GenerateSystemLog("Added Interlocale, " + txtFirstname.Text + " " + txtLastname.Text, "Interlocale Module", 1);
 
-                        DataRow dr = dtInterlocale.NewRow();
-                        dr["Interlocale_Id"] = interlocaleID;
-                        dr["Church_Id"] = txtChurchID.Text;
-                        dr["Firstname"] = txtFirstname.Text;
-                        dr["Middlename"] = txtMiddlename.Text;
-                        dr["Lastname"] = txtLastname.Text;
-                        dr["Locale"] = txtLocale.Text;
-                        dr["DateOfBaptism"] = dateBaptism.EditValue;
-                        dtInterlocale.Rows.Add(dr);
-                        dtInterlocale.AcceptChanges();
+                        //DataRow dr = dtInterlocale.NewRow();
+                        //dr["Interlocale_Id"] = interlocaleID;
+                        //dr["Church_Id"] = txtChurchID.Text;
+                        //dr["Firstname"] = txtFirstname.Text;
+                        //dr["Middlename"] = txtMiddlename.Text;
+                        //dr["Lastname"] = txtLastname.Text;
+                        //dr["Locale"] = txtLocale.Text;
+                        //dr["DateOfBaptism"] = dateBaptism.EditValue;
+                        //dtInterlocale.Rows.Add(dr);
+                        //dtInterlocale.AcceptChanges();
 
-                        gridInterlocale.DataSource = dtInterlocale;
-                        ClearFields();
+                        //gridInterlocale.DataSource = dtInterlocale;
+                        //ClearFields();
+                    }
+
+                    using (var cmdAttendance = new SqlCommand("INSERT_TEMP_ATTENDANCE", Utilities.con))
+                    {
+                        cmdAttendance.CommandType = CommandType.StoredProcedure;
+                        cmdAttendance.Parameters.AddWithValue("@tempGathering_ID", frmAttendanceForm.GatheringID);
+                        //cmd.Parameters.AddWithValue("@tempChurch_ID", gridView1.GetRowCellValue(row, "Church_Id"));
+                        cmdAttendance.Parameters.AddWithValue("@tempAttendance_Status", frmAttendanceForm.Status);
+                        cmdAttendance.Parameters.AddWithValue("@tempReal_Time", DateTime.Now.ToShortTimeString());
+                        cmdAttendance.Parameters.AddWithValue("@is_interlocale", true);
+                        //cmd.Parameters.AddWithValue("@remarks", gridView1.GetRowCellValue(row, "Locale"));
+                        cmdAttendance.Parameters.AddWithValue("@temp_brethren_id", interlocaleID);
+                        cmdAttendance.Parameters.AddWithValue("@locale", txtLocale.Text);
+                        cmdAttendance.ExecuteNonQuery();
+                        var InterlocaleName = txtFirstname.Text + " " + txtLastname.Text;
+                        Utilities.SuccessMessage(InterlocaleName + " Successfully Timed In");
+                        MessageBox.Show(txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY TIMED IN");
+
+                        frmAttendanceForm.drAttendance = frmAttendanceForm.dtAttendance.NewRow();
+                        var dr = frmAttendanceForm.drAttendance;
+                        dr["temp_brethren_id"] = interlocaleID;
+                        dr["tempChurch_ID"] = txtChurchID.Text;
+                        dr["Name"] = InterlocaleName;
+                        dr["tempReal_Time"] = DateTime.Now.ToShortTimeString();
+                        dr["tempAttendance_Status"] = (frmAttendanceForm.Status == 1 ? "TIMED IN" : "LATE");
+                        dr["is_interlocale"] = "YES";
+                        dr["locale"] = txtLocale.Text;
+                        frmAttendanceForm.dtAttendance.Rows.Add(dr);
+                        frmAttendanceForm.dtAttendance.AcceptChanges();
+
+                        this.Close();
                     }
                 }
                 else
@@ -216,26 +264,27 @@ namespace AMS
                     Utilities.ErrorMessage("No Interlocale(s) Selected");
                 else if (gridView1.RowCount == 0)
                     Utilities.ErrorMessage("No Record(s) Found");
-                else if (Utilities.CheckBrethrenIfAttended(frmAttendanceMonitoring.GatheringID, gridView1.GetRowCellValue(row, "Interlocale_Id").ToString()))
-                    Utilities.ErrorMessage("Interlocale Brethren Already Timed in");
+                //else if (Utilities.CheckBrethrenIfAttended(frmAttendanceMonitoring.GatheringID, gridView1.GetRowCellValue(row, "Interlocale_Id").ToString()))
+                //    Utilities.ErrorMessage("Interlocale Brethren Already Timed in");
                 else
                 {
                     using (var cmd = new SqlCommand("INSERT_TEMP_ATTENDANCE", Utilities.con))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@tempGathering_ID", frmAttendanceMonitoring.GatheringID);
-                        cmd.Parameters.AddWithValue("@tempChurch_ID", gridView1.GetRowCellValue(row, "Church_Id"));
+                        //cmd.Parameters.AddWithValue("@tempChurch_ID", gridView1.GetRowCellValue(row, "Church_Id"));
                         cmd.Parameters.AddWithValue("@tempAttendance_Status", frmAttendanceMonitoring.Status);
                         cmd.Parameters.AddWithValue("@tempReal_Time", DateTime.Now.ToShortTimeString());
                         cmd.Parameters.AddWithValue("@is_interlocale", true);
-                        cmd.Parameters.AddWithValue("@remarks", gridView1.GetRowCellValue(row, "Locale"));
+                        //cmd.Parameters.AddWithValue("@remarks", gridView1.GetRowCellValue(row, "Locale"));
                         cmd.Parameters.AddWithValue("@temp_brethren_id", gridView1.GetRowCellValue(row, "Interlocale_Id").ToString());
+                        cmd.Parameters.AddWithValue("@locale", gridView1.GetRowCellValue(row, "Locale").ToString());
                         cmd.ExecuteNonQuery();
                         var InterlocaleName = gridView1.GetRowCellValue(row, "Firstname").ToString() + " " + gridView1.GetRowCellValue(row, "Lastname");
                         Utilities.SuccessMessage(InterlocaleName + " Successfully Timed In");
                         Instances.attendanceMontoring.lblStatus.Text = txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY TIMED IN";
 
-                        Instances.attendanceMontoring.peBrethren.Image = null;
+                        //Instances.attendanceMontoring.peBrethren.Image = null;
 
                         frmAttendanceMonitoring.drAttendance = frmAttendanceMonitoring.dtAttendance.NewRow();
                         var dr = frmAttendanceMonitoring.drAttendance;
@@ -245,7 +294,7 @@ namespace AMS
                         dr["tempReal_Time"] = DateTime.Now.ToShortTimeString();
                         dr["tempAttendance_Status"] = (frmAttendanceMonitoring.Status == 1 ? "TIMED IN" : "LATE");
                         dr["is_interlocale"] = "YES";
-                        dr["remarks"] = gridView1.GetRowCellValue(row, "Locale").ToString();
+                        dr["locale"] = gridView1.GetRowCellValue(row, "Locale").ToString();
                         frmAttendanceMonitoring.dtAttendance.Rows.Add(dr);
                         frmAttendanceMonitoring.dtAttendance.AcceptChanges();
                         
@@ -271,22 +320,22 @@ namespace AMS
         private void btnChurchID_Click(object sender, EventArgs e)
         {
             txtChurchID.Show();
-            lblChurchBaptism.Text = "Church ID :";
+            LabelCI.Text = "Church ID :";
             HideButtons();
         }
 
         private void btnBaptism_Click(object sender, EventArgs e)
         {
             dateBaptism.Show();
-            lblChurchBaptism.Text = "Date of Baptism :";
+            LabelCI.Text = "Date of Baptism :";
             HideButtons();
         }
 
         private void btnBoth_Click(object sender, EventArgs e)
         {
             txtChurchID.Show();
-            lblDateOfBaptism.Show();
-            lblChurchBaptism.Text = "Church ID :";
+            LabelDoB.Show();
+            LabelCI.Text = "Church ID :";
             txtChurchID.Focus();
             dateBaptism.Show();
             dateBaptism.Location = new Point(19, 258);

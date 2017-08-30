@@ -60,13 +60,13 @@
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(374, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(390, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // barBtnSave
             // 
-            this.barBtnSave.Caption = "SAVE";
+            this.barBtnSave.Caption = "SAVE AND TIME IN";
             this.barBtnSave.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnSave.Glyph")));
             this.barBtnSave.Id = 1;
             this.barBtnSave.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnSave.LargeGlyph")));
@@ -100,15 +100,16 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 413);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(374, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(390, 23);
             // 
             // labelControl1
             // 
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl1.Location = new System.Drawing.Point(33, 216);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(47, 13);
+            this.labelControl1.Size = new System.Drawing.Size(56, 13);
             this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Firstname";
+            this.labelControl1.Text = "Firstname *";
             // 
             // labelControl2
             // 
@@ -120,11 +121,12 @@
             // 
             // labelControl3
             // 
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl3.Location = new System.Drawing.Point(33, 309);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(46, 13);
+            this.labelControl3.Size = new System.Drawing.Size(55, 13);
             this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "Lastname";
+            this.labelControl3.Text = "Lastname *";
             // 
             // labelControl4
             // 
@@ -166,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 436);
+            this.ClientSize = new System.Drawing.Size(390, 436);
             this.Controls.Add(this.txtLastname);
             this.Controls.Add(this.txtMiddlename);
             this.Controls.Add(this.txtFirstname);
@@ -177,11 +179,12 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.MaximizeBox = false;
             this.Name = "frmNewlyBaptized";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
-            this.Text = "ADD NEW BRETHREN";
+            this.Text = "ADD NEW MEMBER";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -43,9 +43,9 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBatches)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -69,7 +69,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(472, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(480, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -136,19 +136,19 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 443);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 451);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(472, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(480, 23);
             // 
             // gridBatches
             // 
             this.gridBatches.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBatches.Location = new System.Drawing.Point(0, 143);
+            this.gridBatches.Location = new System.Drawing.Point(0, 147);
             this.gridBatches.MainView = this.gridView1;
             this.gridBatches.MenuManager = this.ribbonControl1;
             this.gridBatches.Name = "gridBatches";
-            this.gridBatches.Size = new System.Drawing.Size(472, 300);
+            this.gridBatches.Size = new System.Drawing.Size(480, 304);
             this.gridBatches.TabIndex = 2;
             this.gridBatches.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -182,6 +182,12 @@
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 0;
             // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Gathering_ID";
+            this.gridColumn5.FieldName = "gathering_id";
+            this.gridColumn5.Name = "gridColumn5";
+            // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Gathering";
@@ -202,17 +208,11 @@
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
             // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "Gathering_ID";
-            this.gridColumn5.FieldName = "gathering_id";
-            this.gridColumn5.Name = "gridColumn5";
-            // 
             // frmBatches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 474);
+            this.ClientSize = new System.Drawing.Size(480, 474);
             this.Controls.Add(this.gridBatches);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);

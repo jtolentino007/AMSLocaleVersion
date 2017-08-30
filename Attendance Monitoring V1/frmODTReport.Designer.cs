@@ -43,6 +43,7 @@
             this.numericAbsence = new System.Windows.Forms.NumericUpDown();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.cmbAddress = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateFrom.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateFrom.Properties)).BeginInit();
@@ -68,7 +69,7 @@
             this.ribbonControl1.ShowCategoryInCaption = false;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(380, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(396, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -108,7 +109,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 376);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(380, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(396, 23);
             // 
             // labelControl1
             // 
@@ -192,11 +193,21 @@
             this.cmbAddress.Size = new System.Drawing.Size(309, 20);
             this.cmbAddress.TabIndex = 4;
             // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl5.Location = new System.Drawing.Point(85, 278);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(184, 13);
+            this.labelControl5.TabIndex = 17;
+            this.labelControl5.Text = "(Leave blank to Disable Address Filter)";
+            // 
             // frmODTReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 399);
+            this.ClientSize = new System.Drawing.Size(396, 399);
+            this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.numericAbsence);
             this.Controls.Add(this.dateTo);
@@ -243,5 +254,6 @@
         private System.Windows.Forms.NumericUpDown numericAbsence;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LookUpEdit cmbAddress;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
     }
 }

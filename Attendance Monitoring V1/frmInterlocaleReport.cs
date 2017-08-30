@@ -53,6 +53,10 @@ namespace AMS
             {
                 Utilities.ErrorMessage("Please Enter Date of Gathering");
             }
+            else if (string.IsNullOrWhiteSpace(lueLocale.Text))
+            {
+                Utilities.ErrorMessage("Please Select Locale");
+            }
             else
             {
                 BindAttendanceToReport();
@@ -72,6 +76,7 @@ namespace AMS
                     interlocaleReport.xrTableCellName.DataBindings.Add("Text", dtInterlocale, dtInterlocale.Columns["Interlocale_name"].ToString());
                     interlocaleReport.xrTableCellTimeIn.DataBindings.Add("Text", dtInterlocale, dtInterlocale.Columns["time_in"].ToString());
                     interlocaleReport.xrTableCellStatus.DataBindings.Add("Text", dtInterlocale, dtInterlocale.Columns["tempAttendance_Status"].ToString());
+                    interlocaleReport.Name = "INTERLOCALE - " + lueGatheringType.Text.ToString().Replace(" ", string.Empty);
                     interlocaleReport.CreateDocument();
 
                     ReportPrintTool printTool = new ReportPrintTool(interlocaleReport);
@@ -83,6 +88,7 @@ namespace AMS
 
         private void frmInterlocaleReport_Load(object sender, EventArgs e)
         {
+            dtDateGathering.EditValue = DateTime.Now.ToShortDateString();
             Utilities.FillLookUpEdit(lueGatheringType, "GET_GATHERING_TYPES", "gathering", "gathering_id");
             Utilities.FillLookUpEdit(lueLocale, "GET_INTERLOCALE_LOCALE", "Locale", "Locale");
         }
