@@ -62,7 +62,7 @@ namespace AMS
         private void mnuBtnAttendance_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             flag = 1;
-            Instances.attendanceMontoring.Show();
+            Instances.attendanceForm.Show();
             this.Hide();
         }
 

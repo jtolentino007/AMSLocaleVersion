@@ -113,26 +113,30 @@ namespace AMS
 
         public void ActivateAttendanceForm()
         {
-            Instances.attendanceMontoring.barBtnEndAttendance.Visibility = BarItemVisibility.Always;
-            Instances.attendanceMontoring.barBtnTimeIn.Visibility = BarItemVisibility.Always;
-            Instances.attendanceMontoring.barBtnNewGathering.Visibility = BarItemVisibility.Never;
-            Instances.attendanceMontoring.txtSearch.Enabled = true;
-            Instances.attendanceMontoring.gridAttendance.Enabled = true;
-            Instances.attendanceMontoring.gridBrethren.Enabled = true;
-            Instances.attendanceMontoring.barBtnNewGathering.Visibility = BarItemVisibility.Never;
-            Instances.attendanceMontoring.mnuBtnGatheringList.Visibility = BarItemVisibility.Never;
-            Instances.attendanceMontoring.mnuBtnInterlocale.Visibility = BarItemVisibility.Always;
-            Instances.attendanceMontoring.barBtnNewlyBaptized.Visibility = BarItemVisibility.Always;
-            Instances.attendanceMontoring.barBtnLateStatus.Visibility = BarItemVisibility.Always;
-            Instances.attendanceMontoring.barBtnLateStatus.Enabled = true;
-            Instances.attendanceMontoring.barBtnLateStatus.Caption = "Activate Late Status";
-            Instances.attendanceMontoring.lblTimerGathering.Text = cmbGatheringType.Text.ToUpper();
-            Instances.attendanceMontoring.lblStatus.Text = "READY";
-            Instances.attendanceMontoring.barBtnGenerateReport.Visibility = BarItemVisibility.Always;
-            //frmAMS.GetAttendanceSummary();
-            frmAttendanceMonitoring.Status = 1;
-            Instances.attendanceMontoring.GetBrethrenList();
-            Instances.attendanceMontoring.GetCurrentAttendance();
+            Instances.attendanceForm.lblGathering.Text = cmbGatheringType.Text;
+            Instances.attendanceForm.lblGatheringBatch.Caption = lueBatch.Text;
+            Instances.attendanceForm.lblGatheringDate.Caption = dtDateGathering.Text;
+            Instances.attendanceForm.GetBrethrenList();
+            Instances.attendanceForm.InitializeAttendeesTable();
+            //Instances.attendanceMontoring.barBtnEndAttendance.Visibility = BarItemVisibility.Always;
+            //Instances.attendanceMontoring.barBtnTimeIn.Visibility = BarItemVisibility.Always;
+            //Instances.attendanceMontoring.barBtnNewGathering.Visibility = BarItemVisibility.Never;
+            //Instances.attendanceMontoring.txtSearch.Enabled = true;
+            //Instances.attendanceMontoring.gridAttendance.Enabled = true;
+            //Instances.attendanceMontoring.gridBrethren.Enabled = true;
+            //Instances.attendanceMontoring.barBtnNewGathering.Visibility = BarItemVisibility.Never;
+            //Instances.attendanceMontoring.mnuBtnGatheringList.Visibility = BarItemVisibility.Never;
+            //Instances.attendanceMontoring.mnuBtnInterlocale.Visibility = BarItemVisibility.Always;
+            //Instances.attendanceMontoring.barBtnNewlyBaptized.Visibility = BarItemVisibility.Always;
+            //Instances.attendanceMontoring.barBtnLateStatus.Visibility = BarItemVisibility.Always;
+            //Instances.attendanceMontoring.barBtnLateStatus.Enabled = true;
+            //Instances.attendanceMontoring.barBtnLateStatus.Caption = "Activate Late Status";
+            //Instances.attendanceMontoring.lblTimerGathering.Text = cmbGatheringType.Text.ToUpper();
+            //Instances.attendanceMontoring.lblStatus.Text = "READY";
+            //Instances.attendanceMontoring.barBtnGenerateReport.Visibility = BarItemVisibility.Always;
+            //frmAttendanceMonitoring.Status = 1;
+            //Instances.attendanceMontoring.GetBrethrenList();
+            //Instances.attendanceMontoring.GetCurrentAttendance();
         }
 
         private void mnuBtnSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -161,14 +165,14 @@ namespace AMS
                         cmd.ExecuteNonQuery();
                         Utilities.SuccessMessage("Gathering Successfully Created");
                         GatheringID = SetGatheringID(cmbGatheringType.GetColumnValue("gathering_code").ToString(), lueBatch.Text);
-                        frmAttendanceMonitoring.GatheringID = GatheringID;
+                        frmAttendanceForm.GatheringID = GatheringID;
                         frmInterlocale.GatheringID = GatheringID;
                         Utilities.GenerateSystemLog("Created " + SetGatheringID(cmbGatheringType.Text, lueBatch.Text), "Gathering Management", 1);
-                        Instances.attendanceMontoring.barStaticGatheringID.Caption = "Gathering ID : " + frmAttendanceMonitoring.GatheringID;
-                        Instances.attendanceMontoring.barStaticGatheringType.Caption = "Gathering : " + cmbGatheringType.Text + ", " + lueBatch.Text + " Batch";
+                        //Instances.attendanceForm.barStaticGatheringID.Caption = "Gathering ID : " + frmAttendanceMonitoring.GatheringID;
+                        //Instances.attendanceForm.barStaticGatheringType.Caption = "Gathering : " + cmbGatheringType.Text + ", " + lueBatch.Text + " Batch";
                         frmAttendanceMonitoring.Time = Convert.ToDateTime(Convert.ToDateTime(lueBatch.Text).ToShortTimeString());
                         ActivateAttendanceForm();
-                        Instances.attendanceMontoring.ShowDialog();
+                        Instances.attendanceForm.ShowDialog();
                         ClearGathering();
                         this.Hide();
                     }

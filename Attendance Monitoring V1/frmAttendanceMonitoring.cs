@@ -22,7 +22,6 @@ namespace AMS
         public static DataRow drAttendance;
         public static bool _isGatheringSetup = false;
         public static Form amsForm { get; set; }
-
         public static int Status = 1;
         public frmAttendanceMonitoring()
         {

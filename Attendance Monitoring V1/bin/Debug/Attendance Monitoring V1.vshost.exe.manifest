@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Attendance Monitoring V1.exe" size="5149152">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Attendance Monitoring V1.exe" size="5173216">
       <assemblyIdentity name="Attendance Monitoring V1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZYaYTIuShT+pc5M+FWGKV1mUpgkH/U1fjZv7jNJYZqY=</dsig:DigestValue>
+        <dsig:DigestValue>QeuOyPdDetUiOWXlvBBVIPixrcAgBXd6XqFf+OFycgU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -169,9 +169,9 @@ namespace AMS
                     using (var cmdAttendance = new SqlCommand("INSERT_TEMP_ATTENDANCE", Utilities.con))
                     {
                         cmdAttendance.CommandType = CommandType.StoredProcedure;
-                        cmdAttendance.Parameters.AddWithValue("@tempGathering_ID", frmAttendanceMonitoring.GatheringID);
+                        cmdAttendance.Parameters.AddWithValue("@tempGathering_ID", frmAttendanceForm.GatheringID);
                         //cmd.Parameters.AddWithValue("@tempChurch_ID", gridView1.GetRowCellValue(row, "Church_Id"));
-                        cmdAttendance.Parameters.AddWithValue("@tempAttendance_Status", frmAttendanceMonitoring.Status);
+                        cmdAttendance.Parameters.AddWithValue("@tempAttendance_Status", frmAttendanceForm.Status);
                         cmdAttendance.Parameters.AddWithValue("@tempReal_Time", DateTime.Now.ToShortTimeString());
                         cmdAttendance.Parameters.AddWithValue("@is_interlocale", true);
                         //cmd.Parameters.AddWithValue("@remarks", gridView1.GetRowCellValue(row, "Locale"));
@@ -180,19 +180,19 @@ namespace AMS
                         cmdAttendance.ExecuteNonQuery();
                         var InterlocaleName = txtFirstname.Text + " " + txtLastname.Text;
                         Utilities.SuccessMessage(InterlocaleName + " Successfully Timed In");
-                        Instances.attendanceMontoring.lblStatus.Text = txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY TIMED IN";
+                        MessageBox.Show(txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY TIMED IN");
 
-                        frmAttendanceMonitoring.drAttendance = frmAttendanceMonitoring.dtAttendance.NewRow();
-                        var dr = frmAttendanceMonitoring.drAttendance;
+                        frmAttendanceForm.drAttendance = frmAttendanceForm.dtAttendance.NewRow();
+                        var dr = frmAttendanceForm.drAttendance;
                         dr["temp_brethren_id"] = interlocaleID;
                         dr["tempChurch_ID"] = txtChurchID.Text;
                         dr["Name"] = InterlocaleName;
                         dr["tempReal_Time"] = DateTime.Now.ToShortTimeString();
-                        dr["tempAttendance_Status"] = (frmAttendanceMonitoring.Status == 1 ? "TIMED IN" : "LATE");
+                        dr["tempAttendance_Status"] = (frmAttendanceForm.Status == 1 ? "TIMED IN" : "LATE");
                         dr["is_interlocale"] = "YES";
                         dr["locale"] = txtLocale.Text;
-                        frmAttendanceMonitoring.dtAttendance.Rows.Add(dr);
-                        frmAttendanceMonitoring.dtAttendance.AcceptChanges();
+                        frmAttendanceForm.dtAttendance.Rows.Add(dr);
+                        frmAttendanceForm.dtAttendance.AcceptChanges();
 
                         this.Close();
                     }

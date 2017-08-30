@@ -181,6 +181,12 @@
     <Compile Include="frmAssignees.Designer.cs">
       <DependentUpon>frmAssignees.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAttendanceForm.Designer.cs">
+      <DependentUpon>frmAttendanceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGatheringSelection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +369,12 @@
     <Compile Include="frmUsers.Designer.cs">
       <DependentUpon>frmUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViewAttendees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewAttendees.Designer.cs">
+      <DependentUpon>frmViewAttendees.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportDataSet.Designer.cs">
@@ -447,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAssignees.resx">
       <DependentUpon>frmAssignees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAttendanceForm.resx">
+      <DependentUpon>frmAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAttendanceMonitoring.resx">
       <DependentUpon>frmAttendanceMonitoring.cs</DependentUpon>
@@ -537,6 +552,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewAttendees.resx">
+      <DependentUpon>frmViewAttendees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

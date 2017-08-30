@@ -118,7 +118,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(312, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(312, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -215,10 +215,10 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 510);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 518);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(312, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(312, 23);
             // 
             // groupControl1
             // 
@@ -457,11 +457,11 @@
             // gridInterlocale
             // 
             this.gridInterlocale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridInterlocale.Location = new System.Drawing.Point(1, 20);
+            this.gridInterlocale.Location = new System.Drawing.Point(1, 21);
             this.gridInterlocale.MainView = this.gridView1;
             this.gridInterlocale.MenuManager = this.ribbonControl1;
             this.gridInterlocale.Name = "gridInterlocale";
-            this.gridInterlocale.Size = new System.Drawing.Size(0, 333);
+            this.gridInterlocale.Size = new System.Drawing.Size(0, 332);
             this.gridInterlocale.TabIndex = 0;
             this.gridInterlocale.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});

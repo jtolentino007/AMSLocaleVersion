@@ -65,8 +65,6 @@ namespace AMS
                 cmdAttendance.Parameters.AddWithValue("@workers", txtWorker.Text);
                 cmdAttendance.Parameters.AddWithValue("@remarks", txtRemarks.Text);
                 cmdAttendance.ExecuteNonQuery();
-                Instances.attendanceMontoring.GetCurrentAttendance();
-                Instances.attendanceMontoring.ReturnAttendanceToNormal();
                 Utilities.SuccessMessage("Attendance Successfully ended");
                 clearAssignee();  
 
