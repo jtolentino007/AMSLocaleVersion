@@ -637,11 +637,12 @@
             // dashboardDesigner1
             // 
             this.dashboardDesigner1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashboardDesigner1.Location = new System.Drawing.Point(0, 140);
+            this.dashboardDesigner1.Location = new System.Drawing.Point(0, 178);
+            this.dashboardDesigner1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.dashboardDesigner1.MenuManager = this.ribbonControl1;
             this.dashboardDesigner1.Name = "dashboardDesigner1";
             this.dashboardDesigner1.PopupMenu = this.dashboardPopupMenu1;
-            this.dashboardDesigner1.Size = new System.Drawing.Size(855, 347);
+            this.dashboardDesigner1.Size = new System.Drawing.Size(997, 421);
             this.dashboardDesigner1.TabIndex = 0;
             this.dashboardDesigner1.Load += new System.EventHandler(this.dashboardDesigner1_Load);
             // 
@@ -864,6 +865,7 @@
             this.useLocalColorsBarItem1,
             this.editActualColorsBarItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 212;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -890,7 +892,7 @@
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemSpinEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbonControl1.Size = new System.Drawing.Size(855, 140);
+            this.ribbonControl1.Size = new System.Drawing.Size(997, 178);
             this.ribbonControl1.Toolbar.ItemLinks.Add(this.fileSaveBarItem1);
             this.ribbonControl1.Toolbar.ItemLinks.Add(this.quickAccessUndoBarItem1);
             this.ribbonControl1.Toolbar.ItemLinks.Add(this.quickAccessRedoBarItem1);
@@ -909,19 +911,21 @@
             this.dashboardBackstageViewControl1.Items.Add(this.dashboardBackstageSaveAsButton1);
             this.dashboardBackstageViewControl1.Items.Add(this.dashboardBackstageRecentTab1);
             this.dashboardBackstageViewControl1.Location = new System.Drawing.Point(0, 0);
+            this.dashboardBackstageViewControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dashboardBackstageViewControl1.Name = "dashboardBackstageViewControl1";
             this.dashboardBackstageViewControl1.Ribbon = this.ribbonControl1;
             this.dashboardBackstageViewControl1.SelectedTab = this.dashboardBackstageRecentTab1;
             this.dashboardBackstageViewControl1.SelectedTabIndex = 4;
-            this.dashboardBackstageViewControl1.Size = new System.Drawing.Size(240, 150);
+            this.dashboardBackstageViewControl1.Size = new System.Drawing.Size(280, 185);
             this.dashboardBackstageViewControl1.TabIndex = 2;
             // 
             // backstageViewClientControl1
             // 
             this.backstageViewClientControl1.Controls.Add(this.recentDashboardsControl1);
             this.backstageViewClientControl1.Location = new System.Drawing.Point(132, 0);
+            this.backstageViewClientControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(91, 150);
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(127, 185);
             this.backstageViewClientControl1.TabIndex = 1;
             // 
             // recentDashboardsControl1
@@ -929,9 +933,10 @@
             this.recentDashboardsControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.recentDashboardsControl1.ForeColor = System.Drawing.Color.Transparent;
             this.recentDashboardsControl1.Location = new System.Drawing.Point(0, 0);
+            this.recentDashboardsControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.recentDashboardsControl1.Name = "recentDashboardsControl1";
             this.recentDashboardsControl1.ServiceProvider = this.dashboardDesigner1;
-            this.recentDashboardsControl1.Size = new System.Drawing.Size(91, 150);
+            this.recentDashboardsControl1.Size = new System.Drawing.Size(127, 185);
             this.recentDashboardsControl1.TabIndex = 0;
             // 
             // dashboardBackstageRecentTab1
@@ -3860,12 +3865,13 @@
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 487);
+            this.ClientSize = new System.Drawing.Size(997, 599);
             this.Controls.Add(this.dashboardDesigner1);
             this.Controls.Add(this.ribbonControl1);
             this.Controls.Add(this.dashboardBackstageViewControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "frmDashboardDesign";
             this.ShowIcon = false;

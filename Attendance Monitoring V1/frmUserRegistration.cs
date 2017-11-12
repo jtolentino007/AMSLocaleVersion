@@ -21,6 +21,7 @@ namespace AMS
         {
             if (Utilities.FMode == "Add")
             {
+                Instances.login.InitializeLogin();
                 Instances.login.Show();
                 this.Hide();
             }
@@ -28,7 +29,6 @@ namespace AMS
             {
                 this.Hide();
             }
-            Instances.login.InitializeLogin();
         }
 
         private void ClearFields()

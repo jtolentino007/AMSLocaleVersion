@@ -55,6 +55,7 @@ namespace AMS
             dtBaptism.EditValue = drBrethren["Date_Baptism"].ToString();
             dtBirth.EditValue = drBrethren["Date_Birth"].ToString();
             SetGender();
+            txtRemarks.Text = drBrethren["Remarks"].ToString();
             //cmbGender.EditValue = drBrethren["Gender"].ToString();
             cmbCivilStatus.EditValue = drBrethren["Civil_Status"].ToString();
             txtStreet.Text = drBrethren["Street"].ToString();
@@ -175,6 +176,7 @@ namespace AMS
             txtContactNo.Text = string.Empty;
             txtContactPerson.Text = string.Empty;
             txtContactPersonNumber.Text = string.Empty;
+            txtRemarks.Text = string.Empty;
             cmbStatus.SelectedIndex = -1;
             lueGroup.ItemIndex = 0;
             lueLocale.ItemIndex = 1;
@@ -208,7 +210,7 @@ namespace AMS
             if (BrethrenID == null)
                 return "B-1";
             else
-                return "B-" + (Convert.ToInt16(BrethrenID.Replace("B-", "")) + 1);
+                return "B-" + (Convert.ToInt64(BrethrenID.Replace("B-", "")) + 1);
         }
 
         private void UpdateBrethren()
@@ -239,7 +241,7 @@ namespace AMS
                 cmd.Parameters.AddWithValue("@ContactPersonNo", txtContactPersonNumber.Text);
                 cmd.Parameters.AddWithValue("@Committee_Names", checkedComboBoxEdit1.Text);
                 cmd.Parameters.AddWithValue("@Status", cmbStatus.EditValue);
-                cmd.Parameters.AddWithValue("@Remarks", "");
+                cmd.Parameters.AddWithValue("@Remarks", txtRemarks.Text);
                 cmd.Parameters.AddWithValue("@locale_id", Convert.ToInt16(lueLocale.EditValue));
                 cmd.Parameters.AddWithValue("@Baptizer", txtBaptizer.Text);
                 cmd.Parameters.AddWithValue("@is_contact_person_member", ContactPersonMember());
@@ -264,7 +266,7 @@ namespace AMS
                 drBrethren["Contact_Person"] = txtContactPerson.Text;
                 drBrethren["Contact_Person_no"] = txtContactPersonNumber.Text;
                 drBrethren["Status"] = cmbStatus.EditValue;
-                drBrethren["Remarks"] = "";
+                drBrethren["Remarks"] = txtRemarks.Text;
                 drBrethren["Group_ID"] = lueGroup.EditValue;
                 drBrethren["Image_Path"] = BrethrenImagePath;
                 drBrethren["Sketch_Path"] = ImagePath;
@@ -310,7 +312,7 @@ namespace AMS
                 cmd.Parameters.AddWithValue("@ContactPersonNo", txtContactPersonNumber.Text);
                 cmd.Parameters.AddWithValue("@Committee_Names", checkedComboBoxEdit1.Text);
                 cmd.Parameters.AddWithValue("@Status", cmbStatus.EditValue);
-                cmd.Parameters.AddWithValue("@Remarks", "");
+                cmd.Parameters.AddWithValue("@Remarks", txtRemarks.Text);
                 cmd.Parameters.AddWithValue("@locale_id", Convert.ToInt32(lueLocale.EditValue));
                 cmd.Parameters.AddWithValue("@Baptizer", txtBaptizer.Text);
                 cmd.Parameters.AddWithValue("@is_contact_person_member", ContactPersonMember());
@@ -339,7 +341,7 @@ namespace AMS
                 dr["Status"] = cmbStatus.EditValue;
                 dr["Image_Path"] = BrethrenImagePath;
                 dr["Sketch_Path"] = ImagePath;
-                dr["Remarks"] = "";
+                dr["Remarks"] = txtRemarks.Text;
                 dr["Group_ID"] = lueGroup.EditValue;
                 dr["Group_name"] = lueGroup.Text;
                 dr["Committee_Names"] = checkedComboBoxEdit1.Text;

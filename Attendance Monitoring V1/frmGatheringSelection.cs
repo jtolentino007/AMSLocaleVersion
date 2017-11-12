@@ -26,7 +26,7 @@ namespace AMS
 
         private void GetGatheringList()
         {
-            using (var adapt = new SqlDataAdapter("GET_GATHERINGS", Utilities.con))
+            using (var adapt = new SqlDataAdapter("GET_GATHERING_LIST", Utilities.con))
             {
                 dtGathering.Clear();
                 adapt.SelectCommand.CommandType = CommandType.StoredProcedure;
@@ -91,6 +91,21 @@ namespace AMS
                 ReportPrintTool printTool = new ReportPrintTool(attendanceReport);
                 printTool.ShowPreviewDialog();
             }
+        }
+
+        private void gridView1_EndGrouping(object sender, EventArgs e)
+        {
+            (sender as DevExpress.XtraGrid.Views.Grid.GridView).ExpandAllGroups();
+        }
+
+        private void gridView1_GroupRowCollapsed(object sender, DevExpress.XtraGrid.Views.Base.RowEventArgs e)
+        {
+
+        }
+
+        private void gridView1_GroupRowCollapsing(object sender, DevExpress.XtraGrid.Views.Base.RowAllowEventArgs e)
+        {
+            e.Allow = false;
         }
     }
 }

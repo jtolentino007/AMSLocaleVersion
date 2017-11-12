@@ -109,6 +109,7 @@
             this.barButtonItem7,
             this.barBtnClose});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 11;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -118,7 +119,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(312, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(364, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -215,10 +216,11 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 518);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 637);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(312, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(364, 29);
             // 
             // groupControl1
             // 
@@ -242,156 +244,166 @@
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Controls.Add(this.txtLocale);
-            this.groupControl1.Location = new System.Drawing.Point(12, 148);
+            this.groupControl1.Location = new System.Drawing.Point(14, 182);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(287, 355);
+            this.groupControl1.Size = new System.Drawing.Size(335, 437);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Add New Interlocale Attendee";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 244);
+            this.label6.Location = new System.Drawing.Point(19, 300);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.Size = new System.Drawing.Size(114, 17);
             this.label6.TabIndex = 15;
             this.label6.Text = "Date of Baptism :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 39);
+            this.label5.Location = new System.Drawing.Point(19, 48);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.Size = new System.Drawing.Size(80, 17);
             this.label5.TabIndex = 14;
             this.label5.Text = "Church ID :";
             // 
             // txtMiddlename
             // 
-            this.txtMiddlename.Location = new System.Drawing.Point(20, 139);
+            this.txtMiddlename.Location = new System.Drawing.Point(23, 171);
+            this.txtMiddlename.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMiddlename.MenuManager = this.ribbonControl1;
             this.txtMiddlename.Name = "txtMiddlename";
-            this.txtMiddlename.Size = new System.Drawing.Size(253, 20);
+            this.txtMiddlename.Size = new System.Drawing.Size(295, 22);
             this.txtMiddlename.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 121);
+            this.label4.Location = new System.Drawing.Point(20, 149);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.Size = new System.Drawing.Size(96, 17);
             this.label4.TabIndex = 12;
             this.label4.Text = "Middle name : ";
             // 
             // dateBaptism
             // 
             this.dateBaptism.EditValue = null;
-            this.dateBaptism.Location = new System.Drawing.Point(19, 262);
+            this.dateBaptism.Location = new System.Drawing.Point(22, 322);
+            this.dateBaptism.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateBaptism.MenuManager = this.ribbonControl1;
             this.dateBaptism.Name = "dateBaptism";
             this.dateBaptism.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateBaptism.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateBaptism.Size = new System.Drawing.Size(253, 20);
+            this.dateBaptism.Size = new System.Drawing.Size(295, 22);
             this.dateBaptism.TabIndex = 7;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(149, 294);
+            this.btnClear.Location = new System.Drawing.Point(174, 362);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(103, 23);
+            this.btnClear.Size = new System.Drawing.Size(120, 28);
             this.btnClear.TabIndex = 5;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(40, 294);
+            this.btnSave.Location = new System.Drawing.Point(47, 362);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(103, 23);
+            this.btnSave.Size = new System.Drawing.Size(120, 28);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtChurchID
             // 
-            this.txtChurchID.Location = new System.Drawing.Point(20, 55);
+            this.txtChurchID.Location = new System.Drawing.Point(23, 68);
+            this.txtChurchID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtChurchID.MenuManager = this.ribbonControl1;
             this.txtChurchID.Name = "txtChurchID";
-            this.txtChurchID.Size = new System.Drawing.Size(253, 20);
+            this.txtChurchID.Size = new System.Drawing.Size(295, 22);
             this.txtChurchID.TabIndex = 0;
             // 
             // txtLocale2
             // 
-            this.txtLocale2.Location = new System.Drawing.Point(19, 323);
+            this.txtLocale2.Location = new System.Drawing.Point(22, 398);
+            this.txtLocale2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLocale2.MenuManager = this.ribbonControl1;
             this.txtLocale2.Name = "txtLocale2";
-            this.txtLocale2.Size = new System.Drawing.Size(253, 20);
+            this.txtLocale2.Size = new System.Drawing.Size(295, 22);
             this.txtLocale2.TabIndex = 3;
             this.txtLocale2.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 203);
+            this.label3.Location = new System.Drawing.Point(19, 250);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(55, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Locale :";
             // 
             // txtLastname
             // 
-            this.txtLastname.Location = new System.Drawing.Point(19, 178);
+            this.txtLastname.Location = new System.Drawing.Point(22, 219);
+            this.txtLastname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLastname.MenuManager = this.ribbonControl1;
             this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(253, 20);
+            this.txtLastname.Size = new System.Drawing.Size(295, 22);
             this.txtLastname.TabIndex = 2;
             // 
             // txtFirstname
             // 
-            this.txtFirstname.Location = new System.Drawing.Point(20, 96);
+            this.txtFirstname.Location = new System.Drawing.Point(23, 118);
+            this.txtFirstname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFirstname.MenuManager = this.ribbonControl1;
             this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(253, 20);
+            this.txtFirstname.Size = new System.Drawing.Size(295, 22);
             this.txtFirstname.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 162);
+            this.label2.Location = new System.Drawing.Point(19, 199);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(80, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Last name :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 78);
+            this.label1.Location = new System.Drawing.Point(20, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(84, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "First name : ";
             // 
             // txtLocale
             // 
-            this.txtLocale.Location = new System.Drawing.Point(19, 219);
+            this.txtLocale.Location = new System.Drawing.Point(22, 270);
+            this.txtLocale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLocale.MenuManager = this.ribbonControl1;
             this.txtLocale.Name = "txtLocale";
             this.txtLocale.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtLocale.Properties.LookAndFeel.SkinMaskColor = System.Drawing.Color.DodgerBlue;
             this.txtLocale.Properties.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.White;
-            this.txtLocale.Size = new System.Drawing.Size(254, 20);
+            this.txtLocale.Size = new System.Drawing.Size(296, 22);
             this.txtLocale.TabIndex = 16;
             // 
             // LabelDoB
             // 
             this.LabelDoB.AutoSize = true;
-            this.LabelDoB.Location = new System.Drawing.Point(191, 93);
+            this.LabelDoB.Location = new System.Drawing.Point(223, 114);
             this.LabelDoB.Name = "LabelDoB";
-            this.LabelDoB.Size = new System.Drawing.Size(83, 13);
+            this.LabelDoB.Size = new System.Drawing.Size(105, 17);
             this.LabelDoB.TabIndex = 11;
             this.LabelDoB.Text = "Date of Baptism";
             this.LabelDoB.Visible = false;
@@ -399,17 +411,18 @@
             // LabelCI
             // 
             this.LabelCI.AutoSize = true;
-            this.LabelCI.Location = new System.Drawing.Point(191, 80);
+            this.LabelCI.Location = new System.Drawing.Point(223, 98);
             this.LabelCI.Name = "LabelCI";
-            this.LabelCI.Size = new System.Drawing.Size(62, 13);
+            this.LabelCI.Size = new System.Drawing.Size(80, 17);
             this.LabelCI.TabIndex = 6;
             this.LabelCI.Text = "Church ID :";
             // 
             // btnBaptism
             // 
-            this.btnBaptism.Location = new System.Drawing.Point(468, 80);
+            this.btnBaptism.Location = new System.Drawing.Point(546, 98);
+            this.btnBaptism.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBaptism.Name = "btnBaptism";
-            this.btnBaptism.Size = new System.Drawing.Size(90, 23);
+            this.btnBaptism.Size = new System.Drawing.Size(105, 28);
             this.btnBaptism.TabIndex = 10;
             this.btnBaptism.Text = "BAPTISM DATE";
             this.btnBaptism.UseVisualStyleBackColor = true;
@@ -418,9 +431,10 @@
             // 
             // btnBoth
             // 
-            this.btnBoth.Location = new System.Drawing.Point(388, 80);
+            this.btnBoth.Location = new System.Drawing.Point(453, 98);
+            this.btnBoth.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBoth.Name = "btnBoth";
-            this.btnBoth.Size = new System.Drawing.Size(79, 23);
+            this.btnBoth.Size = new System.Drawing.Size(92, 28);
             this.btnBoth.TabIndex = 9;
             this.btnBoth.Text = "BOTH";
             this.btnBoth.UseVisualStyleBackColor = true;
@@ -429,9 +443,10 @@
             // 
             // btnChurchID
             // 
-            this.btnChurchID.Location = new System.Drawing.Point(305, 80);
+            this.btnChurchID.Location = new System.Drawing.Point(356, 98);
+            this.btnChurchID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnChurchID.Name = "btnChurchID";
-            this.btnChurchID.Size = new System.Drawing.Size(82, 23);
+            this.btnChurchID.Size = new System.Drawing.Size(96, 28);
             this.btnChurchID.TabIndex = 8;
             this.btnChurchID.Text = "CHURCH ID";
             this.btnChurchID.UseVisualStyleBackColor = true;
@@ -447,9 +462,10 @@
             this.groupControl2.Appearance.Options.UseBackColor = true;
             this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.groupControl2.Controls.Add(this.gridInterlocale);
-            this.groupControl2.Location = new System.Drawing.Point(305, 148);
+            this.groupControl2.Location = new System.Drawing.Point(356, 182);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(0, 355);
+            this.groupControl2.Size = new System.Drawing.Size(10, 437);
             this.groupControl2.TabIndex = 4;
             this.groupControl2.Text = "Select Interlocale Attendee";
             this.groupControl2.Visible = false;
@@ -457,11 +473,13 @@
             // gridInterlocale
             // 
             this.gridInterlocale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridInterlocale.Location = new System.Drawing.Point(1, 21);
+            this.gridInterlocale.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridInterlocale.Location = new System.Drawing.Point(2, 26);
             this.gridInterlocale.MainView = this.gridView1;
+            this.gridInterlocale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridInterlocale.MenuManager = this.ribbonControl1;
             this.gridInterlocale.Name = "gridInterlocale";
-            this.gridInterlocale.Size = new System.Drawing.Size(0, 332);
+            this.gridInterlocale.Size = new System.Drawing.Size(6, 409);
             this.gridInterlocale.TabIndex = 0;
             this.gridInterlocale.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -540,9 +558,9 @@
             // 
             // frmInterlocale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 541);
+            this.ClientSize = new System.Drawing.Size(364, 666);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.LabelDoB);
@@ -552,6 +570,7 @@
             this.Controls.Add(this.btnChurchID);
             this.Controls.Add(this.LabelCI);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmInterlocale";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

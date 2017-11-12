@@ -62,12 +62,13 @@
             this.mnubtnDeleteLocale,
             this.barButtonItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 6;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(784, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(925, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // btnClose
@@ -136,20 +137,23 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 545);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 670);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(784, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(925, 29);
             // 
             // gridLocale
             // 
             this.gridLocale.Cursor = System.Windows.Forms.Cursors.Default;
             this.gridLocale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridLocale.Location = new System.Drawing.Point(0, 147);
+            this.gridLocale.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridLocale.Location = new System.Drawing.Point(0, 187);
             this.gridLocale.MainView = this.gridView1;
+            this.gridLocale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridLocale.MenuManager = this.ribbonControl1;
             this.gridLocale.Name = "gridLocale";
-            this.gridLocale.Size = new System.Drawing.Size(784, 398);
+            this.gridLocale.Size = new System.Drawing.Size(925, 483);
             this.gridLocale.TabIndex = 4;
             this.gridLocale.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -209,12 +213,13 @@
             // 
             // frmLocale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 568);
+            this.ClientSize = new System.Drawing.Size(925, 699);
             this.Controls.Add(this.gridLocale);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmLocale";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -47,7 +47,6 @@ namespace AMS
             LabelCI.Hide();
             dateBaptism.EditValue = DateTime.Now.ToShortDateString();
             LabelDoB.Hide();
-            dateBaptism.Location = new Point(20, 258);
             //btnChurchID.Show();
             //btnBoth.Show();
             //btnBaptism.Show();
@@ -180,7 +179,6 @@ namespace AMS
                         cmdAttendance.ExecuteNonQuery();
                         var InterlocaleName = txtFirstname.Text + " " + txtLastname.Text;
                         Utilities.SuccessMessage(InterlocaleName + " Successfully Timed In");
-                        MessageBox.Show(txtFirstname.Text + " " + txtLastname.Text + " SUCCESSFULLY TIMED IN");
 
                         frmAttendanceForm.drAttendance = frmAttendanceForm.dtAttendance.NewRow();
                         var dr = frmAttendanceForm.drAttendance;
@@ -193,6 +191,10 @@ namespace AMS
                         dr["locale"] = txtLocale.Text;
                         frmAttendanceForm.dtAttendance.Rows.Add(dr);
                         frmAttendanceForm.dtAttendance.AcceptChanges();
+
+                        Instances.attendanceForm.lblChurchID.Text = txtChurchID.Text;
+                        Instances.attendanceForm.lblName.Text = InterlocaleName;
+                        Instances.attendanceForm.lblLocale.Text = txtLocale.Text;
 
                         this.Close();
                     }
@@ -338,7 +340,6 @@ namespace AMS
             LabelCI.Text = "Church ID :";
             txtChurchID.Focus();
             dateBaptism.Show();
-            dateBaptism.Location = new Point(19, 258);
             HideButtons();
         }
     }

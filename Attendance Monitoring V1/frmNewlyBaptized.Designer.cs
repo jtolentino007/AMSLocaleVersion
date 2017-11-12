@@ -54,13 +54,14 @@
             this.barBtnSave,
             this.barBtnCancel});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 3;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(390, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(455, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -97,78 +98,87 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 413);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 508);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(390, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(455, 29);
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl1.Location = new System.Drawing.Point(33, 216);
+            this.labelControl1.Location = new System.Drawing.Point(38, 266);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(56, 13);
+            this.labelControl1.Size = new System.Drawing.Size(69, 16);
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "Firstname *";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(33, 261);
+            this.labelControl2.Location = new System.Drawing.Point(38, 321);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(56, 13);
+            this.labelControl2.Size = new System.Drawing.Size(69, 16);
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Middlename";
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl3.Location = new System.Drawing.Point(33, 309);
+            this.labelControl3.Location = new System.Drawing.Point(38, 380);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(55, 13);
+            this.labelControl3.Size = new System.Drawing.Size(67, 16);
             this.labelControl3.TabIndex = 4;
             this.labelControl3.Text = "Lastname *";
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(33, 173);
+            this.labelControl4.Location = new System.Drawing.Point(38, 213);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(48, 13);
+            this.labelControl4.Size = new System.Drawing.Size(56, 16);
             this.labelControl4.TabIndex = 5;
             this.labelControl4.Text = "Church ID";
             // 
             // txtChurchID
             // 
-            this.txtChurchID.Location = new System.Drawing.Point(33, 189);
+            this.txtChurchID.Location = new System.Drawing.Point(38, 233);
+            this.txtChurchID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtChurchID.Name = "txtChurchID";
-            this.txtChurchID.Size = new System.Drawing.Size(296, 21);
+            this.txtChurchID.Size = new System.Drawing.Size(345, 23);
             this.txtChurchID.TabIndex = 6;
             // 
             // txtFirstname
             // 
-            this.txtFirstname.Location = new System.Drawing.Point(33, 235);
+            this.txtFirstname.Location = new System.Drawing.Point(38, 289);
+            this.txtFirstname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(296, 21);
+            this.txtFirstname.Size = new System.Drawing.Size(345, 23);
             this.txtFirstname.TabIndex = 7;
             // 
             // txtMiddlename
             // 
-            this.txtMiddlename.Location = new System.Drawing.Point(33, 280);
+            this.txtMiddlename.Location = new System.Drawing.Point(38, 345);
+            this.txtMiddlename.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMiddlename.Name = "txtMiddlename";
-            this.txtMiddlename.Size = new System.Drawing.Size(296, 21);
+            this.txtMiddlename.Size = new System.Drawing.Size(345, 23);
             this.txtMiddlename.TabIndex = 8;
             // 
             // txtLastname
             // 
-            this.txtLastname.Location = new System.Drawing.Point(33, 328);
+            this.txtLastname.Location = new System.Drawing.Point(38, 404);
+            this.txtLastname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(296, 21);
+            this.txtLastname.Size = new System.Drawing.Size(345, 23);
             this.txtLastname.TabIndex = 9;
             // 
             // frmNewlyBaptized
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 436);
+            this.ClientSize = new System.Drawing.Size(455, 537);
             this.Controls.Add(this.txtLastname);
             this.Controls.Add(this.txtMiddlename);
             this.Controls.Add(this.txtFirstname);
@@ -179,12 +189,14 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "frmNewlyBaptized";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "ADD NEW MEMBER";
+            this.Load += new System.EventHandler(this.frmNewlyBaptized_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

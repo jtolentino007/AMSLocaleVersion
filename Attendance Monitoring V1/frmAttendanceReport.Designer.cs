@@ -54,6 +54,7 @@
             this.barButtonGenerate,
             this.barButtonCancel});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 3;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -62,7 +63,7 @@
             this.ribbonControl1.ShowCategoryInCaption = false;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(376, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(449, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -99,43 +100,48 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 330);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 405);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(376, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(449, 29);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(33, 163);
+            this.labelControl1.Location = new System.Drawing.Point(38, 201);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(81, 13);
+            this.labelControl1.Size = new System.Drawing.Size(96, 16);
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "Gathering Type :";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(33, 208);
+            this.labelControl2.Location = new System.Drawing.Point(38, 256);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(30, 13);
+            this.labelControl2.Size = new System.Drawing.Size(35, 16);
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Date :";
             // 
             // dtDateGathering
             // 
             this.dtDateGathering.EditValue = null;
-            this.dtDateGathering.Location = new System.Drawing.Point(33, 227);
+            this.dtDateGathering.Location = new System.Drawing.Point(38, 279);
+            this.dtDateGathering.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtDateGathering.MenuManager = this.ribbonControl1;
             this.dtDateGathering.Name = "dtDateGathering";
             this.dtDateGathering.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtDateGathering.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtDateGathering.Size = new System.Drawing.Size(291, 20);
+            this.dtDateGathering.Size = new System.Drawing.Size(339, 22);
             this.dtDateGathering.TabIndex = 5;
             // 
             // cmbGatheringType
             // 
-            this.cmbGatheringType.Location = new System.Drawing.Point(33, 182);
+            this.cmbGatheringType.Location = new System.Drawing.Point(38, 224);
+            this.cmbGatheringType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbGatheringType.MenuManager = this.ribbonControl1;
             this.cmbGatheringType.Name = "cmbGatheringType";
             this.cmbGatheringType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -148,25 +154,26 @@
             this.cmbGatheringType.Properties.NullValuePrompt = "SELECT GATHERING";
             this.cmbGatheringType.Properties.NullValuePromptShowForEmptyValue = true;
             this.cmbGatheringType.Properties.PopupSizeable = false;
-            this.cmbGatheringType.Size = new System.Drawing.Size(291, 20);
+            this.cmbGatheringType.Size = new System.Drawing.Size(339, 22);
             this.cmbGatheringType.TabIndex = 4;
             // 
             // btnViewGatheringList
             // 
             this.btnViewGatheringList.Appearance.BackColor = System.Drawing.Color.Silver;
             this.btnViewGatheringList.Appearance.Options.UseBackColor = true;
-            this.btnViewGatheringList.Location = new System.Drawing.Point(33, 264);
+            this.btnViewGatheringList.Location = new System.Drawing.Point(38, 325);
+            this.btnViewGatheringList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnViewGatheringList.Name = "btnViewGatheringList";
-            this.btnViewGatheringList.Size = new System.Drawing.Size(291, 23);
+            this.btnViewGatheringList.Size = new System.Drawing.Size(339, 28);
             this.btnViewGatheringList.TabIndex = 8;
             this.btnViewGatheringList.Text = "Choose among the list";
             this.btnViewGatheringList.Click += new System.EventHandler(this.btnViewGatheringList_Click);
             // 
             // frmAttendanceReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 353);
+            this.ClientSize = new System.Drawing.Size(449, 434);
             this.Controls.Add(this.btnViewGatheringList);
             this.Controls.Add(this.dtDateGathering);
             this.Controls.Add(this.labelControl2);
@@ -174,6 +181,7 @@
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.cmbGatheringType);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "frmAttendanceReport";
             this.Ribbon = this.ribbonControl1;

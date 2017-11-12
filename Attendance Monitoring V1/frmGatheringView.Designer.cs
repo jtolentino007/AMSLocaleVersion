@@ -38,6 +38,7 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -61,6 +62,7 @@
             this.barButtonItem2,
             this.barBtnFindGathering});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 4;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -71,7 +73,7 @@
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowItemCaptionsInPageHeader = true;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(992, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(1157, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -125,16 +127,18 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 579);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 712);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(992, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1157, 29);
             // 
             // gridView1
             // 
             this.gridView1.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridView1.Appearance.FocusedRow.Options.UseFont = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn8,
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
@@ -143,9 +147,23 @@
             this.gridColumn7,
             this.gridColumn6});
             this.gridView1.GridControl = this.gridGathering;
+            this.gridView1.GroupCount = 2;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gridColumn2, DevExpress.Data.ColumnSortOrder.Ascending),
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gridColumn3, DevExpress.Data.ColumnSortOrder.Ascending)});
+            this.gridView1.GroupRowCollapsing += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.gridView1_GroupRowCollapsing);
+            this.gridView1.EndGrouping += new System.EventHandler(this.gridView1_EndGrouping);
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "Gathering Code";
+            this.gridColumn8.FieldName = "gathering_code";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 0;
             // 
             // gridColumn1
             // 
@@ -167,7 +185,7 @@
             this.gridColumn3.FieldName = "DateOfGathering";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 1;
             // 
             // gridColumn4
             // 
@@ -175,7 +193,7 @@
             this.gridColumn4.FieldName = "Gathering_Week";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.VisibleIndex = 2;
             // 
             // gridColumn5
             // 
@@ -187,7 +205,7 @@
             this.gridColumn5.FieldName = "Gathering_Day";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.VisibleIndex = 3;
             // 
             // gridColumn7
             // 
@@ -209,16 +227,18 @@
             this.gridColumn6.FieldName = "AttendeesCount";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
+            this.gridColumn6.VisibleIndex = 4;
             // 
             // gridGathering
             // 
             this.gridGathering.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridGathering.Location = new System.Drawing.Point(0, 147);
+            this.gridGathering.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridGathering.Location = new System.Drawing.Point(0, 187);
             this.gridGathering.MainView = this.gridView1;
+            this.gridGathering.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridGathering.MenuManager = this.ribbonControl1;
             this.gridGathering.Name = "gridGathering";
-            this.gridGathering.Size = new System.Drawing.Size(992, 432);
+            this.gridGathering.Size = new System.Drawing.Size(1157, 525);
             this.gridGathering.TabIndex = 2;
             this.gridGathering.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -227,12 +247,13 @@
             // 
             // frmGatheringView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 602);
+            this.ClientSize = new System.Drawing.Size(1157, 741);
             this.Controls.Add(this.gridGathering);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmGatheringView";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -266,5 +287,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.GridControl gridGathering;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
     }
 }

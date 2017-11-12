@@ -66,6 +66,7 @@
             this.lblLocale = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.lblGathering = new DevExpress.XtraEditors.LabelControl();
+            this.barButtonTest = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.tlp_Row2.SuspendLayout();
             this.tlp_Col2.SuspendLayout();
@@ -92,15 +93,17 @@
             this.barButtonItemNewInterlocale,
             this.barButtonItemNewMember,
             this.lblGatheringBatch,
-            this.lblGatheringDate});
+            this.lblGatheringDate,
+            this.barButtonTest});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 9;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ribbonControl1.MaxItemId = 10;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(929, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(1242, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -192,6 +195,7 @@
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemNewInterlocale);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemNewMember);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonTest);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             // 
@@ -199,10 +203,11 @@
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.lblGatheringBatch);
             this.ribbonStatusBar1.ItemLinks.Add(this.lblGatheringDate);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 625);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 769);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(929, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1242, 29);
             // 
             // tlp_Row2
             // 
@@ -211,13 +216,13 @@
             this.tlp_Row2.Controls.Add(this.tlp_Col2, 0, 1);
             this.tlp_Row2.Controls.Add(this.lblGathering, 0, 0);
             this.tlp_Row2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlp_Row2.Location = new System.Drawing.Point(0, 147);
+            this.tlp_Row2.Location = new System.Drawing.Point(0, 187);
             this.tlp_Row2.Margin = new System.Windows.Forms.Padding(0);
             this.tlp_Row2.Name = "tlp_Row2";
             this.tlp_Row2.RowCount = 2;
-            this.tlp_Row2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlp_Row2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tlp_Row2.Size = new System.Drawing.Size(929, 478);
+            this.tlp_Row2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlp_Row2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93F));
+            this.tlp_Row2.Size = new System.Drawing.Size(1242, 582);
             this.tlp_Row2.TabIndex = 2;
             // 
             // tlp_Col2
@@ -228,12 +233,12 @@
             this.tlp_Col2.Controls.Add(this.tpl_SearchGrid, 0, 0);
             this.tlp_Col2.Controls.Add(this.tpl_IDContainer, 1, 0);
             this.tlp_Col2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlp_Col2.Location = new System.Drawing.Point(0, 47);
+            this.tlp_Col2.Location = new System.Drawing.Point(0, 40);
             this.tlp_Col2.Margin = new System.Windows.Forms.Padding(0);
             this.tlp_Col2.Name = "tlp_Col2";
             this.tlp_Col2.RowCount = 1;
             this.tlp_Col2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_Col2.Size = new System.Drawing.Size(929, 431);
+            this.tlp_Col2.Size = new System.Drawing.Size(1242, 542);
             this.tlp_Col2.TabIndex = 0;
             // 
             // tpl_SearchGrid
@@ -249,14 +254,14 @@
             this.tpl_SearchGrid.RowCount = 2;
             this.tpl_SearchGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tpl_SearchGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tpl_SearchGrid.Size = new System.Drawing.Size(464, 431);
+            this.tpl_SearchGrid.Size = new System.Drawing.Size(621, 542);
             this.tpl_SearchGrid.TabIndex = 0;
             // 
             // txtSearch
             // 
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSearch.Location = new System.Drawing.Point(3, 3);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.txtSearch.Location = new System.Drawing.Point(3, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.txtSearch.MenuManager = this.ribbonControl1;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -265,18 +270,20 @@
             this.txtSearch.Properties.NullValuePrompt = "ENTER CHURCH ID OR NAME";
             this.txtSearch.Properties.NullValuePromptShowForEmptyValue = true;
             this.txtSearch.Properties.ShowNullValuePromptWhenFocused = true;
-            this.txtSearch.Size = new System.Drawing.Size(458, 42);
+            this.txtSearch.Size = new System.Drawing.Size(615, 50);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
             // 
             // gridBrethren
             // 
             this.gridBrethren.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBrethren.Location = new System.Drawing.Point(3, 46);
+            this.gridBrethren.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridBrethren.Location = new System.Drawing.Point(3, 58);
             this.gridBrethren.MainView = this.gridView1;
+            this.gridBrethren.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridBrethren.MenuManager = this.ribbonControl1;
             this.gridBrethren.Name = "gridBrethren";
-            this.gridBrethren.Size = new System.Drawing.Size(458, 382);
+            this.gridBrethren.Size = new System.Drawing.Size(615, 480);
             this.gridBrethren.TabIndex = 1;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -347,14 +354,14 @@
             this.tpl_IDContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tpl_IDContainer.Controls.Add(this.tpl_ImageDetails, 1, 1);
             this.tpl_IDContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tpl_IDContainer.Location = new System.Drawing.Point(464, 0);
+            this.tpl_IDContainer.Location = new System.Drawing.Point(621, 0);
             this.tpl_IDContainer.Margin = new System.Windows.Forms.Padding(0);
             this.tpl_IDContainer.Name = "tpl_IDContainer";
             this.tpl_IDContainer.RowCount = 3;
             this.tpl_IDContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tpl_IDContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tpl_IDContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tpl_IDContainer.Size = new System.Drawing.Size(465, 431);
+            this.tpl_IDContainer.Size = new System.Drawing.Size(621, 542);
             this.tpl_IDContainer.TabIndex = 1;
             // 
             // tpl_ImageDetails
@@ -364,13 +371,13 @@
             this.tpl_ImageDetails.Controls.Add(this.tpl_ImageContainer, 0, 0);
             this.tpl_ImageDetails.Controls.Add(this.tpl_MemberDetails, 0, 1);
             this.tpl_ImageDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tpl_ImageDetails.Location = new System.Drawing.Point(93, 21);
+            this.tpl_ImageDetails.Location = new System.Drawing.Point(124, 27);
             this.tpl_ImageDetails.Margin = new System.Windows.Forms.Padding(0);
             this.tpl_ImageDetails.Name = "tpl_ImageDetails";
             this.tpl_ImageDetails.RowCount = 2;
             this.tpl_ImageDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tpl_ImageDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tpl_ImageDetails.Size = new System.Drawing.Size(279, 387);
+            this.tpl_ImageDetails.Size = new System.Drawing.Size(372, 487);
             this.tpl_ImageDetails.TabIndex = 0;
             // 
             // tpl_ImageContainer
@@ -387,21 +394,21 @@
             this.tpl_ImageContainer.Name = "tpl_ImageContainer";
             this.tpl_ImageContainer.RowCount = 1;
             this.tpl_ImageContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tpl_ImageContainer.Size = new System.Drawing.Size(279, 154);
+            this.tpl_ImageContainer.Size = new System.Drawing.Size(372, 194);
             this.tpl_ImageContainer.TabIndex = 0;
             // 
             // peMember
             // 
             this.peMember.Dock = System.Windows.Forms.DockStyle.Fill;
             this.peMember.EditValue = global::AMS.Properties.Resources.default_user_image;
-            this.peMember.Location = new System.Drawing.Point(84, 15);
-            this.peMember.Margin = new System.Windows.Forms.Padding(15);
+            this.peMember.Location = new System.Drawing.Point(110, 18);
+            this.peMember.Margin = new System.Windows.Forms.Padding(17, 18, 17, 18);
             this.peMember.MenuManager = this.ribbonControl1;
             this.peMember.Name = "peMember";
             this.peMember.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.peMember.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peMember.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.peMember.Size = new System.Drawing.Size(109, 124);
+            this.peMember.Size = new System.Drawing.Size(152, 158);
             this.peMember.TabIndex = 0;
             // 
             // tpl_MemberDetails
@@ -416,7 +423,7 @@
             this.tpl_MemberDetails.Controls.Add(this.lblLocale, 0, 4);
             this.tpl_MemberDetails.Controls.Add(this.labelControl2, 0, 5);
             this.tpl_MemberDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tpl_MemberDetails.Location = new System.Drawing.Point(0, 154);
+            this.tpl_MemberDetails.Location = new System.Drawing.Point(0, 194);
             this.tpl_MemberDetails.Margin = new System.Windows.Forms.Padding(0);
             this.tpl_MemberDetails.Name = "tpl_MemberDetails";
             this.tpl_MemberDetails.RowCount = 7;
@@ -427,7 +434,7 @@
             this.tpl_MemberDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tpl_MemberDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tpl_MemberDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tpl_MemberDetails.Size = new System.Drawing.Size(279, 233);
+            this.tpl_MemberDetails.Size = new System.Drawing.Size(372, 293);
             this.tpl_MemberDetails.TabIndex = 1;
             // 
             // Label2
@@ -438,23 +445,25 @@
             this.Label2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
             this.Label2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Label2.Location = new System.Drawing.Point(3, 94);
+            this.Label2.Location = new System.Drawing.Point(3, 119);
+            this.Label2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(273, 17);
+            this.Label2.Size = new System.Drawing.Size(366, 21);
             this.Label2.TabIndex = 3;
             this.Label2.Text = "CHURCH ID";
             // 
             // lblChurchID
             // 
-            this.lblChurchID.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChurchID.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChurchID.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblChurchID.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblChurchID.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Bottom;
             this.lblChurchID.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblChurchID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblChurchID.Location = new System.Drawing.Point(3, 60);
+            this.lblChurchID.Location = new System.Drawing.Point(3, 76);
+            this.lblChurchID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblChurchID.Name = "lblChurchID";
-            this.lblChurchID.Size = new System.Drawing.Size(273, 28);
+            this.lblChurchID.Size = new System.Drawing.Size(366, 35);
             this.lblChurchID.TabIndex = 2;
             // 
             // Label1
@@ -465,23 +474,25 @@
             this.Label1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
             this.Label1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Label1.Location = new System.Drawing.Point(3, 37);
+            this.Label1.Location = new System.Drawing.Point(3, 47);
+            this.Label1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(273, 17);
+            this.Label1.Size = new System.Drawing.Size(366, 21);
             this.Label1.TabIndex = 1;
             this.Label1.Text = "NAME";
             // 
             // lblName
             // 
-            this.lblName.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblName.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblName.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Bottom;
             this.lblName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblName.Location = new System.Drawing.Point(3, 3);
+            this.lblName.Location = new System.Drawing.Point(3, 4);
+            this.lblName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(273, 28);
+            this.lblName.Size = new System.Drawing.Size(366, 35);
             this.lblName.TabIndex = 0;
             // 
             // lblLocale
@@ -492,9 +503,10 @@
             this.lblLocale.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Bottom;
             this.lblLocale.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblLocale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblLocale.Location = new System.Drawing.Point(3, 117);
+            this.lblLocale.Location = new System.Drawing.Point(3, 148);
+            this.lblLocale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lblLocale.Name = "lblLocale";
-            this.lblLocale.Size = new System.Drawing.Size(273, 28);
+            this.lblLocale.Size = new System.Drawing.Size(366, 35);
             this.lblLocale.TabIndex = 4;
             // 
             // labelControl2
@@ -505,16 +517,17 @@
             this.labelControl2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
             this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl2.Location = new System.Drawing.Point(3, 151);
+            this.labelControl2.Location = new System.Drawing.Point(3, 191);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(273, 17);
+            this.labelControl2.Size = new System.Drawing.Size(366, 21);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "LOCALE";
             // 
             // lblGathering
             // 
             this.lblGathering.Appearance.BackColor = System.Drawing.Color.MidnightBlue;
-            this.lblGathering.Appearance.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGathering.Appearance.Font = new System.Drawing.Font("Georgia", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGathering.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblGathering.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblGathering.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
@@ -522,18 +535,27 @@
             this.lblGathering.Location = new System.Drawing.Point(0, 0);
             this.lblGathering.Margin = new System.Windows.Forms.Padding(0);
             this.lblGathering.Name = "lblGathering";
-            this.lblGathering.Size = new System.Drawing.Size(929, 47);
+            this.lblGathering.Size = new System.Drawing.Size(1242, 40);
             this.lblGathering.TabIndex = 1;
             this.lblGathering.Text = "SPECIAL PRAYER MEETING";
             // 
+            // barButtonTest
+            // 
+            this.barButtonTest.Caption = "Test";
+            this.barButtonTest.Id = 9;
+            this.barButtonTest.Name = "barButtonTest";
+            this.barButtonTest.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.barButtonTest.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonTest_ItemClick);
+            // 
             // frmAttendanceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 648);
+            this.ClientSize = new System.Drawing.Size(1242, 798);
             this.Controls.Add(this.tlp_Row2);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmAttendanceForm";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -576,10 +598,7 @@
         private System.Windows.Forms.TableLayoutPanel tpl_MemberDetails;
         private DevExpress.XtraEditors.PictureEdit peMember;
         private DevExpress.XtraEditors.LabelControl Label2;
-        private DevExpress.XtraEditors.LabelControl lblChurchID;
         private DevExpress.XtraEditors.LabelControl Label1;
-        private DevExpress.XtraEditors.LabelControl lblName;
-        private DevExpress.XtraEditors.LabelControl lblLocale;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtSearch;
         private DevExpress.XtraGrid.GridControl gridBrethren;
@@ -599,5 +618,9 @@
         public DevExpress.XtraBars.BarStaticItem lblGatheringDate;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        public DevExpress.XtraEditors.LabelControl lblChurchID;
+        public DevExpress.XtraEditors.LabelControl lblName;
+        public DevExpress.XtraEditors.LabelControl lblLocale;
+        private DevExpress.XtraBars.BarButtonItem barButtonTest;
     }
 }

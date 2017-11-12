@@ -40,6 +40,7 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlAttendees)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -47,10 +48,11 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 471);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 579);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(791, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(933, 29);
             // 
             // ribbonControl1
             // 
@@ -59,13 +61,14 @@
             this.ribbonControl1.ExpandCollapseItem,
             this.barButtonItemClose});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 2;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(791, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(933, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -93,11 +96,13 @@
             // gridControlAttendees
             // 
             this.gridControlAttendees.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlAttendees.Location = new System.Drawing.Point(0, 147);
+            this.gridControlAttendees.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControlAttendees.Location = new System.Drawing.Point(0, 187);
             this.gridControlAttendees.MainView = this.gridView1;
+            this.gridControlAttendees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControlAttendees.MenuManager = this.ribbonControl1;
             this.gridControlAttendees.Name = "gridControlAttendees";
-            this.gridControlAttendees.Size = new System.Drawing.Size(791, 324);
+            this.gridControlAttendees.Size = new System.Drawing.Size(933, 392);
             this.gridControlAttendees.TabIndex = 2;
             this.gridControlAttendees.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -107,14 +112,17 @@
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
+            this.gridColumn5,
             this.gridColumn3,
             this.gridColumn4});
             this.gridView1.GridControl = this.gridControlAttendees;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "CHURCH ID";
+            this.gridColumn1.FieldName = "tempChurch_ID";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -122,6 +130,7 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "NAME";
+            this.gridColumn2.FieldName = "Name";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -129,25 +138,38 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "TIME IN";
+            this.gridColumn3.DisplayFormat.FormatString = "t";
+            this.gridColumn3.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.gridColumn3.FieldName = "tempReal_Time";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 3;
             // 
             // gridColumn4
             // 
             this.gridColumn4.Caption = "LOCALE";
+            this.gridColumn4.FieldName = "locale";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.VisibleIndex = 4;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "STATUS";
+            this.gridColumn5.FieldName = "tempAttendance_Status";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 2;
             // 
             // frmViewAttendees
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 494);
+            this.ClientSize = new System.Drawing.Size(933, 608);
             this.Controls.Add(this.gridControlAttendees);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmViewAttendees";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -174,5 +196,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         public DevExpress.XtraGrid.GridControl gridControlAttendees;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
     }
 }

@@ -30,5 +30,11 @@ namespace AMS.Classes
         public static frmAssignee assignees = new frmAssignee();
         public static frmAttendanceForm attendanceForm = new frmAttendanceForm();
         public static frmViewAttendees attendees = new frmViewAttendees();
+        public static frmPrivilegeEdit privilegeEdit = new frmPrivilegeEdit();
+        public static frmPrivileges privileges = new frmPrivileges();
+        public static frmPrivilegeAddEdit privilegeAddEdit = new frmPrivilegeAddEdit();
+        public static frmPermissions permissions = new frmPermissions();
+        public static frmModuleAddEdit moduleAddEdit = new frmModuleAddEdit();
+        public static frmModules modules = new frmModules();
     }
 }

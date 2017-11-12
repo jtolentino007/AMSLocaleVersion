@@ -70,7 +70,7 @@ namespace AMS
 
                 if (frmMain.flag == 1)
                 {
-                    Instances.attendanceMontoring.Hide();
+                    Instances.attendanceForm.Hide();
                     Instances.main.Show();
                     Instances.main.barButtonItem5.Visibility = BarItemVisibility.Always;
                     Instances.main.barButtonItem6.Visibility = BarItemVisibility.Always;
@@ -78,9 +78,10 @@ namespace AMS
                 }
                 else
                 {
-                    Instances.attendanceMontoring.Hide();
+                    Instances.attendanceForm.Hide();
                 }
 
+                Instances.attendanceForm.barButtonItemEndAttendance.Visibility = BarItemVisibility.Never;
                 this.Hide();
 
             }

@@ -7,7 +7,7 @@ namespace AMS
 {
     public partial class frmLocaleAddEdit : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public DataTable dtLocale { get; set; }
+        public DataTable dtLocaleDefault { get; set; }
         public DataRow drLocale { get; set; }
         public frmLocaleAddEdit()
         {
@@ -16,12 +16,12 @@ namespace AMS
 
         private void GetLocale()
         {
-            using (var adapt = new SqlDataAdapter("GET_LOCALE", Utilities.con))
+            using (var adapt = new SqlDataAdapter("GET_DEFAULT_LOCALE", Utilities.con))
             {
                 adapt.SelectCommand.CommandType = CommandType.StoredProcedure;
-                dtLocale = new DataTable();
-                dtLocale.Clear();
-                adapt.Fill(dtLocale);
+                dtLocaleDefault = new DataTable();
+                dtLocaleDefault.Clear();
+                adapt.Fill(dtLocaleDefault);
             }
         }
 
@@ -32,11 +32,11 @@ namespace AMS
 
         private void SetDetails()   
         {
-            txtLocaleCode.Text = dtLocale.Rows[0]["locale_code"].ToString();
-            txtLocale.Text = dtLocale.Rows[0]["locale"].ToString();
-            txtDistrict.Text = dtLocale.Rows[0]["dist"].ToString();
-            txtDivision.Text = dtLocale.Rows[0]["div"].ToString();
-            txtLocaleAddress.Text = dtLocale.Rows[0]["address"].ToString();
+            txtLocaleCode.Text = dtLocaleDefault.Rows[0]["locale_code"].ToString();
+            txtLocale.Text = dtLocaleDefault.Rows[0]["locale"].ToString();
+            txtDistrict.Text = dtLocaleDefault.Rows[0]["dist"].ToString();
+            txtDivision.Text = dtLocaleDefault.Rows[0]["div"].ToString();
+            txtLocaleAddress.Text = dtLocaleDefault.Rows[0]["address"].ToString();
         }
 
         private void GenerateLocaleCode()

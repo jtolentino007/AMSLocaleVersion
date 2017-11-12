@@ -50,11 +50,12 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(58, 193);
+            this.txtPassword.Location = new System.Drawing.Point(77, 238);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.txtPassword.Properties.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(273, 20);
+            this.txtPassword.Size = new System.Drawing.Size(364, 22);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.EditValueChanged += new System.EventHandler(this.txtPassword_EditValueChanged);
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
@@ -72,9 +73,10 @@
             this.btnLogin.Appearance.Options.UseFont = true;
             this.btnLogin.Appearance.Options.UseForeColor = true;
             this.btnLogin.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.btnLogin.Location = new System.Drawing.Point(58, 254);
+            this.btnLogin.Location = new System.Drawing.Point(77, 313);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(129, 29);
+            this.btnLogin.Size = new System.Drawing.Size(172, 36);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -90,9 +92,10 @@
             this.btnClose.Appearance.Options.UseFont = true;
             this.btnClose.Appearance.Options.UseForeColor = true;
             this.btnClose.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.btnClose.Location = new System.Drawing.Point(193, 254);
+            this.btnClose.Location = new System.Drawing.Point(257, 313);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(138, 29);
+            this.btnClose.Size = new System.Drawing.Size(184, 36);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "CLOSE";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -101,9 +104,10 @@
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(-1, 122);
+            this.label1.Location = new System.Drawing.Point(-1, 150);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(386, 21);
+            this.label1.Size = new System.Drawing.Size(515, 26);
             this.label1.TabIndex = 4;
             this.label1.Text = "CHURCH ID";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -113,9 +117,10 @@
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(3, 172);
+            this.label2.Location = new System.Drawing.Point(4, 212);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(379, 21);
+            this.label2.Size = new System.Drawing.Size(505, 26);
             this.label2.TabIndex = 5;
             this.label2.Text = "PASSWORD";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,7 +128,8 @@
             // 
             // lueChurchID
             // 
-            this.lueChurchID.Location = new System.Drawing.Point(58, 147);
+            this.lueChurchID.Location = new System.Drawing.Point(77, 181);
+            this.lueChurchID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lueChurchID.Name = "lueChurchID";
             this.lueChurchID.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.lueChurchID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -137,7 +143,7 @@
             this.lueChurchID.Properties.ShowHeader = false;
             this.lueChurchID.Properties.ShowLines = false;
             this.lueChurchID.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.lueChurchID.Size = new System.Drawing.Size(273, 20);
+            this.lueChurchID.Size = new System.Drawing.Size(364, 22);
             this.lueChurchID.TabIndex = 0;
             this.lueChurchID.EditValueChanged += new System.EventHandler(this.lueChurchID_EditValueChanged);
             this.lueChurchID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtChurchID_KeyDown);
@@ -146,9 +152,10 @@
             // 
             this.hlRegistration.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hlRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hlRegistration.Location = new System.Drawing.Point(120, 218);
+            this.hlRegistration.Location = new System.Drawing.Point(160, 268);
+            this.hlRegistration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hlRegistration.Name = "hlRegistration";
-            this.hlRegistration.Size = new System.Drawing.Size(145, 16);
+            this.hlRegistration.Size = new System.Drawing.Size(183, 19);
             this.hlRegistration.TabIndex = 10;
             this.hlRegistration.Text = "REGISTER AS NEW USER";
             this.hlRegistration.Click += new System.EventHandler(this.hlRegistration_Click);
@@ -157,11 +164,13 @@
             // 
             this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.statusStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblStatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 355);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 439);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(386, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(515, 25);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 7;
             this.statusStrip1.Text = "statusStrip1";
@@ -173,7 +182,7 @@
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(127, 17);
+            this.lblStatus.Size = new System.Drawing.Size(160, 20);
             this.lblStatus.Text = "toolStripStatusLabel1";
             this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
@@ -183,9 +192,10 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.labelControl1);
-            this.panel1.Location = new System.Drawing.Point(0, 20);
+            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(398, 71);
+            this.panel1.Size = new System.Drawing.Size(531, 87);
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -196,10 +206,11 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.MediumTurquoise;
             this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl2.Location = new System.Drawing.Point(3, 39);
+            this.labelControl2.Location = new System.Drawing.Point(4, 48);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.labelControl2.Size = new System.Drawing.Size(383, 18);
+            this.labelControl2.Padding = new System.Windows.Forms.Padding(13, 0, 13, 0);
+            this.labelControl2.Size = new System.Drawing.Size(511, 22);
             this.labelControl2.TabIndex = 9;
             this.labelControl2.Text = "LOCALE ATTENDANCE MONITORING SYSTEM";
             this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
@@ -209,10 +220,11 @@
             this.labelControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl1.Location = new System.Drawing.Point(149, 13);
+            this.labelControl1.Location = new System.Drawing.Point(199, 16);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.labelControl1.Size = new System.Drawing.Size(86, 30);
+            this.labelControl1.Padding = new System.Windows.Forms.Padding(13, 0, 13, 0);
+            this.labelControl1.Size = new System.Drawing.Size(106, 36);
             this.labelControl1.TabIndex = 8;
             this.labelControl1.Text = "LOGIN";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
@@ -224,16 +236,17 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.ForeColor = System.Drawing.Color.DimGray;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(386, 377);
+            this.panel2.Size = new System.Drawing.Size(514, 464);
             this.panel2.TabIndex = 11;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(386, 377);
+            this.ClientSize = new System.Drawing.Size(515, 464);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnClose);
@@ -243,6 +256,7 @@
             this.Controls.Add(this.lueChurchID);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

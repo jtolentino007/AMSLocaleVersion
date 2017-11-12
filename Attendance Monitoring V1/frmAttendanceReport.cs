@@ -63,16 +63,18 @@ namespace AMS
                 BindAttendanceToReport();
 
                 if (dtAttendance.Rows.Count == 0)
-                    Utilities.ErrorMessage("Gathering does not exists...");
+                    Utilities.ErrorMessage("Gathering/Batches does not exists.");
                 else
                 { 
                     SetHeaders();
 
                     GroupField gfBatch = new GroupField(dtAttendance.Columns["batch_time"].ToString());
                     GroupField gfInterlocale = new GroupField(dtAttendance.Columns["Interlocale_Status"].ToString());
+
                     attendanceReport.GroupHeader.GroupFields.Add(gfInterlocale);
                     attendanceReport.GroupHeader.GroupFields.Add(gfBatch);
 
+                    attendanceReport.xrLabelAddPro.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["addpro"].ToString());
                     attendanceReport.xrLabelInterlocale.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["Interlocale_Status"].ToString());
                     attendanceReport.xrLabelBatch.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["batch_time_lbl"].ToString());
                     attendanceReport.xrTableCellChurchID.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["Church_Id"].ToString());
@@ -80,7 +82,12 @@ namespace AMS
                     attendanceReport.xrTableCellTimeIn.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["time_in"].ToString());
                     attendanceReport.xrTableCellStatus.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["AttendanceStatus"].ToString());
                     attendanceReport.xrTableCellLocale.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["locale"].ToString());
+                    //attendanceReport.xrLabelAddPro.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["addpro"].ToString());
+                    //attendanceReport.xrLabelOfficers.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["officers"].ToString());
+                    //attendanceReport.xrLabelWorkers.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["workers"].ToString());
+                    //attendanceReport.xrLabelRemarks.DataBindings.Add("Text", dtAttendance, dtAttendance.Columns["remarks"].ToString());
                     attendanceReport.Name = cmbGatheringType.Text.ToString().Replace(" ", string.Empty);
+
                     attendanceReport.CreateDocument();
                     ReportPrintTool printTool = new ReportPrintTool(attendanceReport);
                     printTool.ShowPreviewDialog();

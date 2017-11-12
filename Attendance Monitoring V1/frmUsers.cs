@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows;
 
 namespace AMS
 {
@@ -64,6 +65,20 @@ namespace AMS
                     Utilities.SuccessMessage("Selected Users successfully deactivated");
                     GetUsers();
                 }
+            }
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (gridView1.SelectedRowsCount > 1)
+            {
+                Utilities.ErrorMessage("Please select 1 user only...");
+            }
+            else
+            {
+                DataRow drUser = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+                Instances.privilegeEdit.comboBoxEditPrivilege.SelectedItem = drUser["privilege_desc"].ToString();
+                Instances.privilegeEdit.ShowDialog();
             }
         }
     }

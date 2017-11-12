@@ -88,6 +88,8 @@
             this.radioButtonFemale = new System.Windows.Forms.RadioButton();
             this.btnAddCommittee = new DevExpress.XtraEditors.SimpleButton();
             this.btnAddGroup = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
+            this.txtRemarks = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtChurchID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFname.Properties)).BeginInit();
@@ -128,6 +130,7 @@
             this.mnuBtnPrint,
             this.mnuBtnPrintPreview});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 5;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -136,7 +139,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(967, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(1068, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // mnuBtnSave
@@ -187,18 +190,20 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 670);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 958);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(967, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1068, 29);
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl1.Location = new System.Drawing.Point(75, 209);
+            this.labelControl1.Location = new System.Drawing.Point(87, 257);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(81, 13);
+            this.labelControl1.Size = new System.Drawing.Size(109, 17);
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "* CHURCH ID : ";
             // 
@@ -206,17 +211,19 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl2.Location = new System.Drawing.Point(79, 241);
+            this.labelControl2.Location = new System.Drawing.Point(92, 297);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(76, 13);
+            this.labelControl2.Size = new System.Drawing.Size(102, 17);
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "* FULL NAME :";
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(108, 422);
+            this.labelControl3.Location = new System.Drawing.Point(126, 519);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(42, 13);
+            this.labelControl3.Size = new System.Drawing.Size(49, 16);
             this.labelControl3.TabIndex = 4;
             this.labelControl3.Text = "GROUP :";
             // 
@@ -224,17 +231,19 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl4.Location = new System.Drawing.Point(105, 481);
+            this.labelControl4.Location = new System.Drawing.Point(122, 592);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(50, 13);
+            this.labelControl4.Size = new System.Drawing.Size(65, 17);
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "STATUS :";
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(95, 452);
+            this.labelControl5.Location = new System.Drawing.Point(111, 556);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(55, 13);
+            this.labelControl5.Size = new System.Drawing.Size(65, 16);
             this.labelControl5.TabIndex = 6;
             this.labelControl5.Text = "BAPTIZER :";
             // 
@@ -242,55 +251,61 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl6.Location = new System.Drawing.Point(39, 328);
+            this.labelControl6.Location = new System.Drawing.Point(45, 404);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(116, 13);
+            this.labelControl6.Size = new System.Drawing.Size(153, 17);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Text = "* DATE OF BAPTISM :";
             // 
             // txtChurchID
             // 
-            this.txtChurchID.Location = new System.Drawing.Point(162, 206);
+            this.txtChurchID.Location = new System.Drawing.Point(203, 254);
+            this.txtChurchID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtChurchID.MenuManager = this.ribbonControl1;
             this.txtChurchID.Name = "txtChurchID";
-            this.txtChurchID.Size = new System.Drawing.Size(156, 20);
+            this.txtChurchID.Size = new System.Drawing.Size(182, 22);
             this.txtChurchID.TabIndex = 0;
             // 
             // txtFname
             // 
-            this.txtFname.Location = new System.Drawing.Point(162, 238);
+            this.txtFname.Location = new System.Drawing.Point(203, 293);
+            this.txtFname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFname.MenuManager = this.ribbonControl1;
             this.txtFname.Name = "txtFname";
             this.txtFname.Properties.NullValuePrompt = "* First name";
             this.txtFname.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtFname.Size = new System.Drawing.Size(156, 20);
+            this.txtFname.Size = new System.Drawing.Size(182, 22);
             this.txtFname.TabIndex = 1;
             // 
             // txtMName
             // 
             this.txtMName.EditValue = "";
-            this.txtMName.Location = new System.Drawing.Point(324, 238);
+            this.txtMName.Location = new System.Drawing.Point(392, 293);
+            this.txtMName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMName.MenuManager = this.ribbonControl1;
             this.txtMName.Name = "txtMName";
             this.txtMName.Properties.NullValuePrompt = "Middle name";
             this.txtMName.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtMName.Size = new System.Drawing.Size(156, 20);
+            this.txtMName.Size = new System.Drawing.Size(182, 22);
             this.txtMName.TabIndex = 2;
             // 
             // txtLName
             // 
-            this.txtLName.Location = new System.Drawing.Point(486, 238);
+            this.txtLName.Location = new System.Drawing.Point(581, 293);
+            this.txtLName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLName.MenuManager = this.ribbonControl1;
             this.txtLName.Name = "txtLName";
             this.txtLName.Properties.NullValuePrompt = "* Last name";
             this.txtLName.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtLName.Size = new System.Drawing.Size(156, 20);
+            this.txtLName.Size = new System.Drawing.Size(182, 22);
             this.txtLName.TabIndex = 3;
             // 
             // dtBaptism
             // 
             this.dtBaptism.EditValue = null;
-            this.dtBaptism.Location = new System.Drawing.Point(162, 325);
+            this.dtBaptism.Location = new System.Drawing.Point(205, 400);
+            this.dtBaptism.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtBaptism.MenuManager = this.ribbonControl1;
             this.dtBaptism.Name = "dtBaptism";
             this.dtBaptism.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -298,62 +313,69 @@
             this.dtBaptism.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtBaptism.Properties.NullValuePrompt = "[Enter Date of Baptism]";
-            this.dtBaptism.Size = new System.Drawing.Size(197, 20);
+            this.dtBaptism.Size = new System.Drawing.Size(230, 22);
             this.dtBaptism.TabIndex = 4;
             // 
             // txtBaptizer
             // 
-            this.txtBaptizer.Location = new System.Drawing.Point(162, 450);
+            this.txtBaptizer.Location = new System.Drawing.Point(205, 554);
+            this.txtBaptizer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBaptizer.MenuManager = this.ribbonControl1;
             this.txtBaptizer.Name = "txtBaptizer";
-            this.txtBaptizer.Size = new System.Drawing.Size(197, 20);
+            this.txtBaptizer.Size = new System.Drawing.Size(230, 22);
             this.txtBaptizer.TabIndex = 8;
             // 
             // cmbStatus
             // 
             this.cmbStatus.EditValue = "";
-            this.cmbStatus.Location = new System.Drawing.Point(162, 480);
+            this.cmbStatus.Location = new System.Drawing.Point(205, 591);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbStatus.MenuManager = this.ribbonControl1;
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbStatus.Properties.Items.AddRange(new object[] {
             "Active",
+            "Active Interlocale and Abroad",
             "Inactive",
             "Suspended Active",
             "Suspended Inactive",
             "Abroad",
             "RFA",
-            "Cannot be Located",
+            "Cannot be Located/Missing",
+            "On and Off",
             "Archive",
             "Deceased"});
             this.cmbStatus.Properties.NullValuePrompt = "[Select Status]";
             this.cmbStatus.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbStatus.Size = new System.Drawing.Size(197, 20);
+            this.cmbStatus.Size = new System.Drawing.Size(230, 22);
             this.cmbStatus.TabIndex = 9;
             // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(54, 162);
+            this.labelControl7.Location = new System.Drawing.Point(63, 199);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(208, 30);
+            this.labelControl7.Size = new System.Drawing.Size(258, 36);
             this.labelControl7.TabIndex = 22;
             this.labelControl7.Text = "BASIC INFORMATION";
             // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(54, 277);
+            this.labelControl8.Location = new System.Drawing.Point(63, 341);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(169, 30);
+            this.labelControl8.Size = new System.Drawing.Size(209, 36);
             this.labelControl8.TabIndex = 25;
             this.labelControl8.Text = "CHURCH DETAILS";
             // 
             // dtBirth
             // 
             this.dtBirth.EditValue = null;
-            this.dtBirth.Location = new System.Drawing.Point(581, 325);
+            this.dtBirth.Location = new System.Drawing.Point(695, 400);
+            this.dtBirth.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtBirth.MenuManager = this.ribbonControl1;
             this.dtBirth.Name = "dtBirth";
             this.dtBirth.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -363,16 +385,17 @@
             this.dtBirth.Properties.MaxValue = new System.DateTime(9999, 12, 31, 0, 0, 0, 0);
             this.dtBirth.Properties.NullDate = new System.DateTime(2016, 11, 11, 13, 47, 19, 0);
             this.dtBirth.Properties.NullValuePrompt = "[Enter Birthdate]";
-            this.dtBirth.Size = new System.Drawing.Size(197, 20);
+            this.dtBirth.Size = new System.Drawing.Size(230, 22);
             this.dtBirth.TabIndex = 10;
             // 
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl9.Location = new System.Drawing.Point(477, 328);
+            this.labelControl9.Location = new System.Drawing.Point(556, 404);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(100, 13);
+            this.labelControl9.Size = new System.Drawing.Size(134, 17);
             this.labelControl9.TabIndex = 26;
             this.labelControl9.Text = "* DATE OF BIRTH :";
             // 
@@ -380,57 +403,64 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl10.Location = new System.Drawing.Point(96, 361);
+            this.labelControl10.Location = new System.Drawing.Point(112, 444);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(57, 13);
+            this.labelControl10.Size = new System.Drawing.Size(78, 17);
             this.labelControl10.TabIndex = 28;
             this.labelControl10.Text = "* LOCALE :";
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(67, 392);
+            this.labelControl11.Location = new System.Drawing.Point(78, 482);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(80, 13);
+            this.labelControl11.Size = new System.Drawing.Size(98, 16);
             this.labelControl11.TabIndex = 31;
             this.labelControl11.Text = "COMMITTEE(S) :";
             // 
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Location = new System.Drawing.Point(430, 277);
+            this.labelControl12.Location = new System.Drawing.Point(502, 341);
+            this.labelControl12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(188, 30);
+            this.labelControl12.Size = new System.Drawing.Size(233, 36);
             this.labelControl12.TabIndex = 32;
             this.labelControl12.Text = "PERSONAL DETAILS";
             // 
             // labelControl13
             // 
-            this.labelControl13.Location = new System.Drawing.Point(522, 361);
+            this.labelControl13.Location = new System.Drawing.Point(609, 444);
+            this.labelControl13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(47, 13);
+            this.labelControl13.Size = new System.Drawing.Size(55, 16);
             this.labelControl13.TabIndex = 35;
             this.labelControl13.Text = "GENDER :";
             // 
             // labelControl14
             // 
-            this.labelControl14.Location = new System.Drawing.Point(495, 392);
+            this.labelControl14.Location = new System.Drawing.Point(577, 482);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(74, 13);
+            this.labelControl14.Size = new System.Drawing.Size(91, 16);
             this.labelControl14.TabIndex = 38;
             this.labelControl14.Text = "CIVIL STATUS :";
             // 
             // labelControl15
             // 
-            this.labelControl15.Location = new System.Drawing.Point(516, 422);
+            this.labelControl15.Location = new System.Drawing.Point(602, 519);
+            this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(53, 13);
+            this.labelControl15.Size = new System.Drawing.Size(64, 16);
             this.labelControl15.TabIndex = 39;
             this.labelControl15.Text = "ADDRESS :";
             // 
             // cmbCivilStatus
             // 
             this.cmbCivilStatus.EditValue = "";
-            this.cmbCivilStatus.Location = new System.Drawing.Point(581, 389);
+            this.cmbCivilStatus.Location = new System.Drawing.Point(695, 479);
+            this.cmbCivilStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbCivilStatus.MenuManager = this.ribbonControl1;
             this.cmbCivilStatus.Name = "cmbCivilStatus";
             this.cmbCivilStatus.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -442,137 +472,152 @@
             "Married"});
             this.cmbCivilStatus.Properties.NullValuePrompt = "[Select Civil Status]";
             this.cmbCivilStatus.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbCivilStatus.Size = new System.Drawing.Size(197, 20);
+            this.cmbCivilStatus.Size = new System.Drawing.Size(230, 22);
             this.cmbCivilStatus.TabIndex = 12;
             // 
             // txtStreet
             // 
-            this.txtStreet.Location = new System.Drawing.Point(581, 419);
+            this.txtStreet.Location = new System.Drawing.Point(695, 516);
+            this.txtStreet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtStreet.MenuManager = this.ribbonControl1;
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.Properties.NullValuePrompt = "Street";
             this.txtStreet.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtStreet.Size = new System.Drawing.Size(91, 20);
+            this.txtStreet.Size = new System.Drawing.Size(106, 22);
             this.txtStreet.TabIndex = 13;
             // 
             // txtBrgy
             // 
-            this.txtBrgy.Location = new System.Drawing.Point(678, 419);
+            this.txtBrgy.Location = new System.Drawing.Point(808, 516);
+            this.txtBrgy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBrgy.MenuManager = this.ribbonControl1;
             this.txtBrgy.Name = "txtBrgy";
             this.txtBrgy.Properties.NullValuePrompt = "Town/Barangay";
             this.txtBrgy.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtBrgy.Size = new System.Drawing.Size(100, 20);
+            this.txtBrgy.Size = new System.Drawing.Size(117, 22);
             this.txtBrgy.TabIndex = 14;
             // 
             // txtProvince
             // 
-            this.txtProvince.Location = new System.Drawing.Point(581, 480);
+            this.txtProvince.Location = new System.Drawing.Point(695, 591);
+            this.txtProvince.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtProvince.MenuManager = this.ribbonControl1;
             this.txtProvince.Name = "txtProvince";
             this.txtProvince.Properties.NullValuePrompt = "Province";
             this.txtProvince.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtProvince.Size = new System.Drawing.Size(91, 20);
+            this.txtProvince.Size = new System.Drawing.Size(106, 22);
             this.txtProvince.TabIndex = 16;
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(581, 450);
+            this.txtCity.Location = new System.Drawing.Point(695, 554);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCity.MenuManager = this.ribbonControl1;
             this.txtCity.Name = "txtCity";
             this.txtCity.Properties.NullValuePrompt = "City/Municipality";
             this.txtCity.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtCity.Size = new System.Drawing.Size(197, 20);
+            this.txtCity.Size = new System.Drawing.Size(230, 22);
             this.txtCity.TabIndex = 15;
             // 
             // txtRegion
             // 
-            this.txtRegion.Location = new System.Drawing.Point(678, 480);
+            this.txtRegion.Location = new System.Drawing.Point(808, 591);
+            this.txtRegion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRegion.MenuManager = this.ribbonControl1;
             this.txtRegion.Name = "txtRegion";
             this.txtRegion.Properties.NullValuePrompt = "Region";
             this.txtRegion.Properties.NullValuePromptShowForEmptyValue = true;
-            this.txtRegion.Size = new System.Drawing.Size(100, 20);
+            this.txtRegion.Size = new System.Drawing.Size(117, 22);
             this.txtRegion.TabIndex = 17;
             // 
             // labelControl16
             // 
-            this.labelControl16.Location = new System.Drawing.Point(496, 520);
+            this.labelControl16.Location = new System.Drawing.Point(579, 640);
+            this.labelControl16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(73, 13);
+            this.labelControl16.Size = new System.Drawing.Size(88, 16);
             this.labelControl16.TabIndex = 62;
             this.labelControl16.Text = "EMPLOYMENT :";
             // 
             // labelControl17
             // 
-            this.labelControl17.Location = new System.Drawing.Point(503, 549);
+            this.labelControl17.Location = new System.Drawing.Point(587, 676);
+            this.labelControl17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(66, 13);
+            this.labelControl17.Size = new System.Drawing.Size(79, 16);
             this.labelControl17.TabIndex = 65;
             this.labelControl17.Text = "CONTACT # :";
             // 
             // labelControl18
             // 
-            this.labelControl18.Location = new System.Drawing.Point(430, 578);
+            this.labelControl18.Location = new System.Drawing.Point(502, 711);
+            this.labelControl18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(139, 13);
+            this.labelControl18.Size = new System.Drawing.Size(165, 16);
             this.labelControl18.TabIndex = 68;
             this.labelControl18.Text = "PERSON WHO KNOWS YOU :";
             // 
             // labelControl19
             // 
-            this.labelControl19.Location = new System.Drawing.Point(460, 609);
+            this.labelControl19.Location = new System.Drawing.Point(537, 750);
+            this.labelControl19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(109, 13);
+            this.labelControl19.Size = new System.Drawing.Size(130, 16);
             this.labelControl19.TabIndex = 71;
             this.labelControl19.Text = "CONTACT PERSON # :";
             // 
             // txtEmployment
             // 
-            this.txtEmployment.Location = new System.Drawing.Point(581, 517);
+            this.txtEmployment.Location = new System.Drawing.Point(695, 636);
+            this.txtEmployment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmployment.MenuManager = this.ribbonControl1;
             this.txtEmployment.Name = "txtEmployment";
             this.txtEmployment.Properties.NullValuePrompt = "e.g. Programmer, etc.";
-            this.txtEmployment.Size = new System.Drawing.Size(197, 20);
+            this.txtEmployment.Size = new System.Drawing.Size(230, 22);
             this.txtEmployment.TabIndex = 18;
             // 
             // txtContactNo
             // 
-            this.txtContactNo.Location = new System.Drawing.Point(581, 546);
+            this.txtContactNo.Location = new System.Drawing.Point(695, 672);
+            this.txtContactNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtContactNo.MenuManager = this.ribbonControl1;
             this.txtContactNo.Name = "txtContactNo";
-            this.txtContactNo.Size = new System.Drawing.Size(197, 20);
+            this.txtContactNo.Size = new System.Drawing.Size(230, 22);
             this.txtContactNo.TabIndex = 19;
             // 
             // txtContactPerson
             // 
-            this.txtContactPerson.Location = new System.Drawing.Point(581, 575);
+            this.txtContactPerson.Location = new System.Drawing.Point(695, 708);
+            this.txtContactPerson.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtContactPerson.MenuManager = this.ribbonControl1;
             this.txtContactPerson.Name = "txtContactPerson";
-            this.txtContactPerson.Size = new System.Drawing.Size(121, 20);
+            this.txtContactPerson.Size = new System.Drawing.Size(141, 22);
             this.txtContactPerson.TabIndex = 20;
             // 
             // txtContactPersonNumber
             // 
-            this.txtContactPersonNumber.Location = new System.Drawing.Point(581, 606);
+            this.txtContactPersonNumber.Location = new System.Drawing.Point(695, 747);
+            this.txtContactPersonNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtContactPersonNumber.MenuManager = this.ribbonControl1;
             this.txtContactPersonNumber.Name = "txtContactPersonNumber";
-            this.txtContactPersonNumber.Size = new System.Drawing.Size(197, 20);
+            this.txtContactPersonNumber.Size = new System.Drawing.Size(230, 22);
             this.txtContactPersonNumber.TabIndex = 21;
             // 
             // checkedComboBoxEdit1
             // 
-            this.checkedComboBoxEdit1.Location = new System.Drawing.Point(162, 389);
+            this.checkedComboBoxEdit1.Location = new System.Drawing.Point(205, 479);
+            this.checkedComboBoxEdit1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkedComboBoxEdit1.MenuManager = this.ribbonControl1;
             this.checkedComboBoxEdit1.Name = "checkedComboBoxEdit1";
             this.checkedComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.checkedComboBoxEdit1.Size = new System.Drawing.Size(197, 20);
+            this.checkedComboBoxEdit1.Size = new System.Drawing.Size(230, 22);
             this.checkedComboBoxEdit1.TabIndex = 6;
             // 
             // cmbGender
             // 
-            this.cmbGender.Location = new System.Drawing.Point(372, 474);
+            this.cmbGender.Location = new System.Drawing.Point(442, 587);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbGender.MenuManager = this.ribbonControl1;
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -581,13 +626,14 @@
             "MALE",
             "FEMALE"});
             this.cmbGender.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbGender.Size = new System.Drawing.Size(197, 20);
+            this.cmbGender.Size = new System.Drawing.Size(230, 22);
             this.cmbGender.TabIndex = 11;
             this.cmbGender.Visible = false;
             // 
             // lueLocale
             // 
-            this.lueLocale.Location = new System.Drawing.Point(162, 358);
+            this.lueLocale.Location = new System.Drawing.Point(205, 441);
+            this.lueLocale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lueLocale.MenuManager = this.ribbonControl1;
             this.lueLocale.Name = "lueLocale";
             this.lueLocale.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -598,12 +644,13 @@
             this.lueLocale.Properties.NullText = "";
             this.lueLocale.Properties.NullValuePrompt = "[Select Locale]";
             this.lueLocale.Properties.NullValuePromptShowForEmptyValue = true;
-            this.lueLocale.Size = new System.Drawing.Size(197, 20);
+            this.lueLocale.Size = new System.Drawing.Size(230, 22);
             this.lueLocale.TabIndex = 5;
             // 
             // lueGroup
             // 
-            this.lueGroup.Location = new System.Drawing.Point(162, 419);
+            this.lueGroup.Location = new System.Drawing.Point(205, 516);
+            this.lueGroup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lueGroup.MenuManager = this.ribbonControl1;
             this.lueGroup.Name = "lueGroup";
             this.lueGroup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -615,24 +662,26 @@
             this.lueGroup.Properties.NullValuePrompt = "[Select Group]";
             this.lueGroup.Properties.NullValuePromptShowForEmptyValue = true;
             this.lueGroup.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.lueGroup.Size = new System.Drawing.Size(197, 20);
+            this.lueGroup.Size = new System.Drawing.Size(230, 22);
             this.lueGroup.TabIndex = 7;
             // 
             // peSketch
             // 
-            this.peSketch.Location = new System.Drawing.Point(162, 506);
+            this.peSketch.Location = new System.Drawing.Point(205, 621);
+            this.peSketch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.peSketch.MenuManager = this.ribbonControl1;
             this.peSketch.Name = "peSketch";
             this.peSketch.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peSketch.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.peSketch.Size = new System.Drawing.Size(197, 120);
+            this.peSketch.Size = new System.Drawing.Size(230, 148);
             this.peSketch.TabIndex = 77;
             // 
             // btnUpload
             // 
-            this.btnUpload.Location = new System.Drawing.Point(162, 628);
+            this.btnUpload.Location = new System.Drawing.Point(205, 767);
+            this.btnUpload.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(197, 23);
+            this.btnUpload.Size = new System.Drawing.Size(230, 28);
             this.btnUpload.TabIndex = 80;
             this.btnUpload.Text = "Upload Sketch";
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
@@ -640,29 +689,34 @@
             // peBrethren
             // 
             this.peBrethren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.peBrethren.Location = new System.Drawing.Point(761, 167);
+            this.peBrethren.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.peBrethren.EditValue = global::AMS.Properties.Resources.default_user_image;
+            this.peBrethren.Location = new System.Drawing.Point(817, 195);
+            this.peBrethren.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.peBrethren.MenuManager = this.ribbonControl1;
             this.peBrethren.Name = "peBrethren";
             this.peBrethren.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peBrethren.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.peBrethren.Size = new System.Drawing.Size(101, 91);
+            this.peBrethren.Size = new System.Drawing.Size(118, 112);
             this.peBrethren.TabIndex = 83;
             // 
             // btnBrowse
             // 
             this.btnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowse.Location = new System.Drawing.Point(762, 259);
+            this.btnBrowse.Location = new System.Drawing.Point(818, 307);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(100, 24);
+            this.btnBrowse.Size = new System.Drawing.Size(117, 30);
             this.btnBrowse.TabIndex = 86;
             this.btnBrowse.Text = "Browse Image";
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // labelControl20
             // 
-            this.labelControl20.Location = new System.Drawing.Point(105, 509);
+            this.labelControl20.Location = new System.Drawing.Point(122, 626);
+            this.labelControl20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(45, 13);
+            this.labelControl20.Size = new System.Drawing.Size(55, 16);
             this.labelControl20.TabIndex = 89;
             this.labelControl20.Text = "SKETCH :";
             // 
@@ -670,9 +724,10 @@
             // 
             this.chkMember.AutoSize = true;
             this.chkMember.BackColor = System.Drawing.Color.Transparent;
-            this.chkMember.Location = new System.Drawing.Point(708, 577);
+            this.chkMember.Location = new System.Drawing.Point(843, 710);
+            this.chkMember.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chkMember.Name = "chkMember";
-            this.chkMember.Size = new System.Drawing.Size(79, 17);
+            this.chkMember.Size = new System.Drawing.Size(98, 21);
             this.chkMember.TabIndex = 92;
             this.chkMember.Text = "is Member?";
             this.chkMember.UseVisualStyleBackColor = false;
@@ -682,9 +737,10 @@
             this.radioButtonMale.AutoSize = true;
             this.radioButtonMale.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonMale.Checked = true;
-            this.radioButtonMale.Location = new System.Drawing.Point(610, 361);
+            this.radioButtonMale.Location = new System.Drawing.Point(729, 444);
+            this.radioButtonMale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButtonMale.Name = "radioButtonMale";
-            this.radioButtonMale.Size = new System.Drawing.Size(47, 17);
+            this.radioButtonMale.Size = new System.Drawing.Size(55, 21);
             this.radioButtonMale.TabIndex = 95;
             this.radioButtonMale.TabStop = true;
             this.radioButtonMale.Text = "Male";
@@ -694,9 +750,10 @@
             // 
             this.radioButtonFemale.AutoSize = true;
             this.radioButtonFemale.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonFemale.Location = new System.Drawing.Point(687, 361);
+            this.radioButtonFemale.Location = new System.Drawing.Point(818, 444);
+            this.radioButtonFemale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButtonFemale.Name = "radioButtonFemale";
-            this.radioButtonFemale.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonFemale.Size = new System.Drawing.Size(71, 21);
             this.radioButtonFemale.TabIndex = 96;
             this.radioButtonFemale.TabStop = true;
             this.radioButtonFemale.Text = "Female";
@@ -707,9 +764,10 @@
             this.btnAddCommittee.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.btnAddCommittee.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCommittee.Image")));
             this.btnAddCommittee.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnAddCommittee.Location = new System.Drawing.Point(360, 389);
+            this.btnAddCommittee.Location = new System.Drawing.Point(445, 479);
+            this.btnAddCommittee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddCommittee.Name = "btnAddCommittee";
-            this.btnAddCommittee.Size = new System.Drawing.Size(25, 20);
+            this.btnAddCommittee.Size = new System.Drawing.Size(29, 25);
             this.btnAddCommittee.TabIndex = 99;
             this.btnAddCommittee.Click += new System.EventHandler(this.btnAddCommittee_Click);
             // 
@@ -718,17 +776,37 @@
             this.btnAddGroup.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.btnAddGroup.Image = ((System.Drawing.Image)(resources.GetObject("btnAddGroup.Image")));
             this.btnAddGroup.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnAddGroup.Location = new System.Drawing.Point(360, 419);
+            this.btnAddGroup.Location = new System.Drawing.Point(445, 516);
+            this.btnAddGroup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddGroup.Name = "btnAddGroup";
-            this.btnAddGroup.Size = new System.Drawing.Size(25, 20);
+            this.btnAddGroup.Size = new System.Drawing.Size(29, 25);
             this.btnAddGroup.TabIndex = 100;
             this.btnAddGroup.Click += new System.EventHandler(this.btnAddGroup_Click_1);
             // 
+            // labelControl21
+            // 
+            this.labelControl21.Location = new System.Drawing.Point(78, 822);
+            this.labelControl21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl21.Name = "labelControl21";
+            this.labelControl21.Size = new System.Drawing.Size(65, 16);
+            this.labelControl21.TabIndex = 103;
+            this.labelControl21.Text = "REMARKS :";
+            // 
+            // txtRemarks
+            // 
+            this.txtRemarks.Location = new System.Drawing.Point(78, 845);
+            this.txtRemarks.Multiline = true;
+            this.txtRemarks.Name = "txtRemarks";
+            this.txtRemarks.Size = new System.Drawing.Size(847, 66);
+            this.txtRemarks.TabIndex = 104;
+            // 
             // frmBrethrenAddEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 693);
+            this.ClientSize = new System.Drawing.Size(1068, 987);
+            this.Controls.Add(this.txtRemarks);
+            this.Controls.Add(this.labelControl21);
             this.Controls.Add(this.btnAddGroup);
             this.Controls.Add(this.btnAddCommittee);
             this.Controls.Add(this.radioButtonFemale);
@@ -782,6 +860,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "frmBrethrenAddEdit";
             this.Ribbon = this.ribbonControl1;
@@ -884,5 +963,7 @@
         private System.Windows.Forms.RadioButton radioButtonFemale;
         private DevExpress.XtraEditors.SimpleButton btnAddCommittee;
         private DevExpress.XtraEditors.SimpleButton btnAddGroup;
+        private DevExpress.XtraEditors.LabelControl labelControl21;
+        private System.Windows.Forms.TextBox txtRemarks;
     }
 }

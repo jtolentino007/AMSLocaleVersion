@@ -62,6 +62,7 @@
             this.barBtnEdit,
             this.barBtnDelete});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 6;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -69,7 +70,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(480, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(570, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -136,19 +137,22 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 451);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 554);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(480, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(570, 29);
             // 
             // gridBatches
             // 
             this.gridBatches.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBatches.Location = new System.Drawing.Point(0, 147);
+            this.gridBatches.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridBatches.Location = new System.Drawing.Point(0, 187);
             this.gridBatches.MainView = this.gridView1;
+            this.gridBatches.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridBatches.MenuManager = this.ribbonControl1;
             this.gridBatches.Name = "gridBatches";
-            this.gridBatches.Size = new System.Drawing.Size(480, 304);
+            this.gridBatches.Size = new System.Drawing.Size(570, 367);
             this.gridBatches.TabIndex = 2;
             this.gridBatches.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -167,6 +171,8 @@
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gridColumn3, DevExpress.Data.ColumnSortOrder.Ascending)});
+            this.gridView1.GroupRowCollapsing += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.gridView1_GroupRowCollapsing);
+            this.gridView1.EndGrouping += new System.EventHandler(this.gridView1_EndGrouping);
             // 
             // gridColumn1
             // 
@@ -210,12 +216,13 @@
             // 
             // frmBatches
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 474);
+            this.ClientSize = new System.Drawing.Size(570, 583);
             this.Controls.Add(this.gridBatches);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "frmBatches";
             this.Ribbon = this.ribbonControl1;

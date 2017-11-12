@@ -193,6 +193,18 @@
     <Compile Include="frmGatheringSelection.Designer.cs">
       <DependentUpon>frmGatheringSelection.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModuleAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModuleAddEdit.Designer.cs">
+      <DependentUpon>frmModuleAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModules.Designer.cs">
+      <DependentUpon>frmModules.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmODTReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,6 +357,30 @@
     <Compile Include="frmNewlyBaptized.Designer.cs">
       <DependentUpon>frmNewlyBaptized.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPermissions.Designer.cs">
+      <DependentUpon>frmPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrivilegeAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrivilegeAddEdit.Designer.cs">
+      <DependentUpon>frmPrivilegeAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrivilegeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrivilegeEdit.Designer.cs">
+      <DependentUpon>frmPrivilegeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrivileges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrivileges.Designer.cs">
+      <DependentUpon>frmPrivileges.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmServerConfig.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -412,6 +448,12 @@
     <Compile Include="XtraReportBrethren.Designer.cs">
       <DependentUpon>XtraReportBrethren.cs</DependentUpon>
     </Compile>
+    <Compile Include="XtraReportLocaleStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReportLocaleStatus.Designer.cs">
+      <DependentUpon>XtraReportLocaleStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="XtraReportODT.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -468,6 +510,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGatheringSelection.resx">
       <DependentUpon>frmGatheringSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModuleAddEdit.resx">
+      <DependentUpon>frmModuleAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModules.resx">
+      <DependentUpon>frmModules.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmODTReport.resx">
       <DependentUpon>frmODTReport.cs</DependentUpon>
@@ -541,6 +589,18 @@
     <EmbeddedResource Include="frmNewlyBaptized.resx">
       <DependentUpon>frmNewlyBaptized.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPermissions.resx">
+      <DependentUpon>frmPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrivilegeAddEdit.resx">
+      <DependentUpon>frmPrivilegeAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrivilegeEdit.resx">
+      <DependentUpon>frmPrivilegeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrivileges.resx">
+      <DependentUpon>frmPrivileges.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmServerConfig.resx">
       <DependentUpon>frmServerConfig.cs</DependentUpon>
     </EmbeddedResource>
@@ -582,6 +642,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="XtraReportBrethren.resx">
       <DependentUpon>XtraReportBrethren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReportLocaleStatus.resx">
+      <DependentUpon>XtraReportLocaleStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XtraReportODT.resx">
       <DependentUpon>XtraReportODT.cs</DependentUpon>
@@ -821,6 +884,12 @@
   <ItemGroup>
     <Content Include="18816620_1528985750453720_649529771_n %281%29.ico" />
     <Content Include="AMS-LOGO %281%29.ico" />
+    <None Include="Resources\icons8-Module-48-delete.png" />
+    <None Include="Resources\icons8-Module-48-edit.png" />
+    <None Include="Resources\icons8-Module-48-add.png" />
+    <None Include="Resources\icons8-Member-48-delete.png" />
+    <None Include="Resources\icons8-Member-48-edit.png" />
+    <None Include="Resources\icons8-Member-48-add.png" />
     <None Include="Resources\icons8-Print-96.png" />
   </ItemGroup>
   <ItemGroup>

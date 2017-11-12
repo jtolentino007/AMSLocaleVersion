@@ -81,5 +81,15 @@ namespace AMS
                 }
             }
         }
+
+        private void gridView1_EndGrouping(object sender, EventArgs e)
+        {
+            (sender as DevExpress.XtraGrid.Views.Grid.GridView).ExpandAllGroups();
+        }
+
+        private void gridView1_GroupRowCollapsing(object sender, DevExpress.XtraGrid.Views.Base.RowAllowEventArgs e)
+        {
+            e.Allow = false;
+        }
     }
 }

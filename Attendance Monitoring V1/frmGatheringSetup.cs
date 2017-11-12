@@ -27,7 +27,7 @@ namespace AMS
             if (vAttendanceID == null)
                 AttendanceID = "A001";
             else
-                AttendanceID = "A00" + Convert.ToInt16(vAttendanceID.Replace("A00", "") + 1);
+                AttendanceID = "A00" + Convert.ToInt64(vAttendanceID.Replace("A00", "") + 1);
 
             return AttendanceID;
         }
@@ -113,11 +113,21 @@ namespace AMS
 
         public void ActivateAttendanceForm()
         {
+            frmAttendanceForm.dtAttendance.Clear();
+
             Instances.attendanceForm.lblGathering.Text = cmbGatheringType.Text;
+
             Instances.attendanceForm.lblGatheringBatch.Caption = lueBatch.Text;
+
             Instances.attendanceForm.lblGatheringDate.Caption = dtDateGathering.Text;
+
             Instances.attendanceForm.GetBrethrenList();
+
             Instances.attendanceForm.InitializeAttendeesTable();
+
+            Instances.attendanceForm.GetAttendedBrethrenList(Convert.ToDateTime(dtDateGathering.Text), cmbGatheringType.GetColumnValue("gathering_code").ToString());
+            
+            
             //Instances.attendanceMontoring.barBtnEndAttendance.Visibility = BarItemVisibility.Always;
             //Instances.attendanceMontoring.barBtnTimeIn.Visibility = BarItemVisibility.Always;
             //Instances.attendanceMontoring.barBtnNewGathering.Visibility = BarItemVisibility.Never;
@@ -171,6 +181,8 @@ namespace AMS
                         //Instances.attendanceForm.barStaticGatheringID.Caption = "Gathering ID : " + frmAttendanceMonitoring.GatheringID;
                         //Instances.attendanceForm.barStaticGatheringType.Caption = "Gathering : " + cmbGatheringType.Text + ", " + lueBatch.Text + " Batch";
                         frmAttendanceMonitoring.Time = Convert.ToDateTime(Convert.ToDateTime(lueBatch.Text).ToShortTimeString());
+                        Instances.attendanceForm.lblGatheringBatch.Caption = "BATCH : " + Convert.ToDateTime(lueBatch.Text).ToShortTimeString();
+                        Instances.attendanceForm.lblGatheringDate.Caption = "DATE OF GATHERING : " + dtDateGathering.Text;
                         ActivateAttendanceForm();
                         Instances.attendanceForm.ShowDialog();
                         ClearGathering();

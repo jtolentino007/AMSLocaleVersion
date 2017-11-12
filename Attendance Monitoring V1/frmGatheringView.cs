@@ -70,15 +70,11 @@ namespace AMS
             Instances.attendanceMontoring.lblTimerGathering.Text = gridView1.GetFocusedRowCellValue("Gathering_Type").ToString().ToUpper();
             Instances.attendanceMontoring.lblStatus.Text = "READY";
             Instances.attendanceMontoring.barBtnGenerateReport.Visibility = BarItemVisibility.Always;
-            GatheringID = gridView1.GetFocusedRowCellValue("Gathering_Id").ToString();
-            GatheringInfo = gridView1.GetFocusedRowCellValue("Gathering_Type").ToString() + ", " + Convert.ToDateTime(gridView1.GetFocusedRowCellValue("Batch_Time")).ToString("hh:mm tt") + " Batch";
-            frmAttendanceMonitoring.GatheringID = GatheringID;
-            frmInterlocale.GatheringID = GatheringID;
-            frmAttendanceMonitoring.Status = 1;
-            Instances.attendanceMontoring.barStaticGatheringID.Caption = GatheringID;
-            Instances.attendanceMontoring.barStaticGatheringType.Caption = GatheringInfo;
-            frmAttendanceMonitoring.Time = Convert.ToDateTime(Convert.ToDateTime(gridView1.GetFocusedRowCellValue("Batch_Time").ToString()).ToShortTimeString());
-            Instances.attendanceMontoring.GetAttendedBrethren();
+            //Instances.attendanceForm.barStaticGatheringID.Caption = GatheringID;
+            //Instances.attendanceForm.barStaticGatheringType.Caption = GatheringInfo;
+            Instances.attendanceForm.lblGatheringBatch.Caption = "BATCH : " + Convert.ToDateTime(Convert.ToDateTime(gridView1.GetFocusedRowCellValue("Batch_Time").ToString()).ToShortTimeString()).ToString();
+            Instances.attendanceForm.lblGatheringDate.Caption = "DATE OF GATHERING : " + gridView1.GetFocusedRowCellValue("DateOfGathering").ToString();
+            //frmAttendanceForm.Time = Convert.ToDateTime(Convert.ToDateTime(gridView1.GetFocusedRowCellValue("Batch_Time").ToString()).ToShortTimeString());
             this.Close();
         }
 
@@ -88,10 +84,35 @@ namespace AMS
                 Utilities.ErrorMessage("No selected gathering(s) found");
             else
             {
-                viewAttendanceID = Instances.setupGathering.SetAttendanceID();
+                frmAttendanceForm.dtAttendance.Clear();
+                //viewAttendanceID = Instances.setupGathering.SetAttendanceID();SetGathering();
                 GetCurrentSelectedAttendance(gridView1.GetFocusedRowCellValue("Gathering_Id").ToString());
-                SetGathering();
-                Instances.attendanceMontoring.ShowDialog();
+                GatheringID = gridView1.GetFocusedRowCellValue("Gathering_Id").ToString();
+                GatheringInfo = gridView1.GetFocusedRowCellValue("Gathering_Type").ToString() + ", " + Convert.ToDateTime(gridView1.GetFocusedRowCellValue("Batch_Time")).ToString("hh:mm tt") + " Batch";
+
+                frmAttendanceForm.GatheringID = GatheringID;
+                frmAttendanceForm.Status = 1;
+                frmInterlocale.GatheringID = GatheringID;
+                Instances.attendanceForm.lblGatheringBatch.Caption = "BATCH : " + Convert.ToDateTime(gridView1.GetFocusedRowCellValue("Batch_Time").ToString()).ToShortTimeString();
+                Instances.attendanceForm.lblGatheringDate.Caption = "DATE OF GATHERING : " + gridView1.GetFocusedRowCellValue("DateOfGathering").ToString();
+                Instances.attendanceForm.lblGathering.Text = gridView1.GetFocusedRowCellValue("Gathering_Type").ToString();
+                Instances.attendanceForm.GetAttendedBrethren();
+                Instances.attendanceForm.GetAttendedBrethrenList(Convert.ToDateTime(gridView1.GetFocusedRowCellValue("DateOfGathering").ToString()), gridView1.GetFocusedRowCellValue("gathering_code").ToString());
+
+                using (SqlDataAdapter TempAdapter = new SqlDataAdapter("GET_TEMP_ATTENDANCE", Utilities.con))
+                {
+                    TempAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                    TempAdapter.Fill(frmAttendanceForm.dtAttendance);
+                }
+
+                Instances.assignees.txtAddpro.Text = (frmAttendanceForm.dtAttendance.Rows.Count > 0 ? frmAttendanceForm.dtAttendance.Rows[0]["addpro"].ToString() : "");
+                Instances.assignees.txtOfficers.Text = (frmAttendanceForm.dtAttendance.Rows.Count > 0 ? frmAttendanceForm.dtAttendance.Rows[0]["officers"].ToString() : "");
+                Instances.assignees.txtWorker.Text = (frmAttendanceForm.dtAttendance.Rows.Count > 0 ? frmAttendanceForm.dtAttendance.Rows[0]["workers"].ToString() : "");
+                Instances.assignees.txtRemarks.Text = (frmAttendanceForm.dtAttendance.Rows.Count > 0 ? frmAttendanceForm.dtAttendance.Rows[0]["remarks"].ToString() : "");
+
+                Instances.attendanceForm.ShowDialog();
+                this.Hide();
+
             }
         }
 
@@ -110,6 +131,16 @@ namespace AMS
         private void gridGathering_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridView1_GroupRowCollapsing(object sender, DevExpress.XtraGrid.Views.Base.RowAllowEventArgs e)
+        {
+            e.Allow = false;
+        }
+
+        private void gridView1_EndGrouping(object sender, EventArgs e)
+        {
+            (sender as DevExpress.XtraGrid.Views.Grid.GridView).ExpandAllGroups();
         }
 
         private void frmGatheringView_Load(object sender, EventArgs e)

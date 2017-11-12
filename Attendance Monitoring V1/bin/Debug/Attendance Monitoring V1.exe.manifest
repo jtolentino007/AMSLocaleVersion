@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Attendance Monitoring V1.exe" size="5173216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Attendance Monitoring V1.exe" size="5234656">
       <assemblyIdentity name="Attendance Monitoring V1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QeuOyPdDetUiOWXlvBBVIPixrcAgBXd6XqFf+OFycgU=</dsig:DigestValue>
+        <dsig:DigestValue>mjZGxu4MctvsMJswLGN3TXUhwSTp8QvCbQFZ8NrQG/A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2304,13 +2304,13 @@
       <dsig:DigestValue>XsWvg8OwsRvdlY+G696gY3DH0Iu7N+nNxb9Pf6bwWKY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Attendance Monitoring V1.exe.config" size="432">
+  <file name="Attendance Monitoring V1.exe.config" size="437">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kP4tDnWO2Tpl2GK1m4NUebXBEkkc7r9bYrowMgkzoQU=</dsig:DigestValue>
+      <dsig:DigestValue>z4bbwHgQUFZxE+OIWAt/DsKWp3Q1iVGdZbLm9HDYgxo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

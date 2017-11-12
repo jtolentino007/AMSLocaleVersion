@@ -69,6 +69,9 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemLocaleStatus = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemLocales = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemPrivileges = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPageCategory2 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -91,6 +94,7 @@
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dashboardViewer1 = new DevExpress.DashboardWin.DashboardViewer(this.components);
+            this.barButtonItemModule = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
@@ -155,9 +159,14 @@
             this.barButtonNewlyBaptizedReport,
             this.barButtonItem4,
             this.barButtonItem5,
-            this.barButtonItem6});
+            this.barButtonItem6,
+            this.barButtonItemLocaleStatus,
+            this.barButtonItemLocales,
+            this.barButtonItemPrivileges,
+            this.barButtonItemModule});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 249;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ribbonControl1.MaxItemId = 253;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1,
@@ -175,7 +184,7 @@
             this.ribbonControl1.ShowCategoryInCaption = false;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1063, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(1240, 187);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
@@ -283,7 +292,7 @@
             // 
             // mnuBtnLocale
             // 
-            this.mnuBtnLocale.Caption = "Locale Management";
+            this.mnuBtnLocale.Caption = "Home \r\nLocale";
             this.mnuBtnLocale.Glyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnLocale.Glyph")));
             this.mnuBtnLocale.Id = 14;
             this.mnuBtnLocale.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("mnuBtnLocale.LargeGlyph")));
@@ -466,6 +475,32 @@
             this.barButtonItem6.Name = "barButtonItem6";
             this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
+            // barButtonItemLocaleStatus
+            // 
+            this.barButtonItemLocaleStatus.Caption = "Locale Status Report";
+            this.barButtonItemLocaleStatus.Id = 249;
+            this.barButtonItemLocaleStatus.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemLocaleStatus.LargeGlyph")));
+            this.barButtonItemLocaleStatus.Name = "barButtonItemLocaleStatus";
+            this.barButtonItemLocaleStatus.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemLocaleStatus_ItemClick);
+            // 
+            // barButtonItemLocales
+            // 
+            this.barButtonItemLocales.Caption = "Locales";
+            this.barButtonItemLocales.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemLocales.Glyph")));
+            this.barButtonItemLocales.Id = 250;
+            this.barButtonItemLocales.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemLocales.LargeGlyph")));
+            this.barButtonItemLocales.Name = "barButtonItemLocales";
+            this.barButtonItemLocales.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemLocales_ItemClick);
+            // 
+            // barButtonItemPrivileges
+            // 
+            this.barButtonItemPrivileges.Caption = "Privilege Management";
+            this.barButtonItemPrivileges.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemPrivileges.Glyph")));
+            this.barButtonItemPrivileges.Id = 251;
+            this.barButtonItemPrivileges.LargeGlyph = global::AMS.Properties.Resources.icons8_User_Menu_Male_96;
+            this.barButtonItemPrivileges.Name = "barButtonItemPrivileges";
+            this.barButtonItemPrivileges.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemPrivileges_ItemClick);
+            // 
             // ribbonPageCategory1
             // 
             this.ribbonPageCategory1.Name = "ribbonPageCategory1";
@@ -507,7 +542,9 @@
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.barBtnUsers);
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItemPrivileges);
             this.ribbonPageGroup5.ItemLinks.Add(this.barBtnDashboardSettings);
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItemModule);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.ShowCaptionButton = false;
             // 
@@ -528,6 +565,7 @@
             this.ribbonPageGroup2.ItemLinks.Add(this.mnuBtnCommittees);
             this.ribbonPageGroup2.ItemLinks.Add(this.mnuBtnLocale);
             this.ribbonPageGroup2.ItemLinks.Add(this.barBtnGatheringTypes);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemLocales);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             // 
@@ -573,6 +611,7 @@
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonGroupingsReport);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonCelebrantReport);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonNewlyBaptizedReport);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItemLocaleStatus);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.ShowCaptionButton = false;
             this.ribbonPageGroup6.Text = "Brethren Related Reports";
@@ -610,13 +649,13 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 147);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 187);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1063, 537);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1240, 655);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
             // tableLayoutPanel2
@@ -634,7 +673,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1063, 53);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1240, 65);
             this.tableLayoutPanel2.TabIndex = 13;
             // 
             // lblWelcomeMessage
@@ -644,11 +683,11 @@
             this.lblWelcomeMessage.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblWelcomeMessage.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblWelcomeMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblWelcomeMessage.Location = new System.Drawing.Point(53, 0);
+            this.lblWelcomeMessage.Location = new System.Drawing.Point(62, 0);
             this.lblWelcomeMessage.Margin = new System.Windows.Forms.Padding(0);
             this.lblWelcomeMessage.Name = "lblWelcomeMessage";
-            this.lblWelcomeMessage.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.lblWelcomeMessage.Size = new System.Drawing.Size(956, 53);
+            this.lblWelcomeMessage.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.lblWelcomeMessage.Size = new System.Drawing.Size(1116, 65);
             this.lblWelcomeMessage.TabIndex = 12;
             this.lblWelcomeMessage.Text = "Hi\r\nUser!\r\n";
             // 
@@ -656,21 +695,21 @@
             // 
             this.peUserImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.peUserImage.EditValue = ((object)(resources.GetObject("peUserImage.EditValue")));
-            this.peUserImage.Location = new System.Drawing.Point(10, 5);
-            this.peUserImage.Margin = new System.Windows.Forms.Padding(10, 5, 5, 0);
+            this.peUserImage.Location = new System.Drawing.Point(12, 6);
+            this.peUserImage.Margin = new System.Windows.Forms.Padding(12, 6, 6, 0);
             this.peUserImage.MenuManager = this.ribbonControl1;
             this.peUserImage.Name = "peUserImage";
             this.peUserImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peUserImage.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.peUserImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.peUserImage.Size = new System.Drawing.Size(38, 48);
+            this.peUserImage.Size = new System.Drawing.Size(44, 59);
             this.peUserImage.TabIndex = 14;
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureEdit1.EditValue = global::AMS.Properties.Resources._18816620_1528985750453720_649529771_n;
-            this.pictureEdit1.Location = new System.Drawing.Point(1009, 0);
+            this.pictureEdit1.Location = new System.Drawing.Point(1178, 0);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit1.MenuManager = this.ribbonControl1;
             this.pictureEdit1.Name = "pictureEdit1";
@@ -679,22 +718,23 @@
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit1.Size = new System.Drawing.Size(54, 53);
+            this.pictureEdit1.Size = new System.Drawing.Size(62, 65);
             this.pictureEdit1.TabIndex = 15;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel3.Controls.Add(this.dashboardViewer1, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 56);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 69);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1057, 478);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1234, 582);
             this.tableLayoutPanel3.TabIndex = 14;
             // 
             // dashboardViewer1
@@ -707,22 +747,32 @@
             this.dashboardViewer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dashboardViewer1.DashboardSource = "C:/Program%20Files/Attendance%20Monitoring%20System/dashboard.xml";
             this.dashboardViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashboardViewer1.Location = new System.Drawing.Point(5, 0);
-            this.dashboardViewer1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.dashboardViewer1.Location = new System.Drawing.Point(6, 0);
+            this.dashboardViewer1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.dashboardViewer1.Name = "dashboardViewer1";
-            this.dashboardViewer1.Size = new System.Drawing.Size(1047, 478);
+            this.dashboardViewer1.Size = new System.Drawing.Size(1222, 582);
             this.dashboardViewer1.TabIndex = 12;
+            // 
+            // barButtonItemModule
+            // 
+            this.barButtonItemModule.Caption = "Modules Management";
+            this.barButtonItemModule.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemModule.Glyph")));
+            this.barButtonItemModule.Id = 252;
+            this.barButtonItemModule.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemModule.LargeGlyph")));
+            this.barButtonItemModule.Name = "barButtonItemModule";
+            this.barButtonItemModule.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemModule_ItemClick);
             // 
             // frmMain
             // 
             this.ActiveGlowColor = System.Drawing.Color.DodgerBlue;
             this.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 684);
+            this.ClientSize = new System.Drawing.Size(1240, 842);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;
@@ -807,6 +857,10 @@
         public DevExpress.XtraBars.BarButtonItem mnuBtnLocale;
         public DevExpress.XtraBars.BarButtonItem barBtnBatches;
         public DevExpress.XtraBars.BarButtonItem barBtnGatheringTypes;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemLocaleStatus;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemLocales;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemPrivileges;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemModule;
     }
 }
 

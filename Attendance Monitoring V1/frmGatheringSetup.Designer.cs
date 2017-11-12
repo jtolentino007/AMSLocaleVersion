@@ -62,6 +62,7 @@
             this.mnuBtnSave,
             this.mnuBtnClose});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 3;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -70,7 +71,7 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(377, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(450, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -108,38 +109,43 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 408);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 501);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(377, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(450, 29);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(32, 223);
+            this.labelControl1.Location = new System.Drawing.Point(37, 274);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(85, 13);
+            this.labelControl1.Size = new System.Drawing.Size(100, 16);
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "GATHERING TYPE";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(32, 268);
+            this.labelControl2.Location = new System.Drawing.Point(37, 330);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(94, 13);
+            this.labelControl2.Size = new System.Drawing.Size(110, 16);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "GATHERING BATCH";
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(32, 317);
+            this.labelControl3.Location = new System.Drawing.Point(37, 390);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(71, 13);
+            this.labelControl3.Size = new System.Drawing.Size(84, 16);
             this.labelControl3.TabIndex = 6;
             this.labelControl3.Text = "VIEWING TYPE";
             // 
             // cmbViewingType
             // 
-            this.cmbViewingType.Location = new System.Drawing.Point(32, 336);
+            this.cmbViewingType.Location = new System.Drawing.Point(37, 414);
+            this.cmbViewingType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbViewingType.MenuManager = this.ribbonControl1;
             this.cmbViewingType.Name = "cmbViewingType";
             this.cmbViewingType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -150,28 +156,30 @@
             this.cmbViewingType.Properties.NullValuePrompt = "SELECT VIEWING TYPE";
             this.cmbViewingType.Properties.NullValuePromptShowForEmptyValue = true;
             this.cmbViewingType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbViewingType.Size = new System.Drawing.Size(278, 20);
+            this.cmbViewingType.Size = new System.Drawing.Size(324, 22);
             this.cmbViewingType.TabIndex = 3;
             // 
             // dtDateGathering
             // 
             this.dtDateGathering.EditValue = null;
             this.dtDateGathering.Enabled = false;
-            this.dtDateGathering.Location = new System.Drawing.Point(32, 191);
+            this.dtDateGathering.Location = new System.Drawing.Point(37, 235);
+            this.dtDateGathering.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtDateGathering.MenuManager = this.ribbonControl1;
             this.dtDateGathering.Name = "dtDateGathering";
             this.dtDateGathering.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtDateGathering.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtDateGathering.Size = new System.Drawing.Size(250, 20);
+            this.dtDateGathering.Size = new System.Drawing.Size(292, 22);
             this.dtDateGathering.TabIndex = 0;
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(32, 172);
+            this.labelControl4.Location = new System.Drawing.Point(37, 212);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(26, 13);
+            this.labelControl4.Size = new System.Drawing.Size(31, 16);
             this.labelControl4.TabIndex = 19;
             this.labelControl4.Text = "DATE";
             // 
@@ -179,16 +187,18 @@
             // 
             this.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnEdit.Image = global::AMS.Properties.Resources.Edit_18;
-            this.btnEdit.Location = new System.Drawing.Point(285, 191);
+            this.btnEdit.Location = new System.Drawing.Point(332, 235);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(25, 20);
+            this.btnEdit.Size = new System.Drawing.Size(29, 25);
             this.btnEdit.TabIndex = 22;
             this.btnEdit.Text = "simpleButton1";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // lueBatch
             // 
-            this.lueBatch.Location = new System.Drawing.Point(32, 287);
+            this.lueBatch.Location = new System.Drawing.Point(37, 353);
+            this.lueBatch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lueBatch.MenuManager = this.ribbonControl1;
             this.lueBatch.Name = "lueBatch";
             this.lueBatch.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -203,12 +213,13 @@
             this.lueBatch.Properties.NullValuePromptShowForEmptyValue = true;
             this.lueBatch.Properties.ShowFooter = false;
             this.lueBatch.Properties.ShowHeader = false;
-            this.lueBatch.Size = new System.Drawing.Size(278, 20);
+            this.lueBatch.Size = new System.Drawing.Size(324, 22);
             this.lueBatch.TabIndex = 25;
             // 
             // cmbGatheringType
             // 
-            this.cmbGatheringType.Location = new System.Drawing.Point(32, 242);
+            this.cmbGatheringType.Location = new System.Drawing.Point(37, 298);
+            this.cmbGatheringType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbGatheringType.MenuManager = this.ribbonControl1;
             this.cmbGatheringType.Name = "cmbGatheringType";
             this.cmbGatheringType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -221,15 +232,16 @@
             this.cmbGatheringType.Properties.NullValuePrompt = "SELECT GATHERING";
             this.cmbGatheringType.Properties.NullValuePromptShowForEmptyValue = true;
             this.cmbGatheringType.Properties.PopupSizeable = false;
-            this.cmbGatheringType.Size = new System.Drawing.Size(278, 20);
+            this.cmbGatheringType.Size = new System.Drawing.Size(324, 22);
             this.cmbGatheringType.TabIndex = 1;
             this.cmbGatheringType.TextChanged += new System.EventHandler(this.cmbGatheringyType_TextChanged);
             // 
             // btnSet
             // 
-            this.btnSet.Location = new System.Drawing.Point(285, 191);
+            this.btnSet.Location = new System.Drawing.Point(332, 235);
+            this.btnSet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSet.Name = "btnSet";
-            this.btnSet.Size = new System.Drawing.Size(25, 21);
+            this.btnSet.Size = new System.Drawing.Size(29, 26);
             this.btnSet.TabIndex = 28;
             this.btnSet.Text = "SET";
             this.btnSet.Visible = false;
@@ -240,18 +252,19 @@
             this.btnAddBatch.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnAddBatch.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBatch.Image")));
             this.btnAddBatch.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnAddBatch.Location = new System.Drawing.Point(316, 287);
+            this.btnAddBatch.Location = new System.Drawing.Point(369, 353);
+            this.btnAddBatch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddBatch.Name = "btnAddBatch";
-            this.btnAddBatch.Size = new System.Drawing.Size(22, 20);
+            this.btnAddBatch.Size = new System.Drawing.Size(26, 25);
             this.btnAddBatch.TabIndex = 30;
             this.btnAddBatch.Click += new System.EventHandler(this.btnAddBatch_Click);
             // 
             // frmGatheringSetup
             // 
             this.ActiveGlowColor = System.Drawing.Color.DodgerBlue;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 431);
+            this.ClientSize = new System.Drawing.Size(450, 530);
             this.Controls.Add(this.btnAddBatch);
             this.Controls.Add(this.lueBatch);
             this.Controls.Add(this.btnEdit);
@@ -266,6 +279,7 @@
             this.Controls.Add(this.btnSet);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "frmGatheringSetup";
             this.Ribbon = this.ribbonControl1;

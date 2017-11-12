@@ -94,6 +94,7 @@
             this.mnuBtnRemoveBrethren,
             this.mnuBtnSearch});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -104,7 +105,7 @@
             this.ribbonControl1.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowQatLocationSelector = false;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(983, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(1157, 187);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -186,22 +187,25 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 570);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 711);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(983, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1157, 29);
             // 
             // gridBrethren
             // 
             this.gridBrethren.Cursor = System.Windows.Forms.Cursors.Default;
             this.gridBrethren.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBrethren.Location = new System.Drawing.Point(0, 143);
+            this.gridBrethren.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridBrethren.Location = new System.Drawing.Point(0, 187);
             this.gridBrethren.MainView = this.gridView1;
+            this.gridBrethren.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridBrethren.MenuManager = this.ribbonControl1;
             this.gridBrethren.Name = "gridBrethren";
             this.gridBrethren.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnViewDetails});
-            this.gridBrethren.Size = new System.Drawing.Size(983, 427);
+            this.gridBrethren.Size = new System.Drawing.Size(1157, 524);
             this.gridBrethren.TabIndex = 6;
             this.gridBrethren.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -487,12 +491,13 @@
             // 
             // frmBrethren
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 601);
+            this.ClientSize = new System.Drawing.Size(1157, 740);
             this.Controls.Add(this.gridBrethren);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

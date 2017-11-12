@@ -225,6 +225,7 @@ namespace AMS
                         reportBrethren.xrLabelGroup.Text = rd["Group_name"].ToString().ToUpper();
                         reportBrethren.xrLabelLocale.Text = rd["locale"].ToString().ToUpper();
                         reportBrethren.xrLabelEmployment.Text = rd["Employment"].ToString().ToUpper();
+                        reportBrethren.xrLabelRemarks.Text = rd["Remarks"].ToString();
                     }
 
                     reportBrethren.CreateDocument();
